@@ -1,6 +1,8 @@
 CreateCategories	/Users/katsuki/Desktop/Rails/MyBlog/db/migrate/20180902215833_create_categories.rb	/^class CreateCategories < ActiveRecord::Migration[5.1]$/;"	class	line:1
 change	/Users/katsuki/Desktop/Rails/MyBlog/db/migrate/20180902215833_create_categories.rb	/^  def change$/;"	method	line:2	class:CreateCategories
 Post	/Users/katsuki/Desktop/Rails/MyBlog/app/models/post.rb	/^class Post < ApplicationRecord$/;"	class	line:1
+PostsHelper	/Users/katsuki/Desktop/Rails/MyBlog/app/helpers/posts_helper.rb	/^module PostsHelper$/;"	module	line:1
+humanize	/Users/katsuki/Desktop/Rails/MyBlog/app/helpers/posts_helper.rb	/^  def humanize(arg)$/;"	method	line:2	class:PostsHelper
 PostsController	/Users/katsuki/Desktop/Rails/MyBlog/app/controllers/posts_controller.rb	/^class PostsController < ApplicationController$/;"	class	line:1
 index	/Users/katsuki/Desktop/Rails/MyBlog/app/controllers/posts_controller.rb	/^  def index$/;"	method	line:3	class:PostsController
 new	/Users/katsuki/Desktop/Rails/MyBlog/app/controllers/posts_controller.rb	/^  def new$/;"	method	line:7	class:PostsController
