@@ -9,7 +9,7 @@ class PostsController < ApplicationController
   end
 
   def create
-    if @post.save?
+    if @post.save
       redirect_to root_path
     else
       render 'new'
