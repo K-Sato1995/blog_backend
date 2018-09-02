@@ -1,1 +1,3 @@
 Post	/Users/katsuki/Desktop/Rails/MyBlog/app/models/post.rb	/^class Post < ApplicationRecord$/;"	class	line:1
+CreateCategories	/Users/katsuki/Desktop/Rails/MyBlog/db/migrate/20180902215833_create_categories.rb	/^class CreateCategories < ActiveRecord::Migration[5.1]$/;"	class	line:1
+change	/Users/katsuki/Desktop/Rails/MyBlog/db/migrate/20180902215833_create_categories.rb	/^  def change$/;"	method	line:2	class:CreateCategories
