@@ -2,6 +2,6 @@
 <% @posts.each do |post| %>
 <%= post.title %>
 <%= post.context %>
-<%= post.status %>
+<%= humanize(post.status) %>
 <% end %>
 <%=link_to 'New', new_post_path%>
