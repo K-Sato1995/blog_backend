@@ -1,2 +1,7 @@
 <h1>Hello World</h1>
+<% @posts.each do |post| %>
+<%= post.title %>
+<%= post.context %>
+<%= post.status %>
+<% end %>
 <%=link_to 'New', new_post_path%>
