@@ -6,3 +6,6 @@ new	/Users/katsuki/Desktop/Rails/MyBlog/app/controllers/posts_controller.rb	/^  
 create	/Users/katsuki/Desktop/Rails/MyBlog/app/controllers/posts_controller.rb	/^  def create$/;"	method	line:11	class:PostsController
 post_params	/Users/katsuki/Desktop/Rails/MyBlog/app/controllers/posts_controller.rb	/^  def post_params$/;"	method	line:21	class:PostsController
 find_post	/Users/katsuki/Desktop/Rails/MyBlog/app/controllers/posts_controller.rb	/^  def find_post$/;"	method	line:25	class:PostsController
+Post	/Users/katsuki/Desktop/Rails/MyBlog/app/models/post.rb	/^class Post < ApplicationRecord$/;"	class	line:1
+PostsHelper	/Users/katsuki/Desktop/Rails/MyBlog/app/helpers/posts_helper.rb	/^module PostsHelper$/;"	module	line:1
+humanize	/Users/katsuki/Desktop/Rails/MyBlog/app/helpers/posts_helper.rb	/^  def humanize(arg)$/;"	method	line:2	class:PostsHelper

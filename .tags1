@@ -4,3 +4,5 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
+PostsHelper	/Users/katsuki/Desktop/Rails/MyBlog/app/helpers/posts_helper.rb	/^module PostsHelper$/;"	module	line:1
+humanize	/Users/katsuki/Desktop/Rails/MyBlog/app/helpers/posts_helper.rb	/^  def humanize(arg)$/;"	method	line:2	class:PostsHelper
