@@ -1,7 +1,7 @@
 <h1>Hello World</h1>
 <% @posts.each do |post| %>
 <%= post.title %>
-<%= post.context %>
+<%= qiita_markdown(post.context) %>
 <%= post.category %>
 <%= humanize(post.status) %>
 <%= link_to 'Edit', edit_post_path(post) %>
