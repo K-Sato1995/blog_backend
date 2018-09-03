@@ -100,3 +100,9 @@ a-color	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_colors.scss	
 .card-header	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_container.scss	/^  .card-header {$/;"	function	line:21
 .card-footer	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_container.scss	/^  .card-footer {$/;"	function	line:24
 footer	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_footer.scss	/^footer {$/;"	function	line:1
+.badge	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_show.scss	/^.badge{$/;"	function	line:1
+.tag	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_show.scss	/^.tag{$/;"	function	line:5
+.s-container	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_show.scss	/^.s-container {$/;"	function	line:9
+// .c-container	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_show.scss	/^\/\/ .c-container {$/;"	function	line:13
+// .comment-section	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_show.scss	/^\/\/ .comment-section {$/;"	function	line:17
+// #comment	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_show.scss	/^\/\/ #comment {$/;"	function	line:20
