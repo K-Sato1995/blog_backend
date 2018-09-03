@@ -1,6 +1,5 @@
 CreateCategories	/Users/katsuki/Desktop/Rails/MyBlog/db/migrate/20180902215833_create_categories.rb	/^class CreateCategories < ActiveRecord::Migration[5.1]$/;"	class	line:1
 change	/Users/katsuki/Desktop/Rails/MyBlog/db/migrate/20180902215833_create_categories.rb	/^  def change$/;"	method	line:2	class:CreateCategories
-Post	/Users/katsuki/Desktop/Rails/MyBlog/app/models/post.rb	/^class Post < ApplicationRecord$/;"	class	line:1
 PostsHelper	/Users/katsuki/Desktop/Rails/MyBlog/app/helpers/posts_helper.rb	/^module PostsHelper$/;"	module	line:1
 humanize	/Users/katsuki/Desktop/Rails/MyBlog/app/helpers/posts_helper.rb	/^  def humanize(arg)$/;"	method	line:2	class:PostsHelper
 PostsController	/Users/katsuki/Desktop/Rails/MyBlog/app/controllers/posts_controller.rb	/^class PostsController < ApplicationController$/;"	class	line:1
@@ -78,7 +77,9 @@ span	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	
 .vg	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^    .vg { color: #008080 } \/* Name.Variable.Global *\/$/;"	function	line:70
 .vi	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^    .vi { color: #008080 } \/* Name.Variable.Instance *\/$/;"	function	line:71
 .il	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^    .il { color: #009999 } \/* Literal.Number.Integer.Long *\/$/;"	function	line:72
-CreateUsers	/Users/katsuki/Desktop/Rails/MyBlog/db/migrate/20180903110440_create_users.rb	/^class CreateUsers < ActiveRecord::Migration[5.1]$/;"	class	line:1
-change	/Users/katsuki/Desktop/Rails/MyBlog/db/migrate/20180903110440_create_users.rb	/^  def change$/;"	method	line:2	class:CreateUsers
 AddUserToPosts	/Users/katsuki/Desktop/Rails/MyBlog/db/migrate/20180903111032_add_user_to_posts.rb	/^class AddUserToPosts < ActiveRecord::Migration[5.1]$/;"	class	line:1
 change	/Users/katsuki/Desktop/Rails/MyBlog/db/migrate/20180903111032_add_user_to_posts.rb	/^  def change$/;"	method	line:2	class:AddUserToPosts
+Post	/Users/katsuki/Desktop/Rails/MyBlog/app/models/post.rb	/^class Post < ApplicationRecord$/;"	class	line:1
+CreateUsers	/Users/katsuki/Desktop/Rails/MyBlog/db/migrate/20180903110440_create_users.rb	/^class CreateUsers < ActiveRecord::Migration[5.1]$/;"	class	line:1
+change	/Users/katsuki/Desktop/Rails/MyBlog/db/migrate/20180903110440_create_users.rb	/^  def change$/;"	method	line:2	class:CreateUsers
+User	/Users/katsuki/Desktop/Rails/MyBlog/app/models/user.rb	/^class User < ApplicationRecord$/;"	class	line:1
