@@ -1,0 +1,27 @@
+@import "colors";
+
+.container {
+  margin-top: 90px;
+}
+.PostBox {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  height: 30%;
+  width: 60%;
+  background-color: #fff;
+  border: solid 1px $p-color;
+}
+#post-box {
+  .card-body {
+    text-align: center;
+  }
+  .card-text {
+    padding: 10px;
+  }
+  .card-header {
+    background-color: #fff;
+  }
+  .card-footer {
+    background-color: #fff;
+  }
+}

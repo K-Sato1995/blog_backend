@@ -1,12 +1,19 @@
-<h1>Hello World</h1>
-<% if user_signed_in? %>
-<%= link_to 'Logout as admin', destroy_user_session_path, method: :delete %>
-<% end %>
-<% @posts.each do |post| %>
-<%= link_to post.title, post_path(post) %>
-<%= post.category %>
-<%= humanize(post.status) %>
-<%= link_to 'Edit', edit_post_path(post) %>
-<%= link_to 'Delete',post_path(post), method: :delete, data: { confirm: 'Are you sure?' } %>
-<% end %>
-<%=link_to 'New', new_post_path%>
+<div class = 'container'>
+  <div class = 'row'>
+    <div class="col-md-8">
+      <% @posts.each do |post| %>
+        <%= link_to post.title, post_path(post) %>
+        <%= post.category %>
+        <%= humanize(post.status) %>
+        <%= link_to 'Edit', edit_post_path(post) %>
+        <%= link_to 'Delete',post_path(post), method: :delete, data: { confirm: 'Are you sure?' } %>
+      <% end %>
+    </div>
+    <div class="col-md-4">
+      <!-- <Side searchHandler = {this.searchHandler} term = {this.state.term}/> -->
+    </div>
+  </div>
+  <!-- <ul id="page-numbers">
+    {renderPageNumbers}
+  </ul> -->
+</div>
