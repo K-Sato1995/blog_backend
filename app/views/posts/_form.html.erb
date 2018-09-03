@@ -1,6 +1,6 @@
 <%= form_for @post do |f|%>
 <%= f.text_field :title %>
-<%= f.text_area :context %>
+<%= f.text_area :context , cols: "30", rows: "30"%>
 <%= f.text_field :category %>
 <%= f.select(:status, Post.statuses.keys) %>
 <%= f.submit %>
