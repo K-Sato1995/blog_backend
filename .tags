@@ -80,3 +80,5 @@ span	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	
 .il	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^    .il { color: #009999 } \/* Literal.Number.Integer.Long *\/$/;"	function	line:72
 CreateUsers	/Users/katsuki/Desktop/Rails/MyBlog/db/migrate/20180903110440_create_users.rb	/^class CreateUsers < ActiveRecord::Migration[5.1]$/;"	class	line:1
 change	/Users/katsuki/Desktop/Rails/MyBlog/db/migrate/20180903110440_create_users.rb	/^  def change$/;"	method	line:2	class:CreateUsers
+AddUserToPosts	/Users/katsuki/Desktop/Rails/MyBlog/db/migrate/20180903111032_add_user_to_posts.rb	/^class AddUserToPosts < ActiveRecord::Migration[5.1]$/;"	class	line:1
+change	/Users/katsuki/Desktop/Rails/MyBlog/db/migrate/20180903111032_add_user_to_posts.rb	/^  def change$/;"	method	line:2	class:AddUserToPosts

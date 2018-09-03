@@ -4,5 +4,5 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
-CreateUsers	/Users/katsuki/Desktop/Rails/MyBlog/db/migrate/20180903110440_create_users.rb	/^class CreateUsers < ActiveRecord::Migration[5.1]$/;"	class	line:1
-change	/Users/katsuki/Desktop/Rails/MyBlog/db/migrate/20180903110440_create_users.rb	/^  def change$/;"	method	line:2	class:CreateUsers
+AddUserToPosts	/Users/katsuki/Desktop/Rails/MyBlog/db/migrate/20180903111032_add_user_to_posts.rb	/^class AddUserToPosts < ActiveRecord::Migration[5.1]$/;"	class	line:1
+change	/Users/katsuki/Desktop/Rails/MyBlog/db/migrate/20180903111032_add_user_to_posts.rb	/^  def change$/;"	method	line:2	class:AddUserToPosts
