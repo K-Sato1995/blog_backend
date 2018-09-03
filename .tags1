@@ -4,20 +4,3 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
-Movie	/Users/katsuki/Desktop/Rails/MyBlog/db/seeds.rb	/^class Movie$/;"	class	line:27
-initialize	/Users/katsuki/Desktop/Rails/MyBlog/db/seeds.rb	/^  def initialize(name)$/;"	method	line:28	class:Movie
-Movie	/Users/katsuki/Desktop/Rails/MyBlog/db/seeds.rb	/^class Movie$/;"	class	line:42
-initialize	/Users/katsuki/Desktop/Rails/MyBlog/db/seeds.rb	/^  def initialize(name)$/;"	method	line:43	class:Movie
-getName	/Users/katsuki/Desktop/Rails/MyBlog/db/seeds.rb	/^  def getName #「ゲッター」$/;"	method	line:47	class:Movie
-Movie	/Users/katsuki/Desktop/Rails/MyBlog/db/seeds.rb	/^class Movie$/;"	class	line:65
-initialize	/Users/katsuki/Desktop/Rails/MyBlog/db/seeds.rb	/^  def initialize(name)$/;"	method	line:66	class:Movie
-Movie	/Users/katsuki/Desktop/Rails/MyBlog/db/seeds.rb	/^class Movie$/;"	class	line:80
-initialize	/Users/katsuki/Desktop/Rails/MyBlog/db/seeds.rb	/^  def initialize(name)$/;"	method	line:81	class:Movie
-getName	/Users/katsuki/Desktop/Rails/MyBlog/db/seeds.rb	/^  def getName #「ゲッター」$/;"	method	line:85	class:Movie
-changeName=	/Users/katsuki/Desktop/Rails/MyBlog/db/seeds.rb	/^  def changeName=(name) #「セッター」$/;"	method	line:89	class:Movie
-Movie	/Users/katsuki/Desktop/Rails/MyBlog/db/seeds.rb	/^class Movie$/;"	class	line:112
-initialize	/Users/katsuki/Desktop/Rails/MyBlog/db/seeds.rb	/^  def initialize(name)$/;"	method	line:115	class:Movie
-Movie	/Users/katsuki/Desktop/Rails/MyBlog/db/seeds.rb	/^class Movie$/;"	class	line:126
-initialize	/Users/katsuki/Desktop/Rails/MyBlog/db/seeds.rb	/^  def initialize(name)$/;"	method	line:129	class:Movie
-Movie	/Users/katsuki/Desktop/Rails/MyBlog/db/seeds.rb	/^class Movie$/;"	class	line:142
-initialize	/Users/katsuki/Desktop/Rails/MyBlog/db/seeds.rb	/^  def initialize(name)$/;"	method	line:144	class:Movie

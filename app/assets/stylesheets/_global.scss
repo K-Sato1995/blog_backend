@@ -1,0 +1,29 @@
+$p-color: #E0E0E0;
+$p2-color: #EEEEEE;
+$h-color: #444;
+$a-color: #666;
+
+h1 {
+  color: $h-color;
+}
+h2 {
+  color: $h-color;
+}
+h3 {
+  color: $h-color;
+}
+h4 {
+  color: $h-color;
+}
+h5 {
+  color: $h-color;
+}
+p {
+  font-size: 18px;
+}
+a {
+  color: $a-color;
+}
+a:hover {
+  color: #222;
+}
