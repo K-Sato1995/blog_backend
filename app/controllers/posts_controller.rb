@@ -36,7 +36,7 @@ class PostsController < ApplicationController
   private
 
   def post_params
-    params.require(:post).permit(:title, :context, :category, :status, :user_id).merge(user_id: current_user.id)
+    params.require(:post).permit(:title, :context, :category, :status, :image, :user_id).merge(user_id: current_user.id)
   end
 
   def find_post
