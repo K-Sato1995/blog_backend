@@ -125,7 +125,6 @@ a:hover	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_colors.scss	
 .card-footer	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_postbox.scss	/^  .card-footer {$/;"	function	line:11
 .post-top	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_postbox.scss	/^  .post-top{$/;"	function	line:14
 footer	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_footer.scss	/^footer {$/;"	function	line:1
-.side	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_side.scss	/^.side{$/;"	function	line:1
 #show-img	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_show.scss	/^#show-img{$/;"	function	line:1
 p-color	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_global.scss	/^$p-color: #E0E0E0;$/;"	function	line:1
 p2-color	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_global.scss	/^$p2-color: #EEEEEE;$/;"	function	line:2
@@ -141,3 +140,10 @@ p	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_global.scss	/^p {$
 a	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_global.scss	/^a {$/;"	function	line:26
 a:hover	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_global.scss	/^a:hover {$/;"	function	line:29
 .container	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_global.scss	/^.container {$/;"	function	line:32
+.side	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_side.scss	/^.side {$/;"	function	line:1
+#search-box	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_side.scss	/^#search-box {$/;"	function	line:7
+#search-header	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_side.scss	/^  #search-header {$/;"	function	line:8
+.user-top	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_side.scss	/^.user-top {$/;"	function	line:13
+.bio	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_side.scss	/^.bio {$/;"	function	line:20
+.user-intro	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_side.scss	/^.user-intro {$/;"	function	line:24
+.user-img	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_side.scss	/^.user-img {$/;"	function	line:28
