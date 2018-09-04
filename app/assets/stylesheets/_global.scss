@@ -2,6 +2,9 @@ $p-color: #E0E0E0;
 $p2-color: #EEEEEE;
 $h-color: #444;
 $a-color: #666;
+body {
+  font-family: "Oswald", Helvetica, Arial, sans-serif!important;
+}
 
 h1 {
   color: $h-color;
@@ -26,4 +29,7 @@ a {
 }
 a:hover {
   color: #222;
+}
+.container {
+  margin-top: 90px;
 }
