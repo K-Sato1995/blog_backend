@@ -1,7 +1,8 @@
 <%= form_for @post do |f|%>
-<%= f.text_field :title %>
-<%= f.text_area :context , cols: "30", rows: "30"%>
-<%= f.text_field :category %>
+<%= f.text_field :title, placeholder:'Title'%>
+<%= f.text_area :context , cols: "30", rows: "30", placeholder:'Context'%>
+<%= f.text_field :category ,placeholder:'Category'%>
+<%= f.text_field :image, placeholder:'Image' %>
 <%= f.select(:status, Post.statuses.keys) %>
 <%= f.submit %>
 <% end %>
