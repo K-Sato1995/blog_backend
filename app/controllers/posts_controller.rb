@@ -3,8 +3,11 @@ class PostsController < ApplicationController
   before_action:find_post, only: [ :show, :edit, :update, :destroy ]
 
   def index
-    @q = Post.ransack(params[:q])
-    @posts = @q.result(distinct: true)
+    if params[:title]
+      @posts = Post.where('title LIKE ?', "%#{params[:title]}%")
+    else
+      @posts = Post.all
+    end
   end
 
   def new
