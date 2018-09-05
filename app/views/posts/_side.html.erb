@@ -1,2 +1,11 @@
 <div class="side">
+  <%= render 'author' %>
+  <div class="card my-4" id = "search-box">
+    <h5 class="card-header" id = 'search-header'>Search</h5>
+    <div class="card-body">
+      <%= search_form_for @q do |f| %>
+        <%= f.search_field :title_cont, class:'form-control', placeholder:'Search' %>
+      <% end %>
+    </div>
+  </div>
 </div>
