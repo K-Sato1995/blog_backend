@@ -3,8 +3,7 @@ class PostsController < ApplicationController
   before_action:find_post, only: [ :show, :edit, :update, :destroy ]
 
   def index
-    @q = Post.ransack(params[:q])
-    @posts = @q.result(distinct: true)
+    @posts = Post.search(params[:title])
   end
 
   def new
