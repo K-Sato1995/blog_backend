@@ -4,6 +4,12 @@ PostsHelper	/Users/katsuki/Desktop/Rails/MyBlog/app/helpers/posts_helper.rb	/^mo
 humanize	/Users/katsuki/Desktop/Rails/MyBlog/app/helpers/posts_helper.rb	/^  def humanize(arg)$/;"	method	line:2	class:PostsHelper
 ApplicationHelper	/Users/katsuki/Desktop/Rails/MyBlog/app/helpers/application_helper.rb	/^module ApplicationHelper$/;"	module	line:1
 qiita_markdown	/Users/katsuki/Desktop/Rails/MyBlog/app/helpers/application_helper.rb	/^  def qiita_markdown(markdown)$/;"	method	line:2	class:ApplicationHelper
+AddUserToPosts	/Users/katsuki/Desktop/Rails/MyBlog/db/migrate/20180903111032_add_user_to_posts.rb	/^class AddUserToPosts < ActiveRecord::Migration[5.1]$/;"	class	line:1
+change	/Users/katsuki/Desktop/Rails/MyBlog/db/migrate/20180903111032_add_user_to_posts.rb	/^  def change$/;"	method	line:2	class:AddUserToPosts
+CreateUsers	/Users/katsuki/Desktop/Rails/MyBlog/db/migrate/20180903110440_create_users.rb	/^class CreateUsers < ActiveRecord::Migration[5.1]$/;"	class	line:1
+change	/Users/katsuki/Desktop/Rails/MyBlog/db/migrate/20180903110440_create_users.rb	/^  def change$/;"	method	line:2	class:CreateUsers
+User	/Users/katsuki/Desktop/Rails/MyBlog/app/models/user.rb	/^class User < ApplicationRecord$/;"	class	line:1
+Post	/Users/katsuki/Desktop/Rails/MyBlog/app/models/post.rb	/^class Post < ApplicationRecord$/;"	class	line:1
 .code-frame	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^.code-frame {$/;"	function	line:1
 .code-lang	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^  .code-lang {$/;"	function	line:3
 span	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^    span {$/;"	function	line:4
@@ -69,17 +75,75 @@ span	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	
 .vg	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^    .vg { color: #008080 } \/* Name.Variable.Global *\/$/;"	function	line:70
 .vi	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^    .vi { color: #008080 } \/* Name.Variable.Instance *\/$/;"	function	line:71
 .il	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^    .il { color: #009999 } \/* Literal.Number.Integer.Long *\/$/;"	function	line:72
-AddUserToPosts	/Users/katsuki/Desktop/Rails/MyBlog/db/migrate/20180903111032_add_user_to_posts.rb	/^class AddUserToPosts < ActiveRecord::Migration[5.1]$/;"	class	line:1
-change	/Users/katsuki/Desktop/Rails/MyBlog/db/migrate/20180903111032_add_user_to_posts.rb	/^  def change$/;"	method	line:2	class:AddUserToPosts
-CreateUsers	/Users/katsuki/Desktop/Rails/MyBlog/db/migrate/20180903110440_create_users.rb	/^class CreateUsers < ActiveRecord::Migration[5.1]$/;"	class	line:1
-change	/Users/katsuki/Desktop/Rails/MyBlog/db/migrate/20180903110440_create_users.rb	/^  def change$/;"	method	line:2	class:CreateUsers
-User	/Users/katsuki/Desktop/Rails/MyBlog/app/models/user.rb	/^class User < ApplicationRecord$/;"	class	line:1
-Post	/Users/katsuki/Desktop/Rails/MyBlog/app/models/post.rb	/^class Post < ApplicationRecord$/;"	class	line:1
+.navbar	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_navbar.scss	/^.navbar {$/;"	function	line:1
+.navbar-brand	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_navbar.scss	/^  .navbar-brand{$/;"	function	line:7
+.link-list	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_navbar.scss	/^  .link-list {$/;"	function	line:12
+.nav-item	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_navbar.scss	/^     .nav-item{$/;"	function	line:15
+a	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_navbar.scss	/^    a{$/;"	function	line:19
+Movie	/Users/katsuki/Desktop/Rails/MyBlog/db/seeds.rb	/^class Movie$/;"	class	line:27
+initialize	/Users/katsuki/Desktop/Rails/MyBlog/db/seeds.rb	/^  def initialize(name)$/;"	method	line:28	class:Movie
+Movie	/Users/katsuki/Desktop/Rails/MyBlog/db/seeds.rb	/^class Movie$/;"	class	line:42
+initialize	/Users/katsuki/Desktop/Rails/MyBlog/db/seeds.rb	/^  def initialize(name)$/;"	method	line:43	class:Movie
+getName	/Users/katsuki/Desktop/Rails/MyBlog/db/seeds.rb	/^  def getName #「ゲッター」$/;"	method	line:47	class:Movie
+Movie	/Users/katsuki/Desktop/Rails/MyBlog/db/seeds.rb	/^class Movie$/;"	class	line:65
+initialize	/Users/katsuki/Desktop/Rails/MyBlog/db/seeds.rb	/^  def initialize(name)$/;"	method	line:66	class:Movie
+Movie	/Users/katsuki/Desktop/Rails/MyBlog/db/seeds.rb	/^class Movie$/;"	class	line:80
+initialize	/Users/katsuki/Desktop/Rails/MyBlog/db/seeds.rb	/^  def initialize(name)$/;"	method	line:81	class:Movie
+getName	/Users/katsuki/Desktop/Rails/MyBlog/db/seeds.rb	/^  def getName #「ゲッター」$/;"	method	line:85	class:Movie
+changeName=	/Users/katsuki/Desktop/Rails/MyBlog/db/seeds.rb	/^  def changeName=(name) #「セッター」$/;"	method	line:89	class:Movie
+Movie	/Users/katsuki/Desktop/Rails/MyBlog/db/seeds.rb	/^class Movie$/;"	class	line:112
+initialize	/Users/katsuki/Desktop/Rails/MyBlog/db/seeds.rb	/^  def initialize(name)$/;"	method	line:115	class:Movie
+Movie	/Users/katsuki/Desktop/Rails/MyBlog/db/seeds.rb	/^class Movie$/;"	class	line:126
+initialize	/Users/katsuki/Desktop/Rails/MyBlog/db/seeds.rb	/^  def initialize(name)$/;"	method	line:129	class:Movie
+Movie	/Users/katsuki/Desktop/Rails/MyBlog/db/seeds.rb	/^class Movie$/;"	class	line:142
+initialize	/Users/katsuki/Desktop/Rails/MyBlog/db/seeds.rb	/^  def initialize(name)$/;"	method	line:144	class:Movie
+p-color	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_colors.scss	/^$p-color: #E0E0E0;$/;"	function	line:1
+p2-color	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_colors.scss	/^$p2-color: #EEEEEE;$/;"	function	line:2
+h-color	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_colors.scss	/^$h-color: #444;$/;"	function	line:3
+a-color	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_colors.scss	/^$a-color: #666;$/;"	function	line:4
+h1	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_colors.scss	/^h1 {$/;"	function	line:6
+h2	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_colors.scss	/^h2 {$/;"	function	line:9
+h3	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_colors.scss	/^h3 {$/;"	function	line:12
+h4	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_colors.scss	/^h4 {$/;"	function	line:15
+h5	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_colors.scss	/^h5 {$/;"	function	line:18
+p	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_colors.scss	/^p {$/;"	function	line:21
+a	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_colors.scss	/^a {$/;"	function	line:24
+a:hover	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_colors.scss	/^a:hover {$/;"	function	line:27
+.container	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_container.scss	/^.container {$/;"	function	line:3
+footer	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_footer.scss	/^footer {$/;"	function	line:1
+#show-img	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_show.scss	/^#show-img{$/;"	function	line:1
+p-color	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_global.scss	/^$p-color: #E0E0E0;$/;"	function	line:1
+p2-color	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_global.scss	/^$p2-color: #EEEEEE;$/;"	function	line:2
+h-color	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_global.scss	/^$h-color: #444;$/;"	function	line:3
+a-color	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_global.scss	/^$a-color: #666;$/;"	function	line:4
+body	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_global.scss	/^body{$/;"	function	line:5
+h1	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_global.scss	/^h1 {$/;"	function	line:8
+h2	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_global.scss	/^h2 {$/;"	function	line:11
+h3	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_global.scss	/^h3 {$/;"	function	line:14
+h4	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_global.scss	/^h4 {$/;"	function	line:17
+h5	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_global.scss	/^h5 {$/;"	function	line:20
+p	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_global.scss	/^p {$/;"	function	line:23
+a	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_global.scss	/^a {$/;"	function	line:26
+a:hover	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_global.scss	/^a:hover {$/;"	function	line:29
+.container	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_global.scss	/^.container {$/;"	function	line:32
+.side	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_side.scss	/^.side {$/;"	function	line:1
+#search-box	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_side.scss	/^#search-box {$/;"	function	line:7
+#search-header	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_side.scss	/^  #search-header {$/;"	function	line:8
+.user-top	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_side.scss	/^.user-top {$/;"	function	line:13
+.bio	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_side.scss	/^.bio {$/;"	function	line:20
+.user-intro	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_side.scss	/^.user-intro {$/;"	function	line:24
+.user-img	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_side.scss	/^.user-img {$/;"	function	line:28
 PostsController	/Users/katsuki/Desktop/Rails/MyBlog/app/controllers/posts_controller.rb	/^class PostsController < ApplicationController$/;"	class	line:1
 index	/Users/katsuki/Desktop/Rails/MyBlog/app/controllers/posts_controller.rb	/^  def index$/;"	method	line:5	class:PostsController
-new	/Users/katsuki/Desktop/Rails/MyBlog/app/controllers/posts_controller.rb	/^  def new$/;"	method	line:9	class:PostsController
-create	/Users/katsuki/Desktop/Rails/MyBlog/app/controllers/posts_controller.rb	/^  def create$/;"	method	line:13	class:PostsController
-update	/Users/katsuki/Desktop/Rails/MyBlog/app/controllers/posts_controller.rb	/^  def update$/;"	method	line:22	class:PostsController
-destroy	/Users/katsuki/Desktop/Rails/MyBlog/app/controllers/posts_controller.rb	/^  def destroy$/;"	method	line:31	class:PostsController
-post_params	/Users/katsuki/Desktop/Rails/MyBlog/app/controllers/posts_controller.rb	/^  def post_params$/;"	method	line:38	class:PostsController
-find_post	/Users/katsuki/Desktop/Rails/MyBlog/app/controllers/posts_controller.rb	/^  def find_post$/;"	method	line:42	class:PostsController
+new	/Users/katsuki/Desktop/Rails/MyBlog/app/controllers/posts_controller.rb	/^  def new$/;"	method	line:10	class:PostsController
+create	/Users/katsuki/Desktop/Rails/MyBlog/app/controllers/posts_controller.rb	/^  def create$/;"	method	line:14	class:PostsController
+update	/Users/katsuki/Desktop/Rails/MyBlog/app/controllers/posts_controller.rb	/^  def update$/;"	method	line:23	class:PostsController
+destroy	/Users/katsuki/Desktop/Rails/MyBlog/app/controllers/posts_controller.rb	/^  def destroy$/;"	method	line:32	class:PostsController
+post_params	/Users/katsuki/Desktop/Rails/MyBlog/app/controllers/posts_controller.rb	/^  def post_params$/;"	method	line:39	class:PostsController
+find_post	/Users/katsuki/Desktop/Rails/MyBlog/app/controllers/posts_controller.rb	/^  def find_post$/;"	method	line:43	class:PostsController
+#post-box	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_postbox.scss	/^#post-box {$/;"	function	line:1
+.card-body	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_postbox.scss	/^  .card-body {$/;"	function	line:2
+.card-text	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_postbox.scss	/^  .card-text {$/;"	function	line:5
+.card-header	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_postbox.scss	/^  .card-header {$/;"	function	line:8
+.card-footer	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_postbox.scss	/^  .card-footer {$/;"	function	line:11
+.post-top	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_postbox.scss	/^  .post-top{$/;"	function	line:14
