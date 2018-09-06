@@ -3,7 +3,12 @@ class PostsController < ApplicationController
   before_action:find_post, only: [ :show, :edit, :update, :destroy ]
 
   def index
-    @posts = Post.search(params[:title])
+    @categories = Category.all
+    if params[:category]
+      @posts = Post.category_search(category)
+    else
+      @posts = Post.search(params[:title])
+    end
   end
 
   def new

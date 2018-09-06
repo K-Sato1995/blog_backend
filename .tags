@@ -128,18 +128,6 @@ change	/Users/katsuki/Desktop/Rails/MyBlog/db/migrate/20180906105556_remove_cate
 CreateCategories	/Users/katsuki/Desktop/Rails/MyBlog/db/migrate/20180906105516_create_categories.rb	/^class CreateCategories < ActiveRecord::Migration[5.1]$/;"	class	line:1
 change	/Users/katsuki/Desktop/Rails/MyBlog/db/migrate/20180906105516_create_categories.rb	/^  def change$/;"	method	line:2	class:CreateCategories
 Category	/Users/katsuki/Desktop/Rails/MyBlog/app/models/category.rb	/^class Category < ApplicationRecord$/;"	class	line:1
-Post	/Users/katsuki/Desktop/Rails/MyBlog/app/models/post.rb	/^class Post < ApplicationRecord$/;"	class	line:1
-search	/Users/katsuki/Desktop/Rails/MyBlog/app/models/post.rb	/^  def self.search(title)$/;"	singleton method	line:7	class:Post
-category_name=	/Users/katsuki/Desktop/Rails/MyBlog/app/models/post.rb	/^  def category_name=(name)$/;"	method	line:15	class:Post
-category_name	/Users/katsuki/Desktop/Rails/MyBlog/app/models/post.rb	/^  def category_name$/;"	method	line:19	class:Post
-PostsController	/Users/katsuki/Desktop/Rails/MyBlog/app/controllers/posts_controller.rb	/^class PostsController < ApplicationController$/;"	class	line:1
-index	/Users/katsuki/Desktop/Rails/MyBlog/app/controllers/posts_controller.rb	/^  def index$/;"	method	line:5	class:PostsController
-new	/Users/katsuki/Desktop/Rails/MyBlog/app/controllers/posts_controller.rb	/^  def new$/;"	method	line:9	class:PostsController
-create	/Users/katsuki/Desktop/Rails/MyBlog/app/controllers/posts_controller.rb	/^  def create$/;"	method	line:13	class:PostsController
-update	/Users/katsuki/Desktop/Rails/MyBlog/app/controllers/posts_controller.rb	/^  def update$/;"	method	line:22	class:PostsController
-destroy	/Users/katsuki/Desktop/Rails/MyBlog/app/controllers/posts_controller.rb	/^  def destroy$/;"	method	line:31	class:PostsController
-post_params	/Users/katsuki/Desktop/Rails/MyBlog/app/controllers/posts_controller.rb	/^  def post_params$/;"	method	line:38	class:PostsController
-find_post	/Users/katsuki/Desktop/Rails/MyBlog/app/controllers/posts_controller.rb	/^  def find_post$/;"	method	line:42	class:PostsController
 Movie	/Users/katsuki/Desktop/Rails/MyBlog/db/seeds.rb	/^class Movie$/;"	class	line:35
 initialize	/Users/katsuki/Desktop/Rails/MyBlog/db/seeds.rb	/^  def initialize(name)$/;"	method	line:36	class:Movie
 Movie	/Users/katsuki/Desktop/Rails/MyBlog/db/seeds.rb	/^class Movie$/;"	class	line:50
@@ -157,3 +145,16 @@ Movie	/Users/katsuki/Desktop/Rails/MyBlog/db/seeds.rb	/^class Movie$/;"	class	li
 initialize	/Users/katsuki/Desktop/Rails/MyBlog/db/seeds.rb	/^  def initialize(name)$/;"	method	line:137	class:Movie
 Movie	/Users/katsuki/Desktop/Rails/MyBlog/db/seeds.rb	/^class Movie$/;"	class	line:150
 initialize	/Users/katsuki/Desktop/Rails/MyBlog/db/seeds.rb	/^  def initialize(name)$/;"	method	line:152	class:Movie
+Post	/Users/katsuki/Desktop/Rails/MyBlog/app/models/post.rb	/^class Post < ApplicationRecord$/;"	class	line:1
+search	/Users/katsuki/Desktop/Rails/MyBlog/app/models/post.rb	/^  def self.search(title)$/;"	singleton method	line:7	class:Post
+category_search	/Users/katsuki/Desktop/Rails/MyBlog/app/models/post.rb	/^  def self.category_search(category)$/;"	singleton method	line:15	class:Post
+category_name=	/Users/katsuki/Desktop/Rails/MyBlog/app/models/post.rb	/^  def category_name=(name)$/;"	method	line:19	class:Post
+category_name	/Users/katsuki/Desktop/Rails/MyBlog/app/models/post.rb	/^  def category_name$/;"	method	line:23	class:Post
+PostsController	/Users/katsuki/Desktop/Rails/MyBlog/app/controllers/posts_controller.rb	/^class PostsController < ApplicationController$/;"	class	line:1
+index	/Users/katsuki/Desktop/Rails/MyBlog/app/controllers/posts_controller.rb	/^  def index$/;"	method	line:5	class:PostsController
+new	/Users/katsuki/Desktop/Rails/MyBlog/app/controllers/posts_controller.rb	/^  def new$/;"	method	line:14	class:PostsController
+create	/Users/katsuki/Desktop/Rails/MyBlog/app/controllers/posts_controller.rb	/^  def create$/;"	method	line:18	class:PostsController
+update	/Users/katsuki/Desktop/Rails/MyBlog/app/controllers/posts_controller.rb	/^  def update$/;"	method	line:27	class:PostsController
+destroy	/Users/katsuki/Desktop/Rails/MyBlog/app/controllers/posts_controller.rb	/^  def destroy$/;"	method	line:36	class:PostsController
+post_params	/Users/katsuki/Desktop/Rails/MyBlog/app/controllers/posts_controller.rb	/^  def post_params$/;"	method	line:43	class:PostsController
+find_post	/Users/katsuki/Desktop/Rails/MyBlog/app/controllers/posts_controller.rb	/^  def find_post$/;"	method	line:47	class:PostsController
