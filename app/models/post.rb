@@ -12,15 +12,15 @@ class Post < ApplicationRecord
     end
   end
 
-  def self.category_search(category)
-    where('category LIKE ?', "%#{category}%")
-  end
-
   def category_name=(name)
     self.category = Category.find_or_create_by(name: name)
   end
 
   def category_name
     self.category ? self.category.name: nil
+  end
+
+  def self.category_search(category)
+    where('category_id LIKE ?', "%#{category}%")
   end
 end
