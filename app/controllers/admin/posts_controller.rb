@@ -1,9 +1,12 @@
 class Admin::PostsController < ApplicationController
   before_action:authenticate_user!, only: [ :new, :edit, :update, :destroy ]
-  before_action:find_post, only: [ :show, :edit, :update, :destroy ]
+  before_action:find_post, only: [ :edit, :update, :destroy ]
 
   def new
     @post = Post.new
+  end
+
+  def edit
   end
 
   def create
