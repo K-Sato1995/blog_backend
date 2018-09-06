@@ -3,7 +3,12 @@ class PostsController < ApplicationController
   before_action:find_post, only: [ :show, :edit, :update, :destroy ]
 
   def index
-    @posts = Post.search(params[:title])
+    @categories = Category.all
+    if params[:category]
+      @posts = Post.category_search(params[:category])
+    else
+      @posts = Post.search(params[:title])
+    end
   end
 
   def new
@@ -36,7 +41,7 @@ class PostsController < ApplicationController
   private
 
   def post_params
-    params.require(:post).permit(:title, :context, :category, :status, :image, :user_id).merge(user_id: current_user.id)
+    params.require(:post).permit(:title, :context, :category, :status, :image, :category_name, :user_id).merge(user_id: current_user.id)
   end
 
   def find_post
