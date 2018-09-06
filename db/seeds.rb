@@ -10,12 +10,6 @@ User.create(name: 'Sub_Admin_User',
             email: 'sa@example.com',
             password: '111111',
             password_confirmation: '111111')
-# CATEGORY
-categories = ['Ruby', 'Go', 'Javascript', 'Othres']
-
-categories.each do |name|
-  Category.create(name: name)
-end
 
 #POST
 Post.create(title: 'Title1',
@@ -161,7 +155,7 @@ p obj1.name #=> 'Fight Club'
 ",
 image: 'https://images.pexels.com/photos/842948/pexels-photo-842948.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
 user_id: 1,
-category_id: 1)
+category_name: 'Ruby')
 
 
 Post.create(title: 'Title1',
@@ -185,4 +179,4 @@ func main() {
 ```",
 image: 'https://images.pexels.com/photos/747964/pexels-photo-747964.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
 user_id: 1,
-category_id: 2)
+category_name: 'Go')
