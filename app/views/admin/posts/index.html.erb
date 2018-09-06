@@ -1,0 +1,9 @@
+<% @posts.each do |post| %>
+<%= post.title %>
+<%= post.category_name %>
+<%= humanize(post.status) %>
+<%= post.image %>
+<%= link_to 'Edit', edit_admin_post_path(post) %>
+<%= link_to 'Delete',admin_post_path(post), method: :delete, data: { confirm: 'Are you sure?' } %>
+Posted on <%= post.created_at.strftime("%B %d, %Y") %>
+<% end %>
