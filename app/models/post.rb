@@ -4,6 +4,8 @@ class Post < ApplicationRecord
   enum status: { draft: 0, published: 1, confidential: 2 }
   validates :title, :context, :category, presence: true
 
+  scope :published, -> { where(status: 'published') }
+
   def self.search(title)
     if title
       where('title LIKE ?', "%#{title}%")
