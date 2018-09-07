@@ -7,6 +7,9 @@
 <%= link_to 'Delete',admin_post_path(post), method: :delete, data: { confirm: 'Are you sure?' } %>
 Posted on <%= post.created_at.strftime("%B %d, %Y") %>
 <% end %>
+<% flash.each do |key, value| %>
+  <div class = "alert alert-<%= key %>"><%= value%></div>
+<% end %>
 
 <table class="table table-striped table-hover">
   <thead>

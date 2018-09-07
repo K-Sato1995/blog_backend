@@ -16,6 +16,7 @@ class Admin::PostsController < ApplicationController
   def create
     @post = Post.new(post_params)
     if @post.save
+      flash[:success] = 'Your post was successfully created'
       redirect_to admin_posts_path
     else
       render 'new'
@@ -25,6 +26,7 @@ class Admin::PostsController < ApplicationController
   def update
     @post.update(post_params)
     if @post.save
+      flash[:warning] = 'The post was successfully updated'
       redirect_to admin_posts_path
     else
       render 'edit'
@@ -33,6 +35,7 @@ class Admin::PostsController < ApplicationController
 
   def destroy
     @post.destroy
+    flash[:danger] = 'The post was successfully deleted'
     redirect_to admin_posts_path
   end
 
