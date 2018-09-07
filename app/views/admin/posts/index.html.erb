@@ -1,9 +1,34 @@
-<% @posts.each do |post| %>
-<%= post.title %>
-<%= post.category_name %>
-<%= humanize(post.status) %>
-<%= post.image %>
-<%= link_to 'Edit', edit_admin_post_path(post) %>
-<%= link_to 'Delete',admin_post_path(post), method: :delete, data: { confirm: 'Are you sure?' } %>
-Posted on <%= post.created_at.strftime("%B %d, %Y") %>
+<% flash.each do |key, value| %>
+  <div class = "alert alert-<%= key %>"><%= value%></div>
 <% end %>
+
+<table class="table table-striped table-hover">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Title</th>
+      <th scope="col">Status</th>
+      <th scope="col">Category</th>
+      <th scope="col">Posted on</th>
+      <th scope="col">Last updated on</th>
+      <th scope = 'col'>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @posts.each do |post| %>
+    <tr>
+      <td><%= post.id %></td>
+      <td><%= link_to post.title, post_path(post) %></td>
+      <td><%= humanize(post.status) %></td>
+      <td><%= post.category_name %></td>
+      <td><%= post.created_at.strftime("%Y/%m/%d") %></td>
+      <td><%= post.updated_at.strftime("%Y/%m/%d") %></td>
+      <td>
+        <%= link_to 'Edit', edit_admin_post_path(post) %>
+        <%= link_to 'Delete',admin_post_path(post), method: :delete, data: { confirm: 'Are you sure?' } %>
+      </td>
+    </tr>
+
+    <% end %>
+  </tbody>
+</table>
