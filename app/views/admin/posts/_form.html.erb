@@ -1,6 +1,6 @@
 <%= form_for [:admin, @post] do |f|%>
 <%= f.text_field :title, placeholder:'Title'%>
-<%= f.text_area :context , cols: "30", rows: "30", placeholder:'Context'%>
+<%= f.text_area :context , cols: "30", rows: "30", placeholder:'Context',onchange:"setPreview(this.value)"%>
 <%= f.text_field :image, placeholder:'Image' %>
 <%= f.text_field :category_name, list: "categories_autocomplete" %>
   <datalist id="categories_autocomplete">
@@ -11,3 +11,5 @@
 <%= f.select(:status, Post.statuses.keys) %>
 <%= f.submit %>
 <% end %>
+
+<div id="preview"></div>
