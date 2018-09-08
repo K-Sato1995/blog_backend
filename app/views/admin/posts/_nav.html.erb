@@ -1,0 +1,11 @@
+<nav class="navbar fixed-top">
+  <h3 class="navbar-brand">Admin Page</h3>
+    <ul class="link-list">
+      <li class = 'nav-item'><%= link_to 'Home', root_path %></li>
+      <li class = 'nav-item'><%= link_to 'Admin Home', admin_posts_path %></li>
+      <li class = 'nav-item'><%=link_to 'New', new_admin_post_path%></li>
+      <% if user_signed_in? %>
+        <li class = 'nav-item'><%= link_to 'Logout as admin', destroy_user_session_path, method: :delete %></li>
+      <% end %>
+    </ul>
+</nav>

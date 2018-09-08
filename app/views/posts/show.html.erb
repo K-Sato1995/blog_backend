@@ -1,7 +1,8 @@
-<article>
+<%= render 'nav' %>
+<article class = 'container'>
  <h1 class="mt-4"><%=@post.title%></h1>
  <hr/>
-   <p>Posted on <%= @post.created_at.strftime("%B %d, %Y") %> <span class = 'tag'><%= @post.category %></span></p>
+   <p>Posted on <%= @post.created_at.strftime("%B %d, %Y") %> <span class = 'tag'><%= @post.category_name %></span></p>
  <hr/>
    <div style="background-image: url(<%= @post.image%>);" class="img-fluid rounded" id = 'show-img'></div>
  <hr/>

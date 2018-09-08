@@ -1,3 +1,4 @@
+#USER
 User.create(name: 'Admin_User',
             status: 0,
             email: 'a@example.com',
@@ -10,6 +11,7 @@ User.create(name: 'Sub_Admin_User',
             password: '111111',
             password_confirmation: '111111')
 
+#POST
 Post.create(title: 'Title1',
             context: "#概要
 Rubyの「ゲッター」・「セッター」とは何か？
@@ -151,6 +153,30 @@ obj1.name = 'Fight Club'
 p obj1.name #=> 'Fight Club'
 ```
 ",
-category: 'Ruby',
 image: 'https://images.pexels.com/photos/842948/pexels-photo-842948.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
-user_id: 1)
+user_id: 1,
+category_name: 'Ruby')
+
+
+Post.create(title: 'Title1',
+            context: "
+#パッケージ
+Goのプログラムは`package`によって成り立っています。
+`import`内に必要な`package`を明示します。
+
+```Golang
+package main
+
+import (
+	'fmt'
+	'math/rand'
+)
+
+func main() {
+  fmt.Println('My favorite number is', rand.Intn(10)) // => My favorite number is 1
+}
+
+```",
+image: 'https://images.pexels.com/photos/747964/pexels-photo-747964.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+user_id: 1,
+category_name: 'Go')
