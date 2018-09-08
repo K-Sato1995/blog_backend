@@ -1,15 +1,45 @@
 <%= form_for [:admin, @post] do |f|%>
-<%= f.text_field :title, placeholder:'Title'%>
-<%= f.text_area :context , cols: "30", rows: "30", placeholder:'Context',onchange:"setPreview(this.value)"%>
-<%= f.text_field :image, placeholder:'Image' %>
-<%= f.text_field :category_name, list: "categories_autocomplete" %>
-  <datalist id="categories_autocomplete">
-    <% Category.all.each do |category| %>
-      <option value="<%= category.name %>">
-    <% end %>
-  </datalist>
-<%= f.select(:status, Post.statuses.keys) %>
+
+<div class="form-group">
+  <div class="row">
+    <%= f.text_field :title, placeholder:'Title', class: "col-md-12 form-control"%>
+  </div>
+</div>
+
+<div class="form-group">
+  <div class="row">
+    <%= f.text_field :category_name, list: "categories_autocomplete", placeholder:'Category', class: "col-md-12 form-control"%>
+      <datalist id="categories_autocomplete">
+        <% Category.all.each do |category| %>
+          <option value="<%= category.name %>">
+        <% end %>
+      </datalist>
+</div>
+</div>
+
+<div class="form-group">
+  <div class="row">
+    <%= f.text_field :image, placeholder:'Post Image', class:"col-md-12 form-control"%>
+  </div>
+</div>
+
+<div class="form-group">
+  <div class="row">
+    <%= f.text_area :context , cols: "30", rows: "20", placeholder:'Context', id: 'context', class:"col-md-6 form-control", onchange:"setPreview(this.value)"%>
+    <div id="preview" class = "col-md-6 form-control">Preview</div>
+  </div>
+</div>
+
+<div class="form-group">
+  <div class="row">
+    <%= f.select(:status, Post.statuses.keys, {}, { :class => "col-md-12 form-control" }) %>
+  </div>
+</div>
 <%= f.submit %>
 <% end %>
 
-<div id="preview"></div>
+<script>
+  const preview_content = document.getElementById('preview')
+  const context = document.getElementById('context')
+  preview_content.innerHTML = markdown.toHTML(context.value);
+</script>
