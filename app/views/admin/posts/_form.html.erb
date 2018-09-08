@@ -35,8 +35,13 @@
     <%= f.select(:status, Post.statuses.keys, {}, { :class => "col-md-12 form-control" }) %>
   </div>
 </div>
-<%= f.submit %>
-<% end %>
+
+<div class="form-group">
+  <div class="row">
+    <%= f.submit class:'col-md-12 btn btn-outline-primary'%>
+    <% end %>
+  </div>
+</div>
 
 <script>
   const preview_content = document.getElementById('preview')
