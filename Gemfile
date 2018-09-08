@@ -46,6 +46,7 @@ group :development do
   gem 'devise'
   gem 'kaminari'
   gem 'listen', '>= 3.0.5', '< 3.2'
+  gem 'markdownjs-rails'
   gem 'qiita-markdown'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
