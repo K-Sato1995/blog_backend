@@ -13,7 +13,6 @@
         <ul class="sidebar-nav">
           <li class = 'nav-item'><%= link_to 'Admin Home', admin_posts_path %></li>
           <li><%= link_to 'Blog Home', root_path %></li>
-          <li><%=link_to 'New Post', new_admin_post_path%></li>
       </div>
     </div>
     <!-- Content -->
@@ -21,13 +20,13 @@
       <!-- Tab Panels -->
       <ul class="nav nav-tabs" >
         <li class="nav-item">
-          <%= link_to 'Published', admin_posts_path(status: 'published'), class: 'nav-link' %>
+          <%= link_to 'Published', admin_posts_path(status: 'published'), class: "nav-link #{@active3} published" %>
         </li>
         <li class="nav-item" >
-            <%= link_to 'Draft', admin_posts_path(status: 'draft'), class: 'nav-link' %>
+            <%= link_to 'Draft', admin_posts_path(status: 'draft'), class: "nav-link #{@active1} draft" %>
         </li>
         <li class="nav-item">
-            <%= link_to 'Private', admin_posts_path(status: 'confidential'), class: 'nav-link'%>
+            <%= link_to 'Private', admin_posts_path(status: 'confidential'), class: "nav-link #{@active2} private"%>
         </li>
       </ul>
       <!-- Table for Publised Posts-->
