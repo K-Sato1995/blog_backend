@@ -1,5 +1,11 @@
 <nav class="admin-navbar fixed-top">
-  <h4 class="admin-navbar-brand">Admin Page</h4>
+  <h4 class="admin-navbar-brand">Admin Page
+    <div id="menu-icon" onClick = 'toggleNav()'>
+      <div class="menu-icon-bar"></div>
+      <div class="menu-icon-bar"></div>
+      <div class="menu-icon-bar"></div>
+    </div>
+  </h4>
     <ul class="link-list">
       <li class = 'nav-item'><%= link_to 'Home', root_path %></li>
       <li class = 'nav-item'><%= link_to 'Admin Home', admin_posts_path %></li>
