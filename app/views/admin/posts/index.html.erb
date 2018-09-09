@@ -14,26 +14,20 @@
           <li class = 'nav-item'><%= link_to 'Admin Home', admin_posts_path %></li>
           <li><%= link_to 'Blog Home', root_path %></li>
           <li><%=link_to 'New Post', new_admin_post_path%></li>
-          <% if user_signed_in? %>
-            <li><%= link_to 'Logout as admin', destroy_user_session_path, method: :delete %></li>
-          <% end %>
       </div>
     </div>
     <!-- Content -->
     <div class="col-md-11 admin-content" id = 'admin-content'>
       <!-- Tab Panels -->
-      <ul class="nav nav-tabs">
+      <ul class="nav nav-tabs" >
         <li class="nav-item">
-          <a class="nav-link active" href="#">Active</a>
+          <%= link_to 'Published', admin_posts_path(status: 'published'), class: 'nav-link' %>
+        </li>
+        <li class="nav-item" >
+            <%= link_to 'Draft', admin_posts_path(status: 'draft'), class: 'nav-link' %>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
+            <%= link_to 'Private', admin_posts_path(status: 'confidential'), class: 'nav-link'%>
         </li>
       </ul>
       <!-- Table for Publised Posts-->
@@ -50,62 +44,6 @@
         </thead>
         <tbody>
           <% @posts.each do |post| %>
-          <tr>
-            <td><%= post.id %></td>
-            <td><%= link_to post.title, post_path(post) %></td>
-            <td><%= post.category_name %></td>
-            <td><%= post.created_at.strftime("%Y/%m/%d") %></td>
-            <td><%= post.updated_at.strftime("%Y/%m/%d") %></td>
-            <td>
-              <%= link_to 'Edit', edit_admin_post_path(post) %>
-              <%= link_to 'Delete',admin_post_path(post), method: :delete, data: { confirm: 'Are you sure?' } %>
-            </td>
-          </tr>
-          <% end %>
-        </tbody>
-      </table>
-      <!-- Table for Draft Posts -->
-      <table class="table table-striped table-hover posts-table" id = 'draft_posts'>
-        <thead>
-          <tr>
-            <th><%= sort_link @q, :id%></th>
-            <th><%= sort_link @q, :title%></th>
-            <th><%= sort_link @q, :category_name, 'Category'%></th>
-            <th><%= sort_link @q, :created_at, 'Posted on'%></th>
-            <th><%= sort_link @q, :updated_at, 'Last updated on'%></th>
-            <th scope = 'col'>Actions</th>
-          </tr>
-        </thead>
-        <tbody>
-          <% @draft_posts.each do |post| %>
-          <tr>
-            <td><%= post.id %></td>
-            <td><%= link_to post.title, post_path(post) %></td>
-            <td><%= post.category_name %></td>
-            <td><%= post.created_at.strftime("%Y/%m/%d") %></td>
-            <td><%= post.updated_at.strftime("%Y/%m/%d") %></td>
-            <td>
-              <%= link_to 'Edit', edit_admin_post_path(post) %>
-              <%= link_to 'Delete',admin_post_path(post), method: :delete, data: { confirm: 'Are you sure?' } %>
-            </td>
-          </tr>
-          <% end %>
-        </tbody>
-      </table>
-      <!-- Table for Private Posts -->
-      <table class="table table-striped table-hover posts-table" id = 'private_posts'>
-        <thead>
-          <tr>
-            <th><%= sort_link @q, :id%></th>
-            <th><%= sort_link @q, :title%></th>
-            <th><%= sort_link @q, :category_name, 'Category'%></th>
-            <th><%= sort_link @q, :created_at, 'Posted on'%></th>
-            <th><%= sort_link @q, :updated_at, 'Last updated on'%></th>
-            <th scope = 'col'>Actions</th>
-          </tr>
-        </thead>
-        <tbody>
-          <% @private_posts.each do |post| %>
           <tr>
             <td><%= post.id %></td>
             <td><%= link_to post.title, post_path(post) %></td>
@@ -151,14 +89,5 @@ function toggleNav(){
   }else{
     closeNav()
   }
-}
-
-/////////////////TAB PANELS/////////////////////////////////////
-let table1 = document.getElementById('publised_posts')
-let table2 = document.getElementById('draft_posts')
-let table3 = document.getElementById('private_posts')
-
-function changePanel(arg1, arg2, arg3){
-
 }
 </script>
