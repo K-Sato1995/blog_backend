@@ -1,0 +1,29 @@
+@import "global";
+@import "navbar";
+
+.admin-sidebar {
+   position: fixed;
+   width: 200px;
+   height: 100%;
+   left: 0;
+   top: 0;
+   overflow:hidden;
+   background-color: #212529;
+   border-right: solid 1px #efefef;
+}
+.admin-container {
+  margin-top: 80px;
+  height: 100%;
+  width: 100%;
+  border: solid 1px;
+  .content {
+  }
+}
+
+.admin-navbar {
+  @extend .navbar;
+   .admin-navbar-brand {
+     margin: 15px;
+     float: left;
+   }
+}
