@@ -5,6 +5,8 @@ class Admin::PostsController < ApplicationController
   def index
     @q = Post.ransack(params[:q])
     @posts = @q.result(distinct: true)
+    @draft_posts = Post.draft
+    @private_posts = Post.confidential
   end
 
   def new
