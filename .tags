@@ -121,19 +121,6 @@ change	/Users/katsuki/Desktop/Rails/MyBlog/db/migrate/20180906105556_remove_cate
 CreateCategories	/Users/katsuki/Desktop/Rails/MyBlog/db/migrate/20180906105516_create_categories.rb	/^class CreateCategories < ActiveRecord::Migration[5.1]$/;"	class	line:1
 change	/Users/katsuki/Desktop/Rails/MyBlog/db/migrate/20180906105516_create_categories.rb	/^  def change$/;"	method	line:2	class:CreateCategories
 Category	/Users/katsuki/Desktop/Rails/MyBlog/app/models/category.rb	/^class Category < ApplicationRecord$/;"	class	line:1
-PostsController	/Users/katsuki/Desktop/Rails/MyBlog/app/controllers/posts_controller.rb	/^class PostsController < ApplicationController$/;"	class	line:1
-index	/Users/katsuki/Desktop/Rails/MyBlog/app/controllers/posts_controller.rb	/^  def index$/;"	method	line:5	class:PostsController
-new	/Users/katsuki/Desktop/Rails/MyBlog/app/controllers/posts_controller.rb	/^  def new$/;"	method	line:14	class:PostsController
-create	/Users/katsuki/Desktop/Rails/MyBlog/app/controllers/posts_controller.rb	/^  def create$/;"	method	line:18	class:PostsController
-update	/Users/katsuki/Desktop/Rails/MyBlog/app/controllers/posts_controller.rb	/^  def update$/;"	method	line:27	class:PostsController
-destroy	/Users/katsuki/Desktop/Rails/MyBlog/app/controllers/posts_controller.rb	/^  def destroy$/;"	method	line:36	class:PostsController
-post_params	/Users/katsuki/Desktop/Rails/MyBlog/app/controllers/posts_controller.rb	/^  def post_params$/;"	method	line:43	class:PostsController
-find_post	/Users/katsuki/Desktop/Rails/MyBlog/app/controllers/posts_controller.rb	/^  def find_post$/;"	method	line:47	class:PostsController
-Post	/Users/katsuki/Desktop/Rails/MyBlog/app/models/post.rb	/^class Post < ApplicationRecord$/;"	class	line:1
-search	/Users/katsuki/Desktop/Rails/MyBlog/app/models/post.rb	/^  def self.search(title)$/;"	singleton method	line:7	class:Post
-category_name=	/Users/katsuki/Desktop/Rails/MyBlog/app/models/post.rb	/^  def category_name=(name)$/;"	method	line:15	class:Post
-category_name	/Users/katsuki/Desktop/Rails/MyBlog/app/models/post.rb	/^  def category_name$/;"	method	line:19	class:Post
-category_search	/Users/katsuki/Desktop/Rails/MyBlog/app/models/post.rb	/^  def self.category_search(category)$/;"	singleton method	line:23	class:Post
 Movie	/Users/katsuki/Desktop/Rails/MyBlog/db/seeds.rb	/^class Movie$/;"	class	line:29
 initialize	/Users/katsuki/Desktop/Rails/MyBlog/db/seeds.rb	/^  def initialize(name)$/;"	method	line:30	class:Movie
 Movie	/Users/katsuki/Desktop/Rails/MyBlog/db/seeds.rb	/^class Movie$/;"	class	line:44
@@ -161,9 +148,15 @@ a	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_navbar.scss	/^    
 #preview	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_form.scss	/^#preview {$/;"	function	line:1
 .form-container	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_form.scss	/^.form-container {$/;"	function	line:6
 .form-link-lists	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_form.scss	/^  .form-link-lists {$/;"	function	line:9
-.posts-table	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_admin_content.scss	/^.posts-table {$/;"	function	line:1
-thead > tr > td	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_admin_content.scss	/^    thead > tr > td,$/;"	function	line:3
-thead > tr > th	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_admin_content.scss	/^    thead > tr > th {$/;"	function	line:4
+PostsHelper	/Users/katsuki/Desktop/Rails/MyBlog/app/helpers/posts_helper.rb	/^module PostsHelper$/;"	module	line:1
+Post	/Users/katsuki/Desktop/Rails/MyBlog/app/models/post.rb	/^class Post < ApplicationRecord$/;"	class	line:1
+search	/Users/katsuki/Desktop/Rails/MyBlog/app/models/post.rb	/^  def self.search(title)$/;"	singleton method	line:11	class:Post
+category_name=	/Users/katsuki/Desktop/Rails/MyBlog/app/models/post.rb	/^  def category_name=(name)$/;"	method	line:19	class:Post
+category_name	/Users/katsuki/Desktop/Rails/MyBlog/app/models/post.rb	/^  def category_name$/;"	method	line:23	class:Post
+category_search	/Users/katsuki/Desktop/Rails/MyBlog/app/models/post.rb	/^  def self.category_search(category)$/;"	singleton method	line:27	class:Post
+PostsController	/Users/katsuki/Desktop/Rails/MyBlog/app/controllers/posts_controller.rb	/^class PostsController < ApplicationController$/;"	class	line:1
+index	/Users/katsuki/Desktop/Rails/MyBlog/app/controllers/posts_controller.rb	/^  def index$/;"	method	line:3	class:PostsController
+show	/Users/katsuki/Desktop/Rails/MyBlog/app/controllers/posts_controller.rb	/^  def show$/;"	method	line:12	class:PostsController
 #admin-sidebar	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_admin.scss	/^#admin-sidebar {$/;"	function	line:4
 .admin-container	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_admin.scss	/^.admin-container {$/;"	function	line:19
 .admin-content	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_admin.scss	/^  .admin-content {$/;"	function	line:25
@@ -172,12 +165,25 @@ thead > tr > th	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_admi
 .admin-navbar-brand:hover	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_admin.scss	/^   .admin-navbar-brand:hover{$/;"	function	line:39
 #menu-icon	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_admin.scss	/^   #menu-icon {$/;"	function	line:42
 .menu-icon-bar	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_admin.scss	/^     .menu-icon-bar {$/;"	function	line:47
-.sidebar-nav	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_admin.scss	/^.sidebar-nav {$/;"	function	line:58
-.sidebar-nav li	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_admin.scss	/^.sidebar-nav li {$/;"	function	line:67
-.sidebar-nav li a	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_admin.scss	/^.sidebar-nav li a {$/;"	function	line:72
-.sidebar-nav li a:hover	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_admin.scss	/^.sidebar-nav li a:hover {$/;"	function	line:78
-.sidebar-nav li a:active, .sidebar-nav li a:focus	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_admin.scss	/^.sidebar-nav li a:active, .sidebar-nav li a:focus {$/;"	function	line:84
-.sidebar-nav>.sidebar-brand	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_admin.scss	/^.sidebar-nav>.sidebar-brand {$/;"	function	line:88
-.sidebar-nav>.sidebar-brand a	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_admin.scss	/^.sidebar-nav>.sidebar-brand a {$/;"	function	line:94
-.sidebar-nav>.sidebar-brand a:hover	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_admin.scss	/^.sidebar-nav>.sidebar-brand a:hover {$/;"	function	line:98
-PostsHelper	/Users/katsuki/Desktop/Rails/MyBlog/app/helpers/posts_helper.rb	/^module PostsHelper$/;"	module	line:1
+.admin-btn-list	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_admin.scss	/^   .admin-btn-list {$/;"	function	line:55
+li	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_admin.scss	/^     li {$/;"	function	line:57
+.sidebar-nav	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_admin.scss	/^.sidebar-nav {$/;"	function	line:65
+.sidebar-nav li	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_admin.scss	/^.sidebar-nav li {$/;"	function	line:74
+.sidebar-nav li a	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_admin.scss	/^.sidebar-nav li a {$/;"	function	line:79
+.sidebar-nav li a:hover	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_admin.scss	/^.sidebar-nav li a:hover {$/;"	function	line:85
+.sidebar-nav li a:active, .sidebar-nav li a:focus	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_admin.scss	/^.sidebar-nav li a:active, .sidebar-nav li a:focus {$/;"	function	line:91
+.sidebar-nav>.sidebar-brand	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_admin.scss	/^.sidebar-nav>.sidebar-brand {$/;"	function	line:95
+.sidebar-nav>.sidebar-brand a	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_admin.scss	/^.sidebar-nav>.sidebar-brand a {$/;"	function	line:101
+.sidebar-nav>.sidebar-brand a:hover	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_admin.scss	/^.sidebar-nav>.sidebar-brand a:hover {$/;"	function	line:105
+Admin	/Users/katsuki/Desktop/Rails/MyBlog/app/controllers/admin/posts_controller.rb	/^class Admin::PostsController < ApplicationController$/;"	class	line:1
+index	/Users/katsuki/Desktop/Rails/MyBlog/app/controllers/admin/posts_controller.rb	/^  def index$/;"	method	line:5	class:Admin
+new	/Users/katsuki/Desktop/Rails/MyBlog/app/controllers/admin/posts_controller.rb	/^  def new$/;"	method	line:21	class:Admin
+edit	/Users/katsuki/Desktop/Rails/MyBlog/app/controllers/admin/posts_controller.rb	/^  def edit$/;"	method	line:25	class:Admin
+create	/Users/katsuki/Desktop/Rails/MyBlog/app/controllers/admin/posts_controller.rb	/^  def create$/;"	method	line:28	class:Admin
+update	/Users/katsuki/Desktop/Rails/MyBlog/app/controllers/admin/posts_controller.rb	/^  def update$/;"	method	line:38	class:Admin
+destroy	/Users/katsuki/Desktop/Rails/MyBlog/app/controllers/admin/posts_controller.rb	/^  def destroy$/;"	method	line:48	class:Admin
+post_params	/Users/katsuki/Desktop/Rails/MyBlog/app/controllers/admin/posts_controller.rb	/^  def post_params$/;"	method	line:56	class:Admin
+find_post	/Users/katsuki/Desktop/Rails/MyBlog/app/controllers/admin/posts_controller.rb	/^  def find_post$/;"	method	line:60	class:Admin
+.posts-table	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_admin_content.scss	/^.posts-table {$/;"	function	line:1
+thead > tr > td	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_admin_content.scss	/^    thead > tr > td,$/;"	function	line:3
+thead > tr > th	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_admin_content.scss	/^    thead > tr > th {$/;"	function	line:4
