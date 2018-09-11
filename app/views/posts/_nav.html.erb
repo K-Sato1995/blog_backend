@@ -1,9 +1,36 @@
 <nav class="navbar fixed-top">
+  <div id="overlay" onClick = 'closeHomeSideBar()'></div>
   <h3><%= link_to 'My Blog', root_path, class:"navbar-brand" %></h3>
-    <ul class="link-list">
-      <li class = 'nav-item'><%= link_to 'Home', root_path %></li>
-      <% if user_signed_in? %>
-        <li class = 'nav-item'><%= link_to 'Admin Home', admin_posts_path %></li>
-      <% end %>
-    </ul>
+  <div id="home-menu-icon" onClick = 'openHomeSideBar()'>
+    <div class="home-menu-icon-bar"></div>
+    <div class="home-menu-icon-bar"></div>
+    <div class="home-menu-icon-bar"></div>
+  </div>
 </nav>
+
+<ul class="navbar-side" id="navbarSide">
+   <li class="navbar-side-item">
+     <%= link_to 'Home', root_path, class:'side-link' %>
+   </li>
+   <% if user_signed_in? %>
+     <li class="navbar-side-item">
+       <%= link_to 'Admin Home', admin_posts_path, class:'side-link' %>
+     </li>
+    <% end %>
+</ul>
+
+<script>
+  let menuBtn = document.getElementById('home-menu-icon')
+  let homeSideBar = document.getElementById('navbarSide')
+  let overlay = document.getElementById('overlay')
+
+  function openHomeSideBar(){
+    homeSideBar.classList.add('reveal');
+    overlay.style.display = 'block';
+  }
+
+  function closeHomeSideBar(){
+    homeSideBar.classList.remove('reveal');
+    overlay.style.display = 'none';
+  }
+</script>
