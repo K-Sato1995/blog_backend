@@ -11,15 +11,67 @@
     margin-top: 25px;
     float: left;
   }
-  .link-list {
-    margin-top: 15px;
-    margin-right: 100px;
-     .nav-item{
-       margin-left: 20px;
-       display: inline;
-     }
-    a{
-      text-decoration: none;
+  #home-menu-icon {
+    position: absolute;
+    cursor: pointer;
+    top: 20px;
+    right: 120px;
+    .home-menu-icon-bar {
+      width: 30px;
+      height: 3px;
+      background-color: #444;
+      margin: 4px 0;
+      border-radius: 5px;
     }
   }
+}
+.navbar-side {
+  height: 100%;
+  width: 25%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 0;
+  list-style: none;
+  border-left: 1px solid #EFEFEF;
+  background-color: #fff;
+  overflow-y: scroll;
+  z-index: 2000;
+  -webkit-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  transform: translateX(100%);
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
+}
+
+.navbar-side-item {
+ padding: 1.5rem 0;
+ margin: 0;
+ border-bottom: 1px solid #EFEFEF;
+ height: 5rem;
+}
+
+.side-link {
+ padding-left: 2rem;
+}
+
+.reveal {
+  -webkit-transform: translateX(0%);
+  -ms-transform: translateX(0%);
+  transform: translateX(0%);
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
+}
+
+#overlay {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+  background-color: #ccc;
+  opacity: 0.6;
+  z-index: 990;
 }

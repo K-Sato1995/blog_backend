@@ -114,23 +114,6 @@ change	/Users/katsuki/Desktop/Rails/MyBlog/db/migrate/20180906105556_remove_cate
 CreateCategories	/Users/katsuki/Desktop/Rails/MyBlog/db/migrate/20180906105516_create_categories.rb	/^class CreateCategories < ActiveRecord::Migration[5.1]$/;"	class	line:1
 change	/Users/katsuki/Desktop/Rails/MyBlog/db/migrate/20180906105516_create_categories.rb	/^  def change$/;"	method	line:2	class:CreateCategories
 Category	/Users/katsuki/Desktop/Rails/MyBlog/app/models/category.rb	/^class Category < ApplicationRecord$/;"	class	line:1
-Movie	/Users/katsuki/Desktop/Rails/MyBlog/db/seeds.rb	/^class Movie$/;"	class	line:29
-initialize	/Users/katsuki/Desktop/Rails/MyBlog/db/seeds.rb	/^  def initialize(name)$/;"	method	line:30	class:Movie
-Movie	/Users/katsuki/Desktop/Rails/MyBlog/db/seeds.rb	/^class Movie$/;"	class	line:44
-initialize	/Users/katsuki/Desktop/Rails/MyBlog/db/seeds.rb	/^  def initialize(name)$/;"	method	line:45	class:Movie
-getName	/Users/katsuki/Desktop/Rails/MyBlog/db/seeds.rb	/^  def getName #「ゲッター」$/;"	method	line:49	class:Movie
-Movie	/Users/katsuki/Desktop/Rails/MyBlog/db/seeds.rb	/^class Movie$/;"	class	line:67
-initialize	/Users/katsuki/Desktop/Rails/MyBlog/db/seeds.rb	/^  def initialize(name)$/;"	method	line:68	class:Movie
-Movie	/Users/katsuki/Desktop/Rails/MyBlog/db/seeds.rb	/^class Movie$/;"	class	line:82
-initialize	/Users/katsuki/Desktop/Rails/MyBlog/db/seeds.rb	/^  def initialize(name)$/;"	method	line:83	class:Movie
-getName	/Users/katsuki/Desktop/Rails/MyBlog/db/seeds.rb	/^  def getName #「ゲッター」$/;"	method	line:87	class:Movie
-changeName=	/Users/katsuki/Desktop/Rails/MyBlog/db/seeds.rb	/^  def changeName=(name) #「セッター」$/;"	method	line:91	class:Movie
-Movie	/Users/katsuki/Desktop/Rails/MyBlog/db/seeds.rb	/^class Movie$/;"	class	line:114
-initialize	/Users/katsuki/Desktop/Rails/MyBlog/db/seeds.rb	/^  def initialize(name)$/;"	method	line:117	class:Movie
-Movie	/Users/katsuki/Desktop/Rails/MyBlog/db/seeds.rb	/^class Movie$/;"	class	line:128
-initialize	/Users/katsuki/Desktop/Rails/MyBlog/db/seeds.rb	/^  def initialize(name)$/;"	method	line:131	class:Movie
-Movie	/Users/katsuki/Desktop/Rails/MyBlog/db/seeds.rb	/^class Movie$/;"	class	line:144
-initialize	/Users/katsuki/Desktop/Rails/MyBlog/db/seeds.rb	/^  def initialize(name)$/;"	method	line:146	class:Movie
 setPreview	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/javascripts/form.js	/^function setPreview(val){$/;"	function	line:2
 setPreview	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/javascripts/form.js	/^function setPreview(val){$/;"	function	line:2
 #preview	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_form.scss	/^#preview {$/;"	function	line:1
@@ -172,11 +155,6 @@ find_post	/Users/katsuki/Desktop/Rails/MyBlog/app/controllers/admin/posts_contro
 .posts-table	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_admin_content.scss	/^.posts-table {$/;"	function	line:1
 thead > tr > td	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_admin_content.scss	/^    thead > tr > td,$/;"	function	line:3
 thead > tr > th	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_admin_content.scss	/^    thead > tr > th {$/;"	function	line:4
-.navbar	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_navbar.scss	/^.navbar {$/;"	function	line:1
-.navbar-brand	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_navbar.scss	/^  .navbar-brand{$/;"	function	line:7
-.link-list	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_navbar.scss	/^  .link-list {$/;"	function	line:14
-.nav-item	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_navbar.scss	/^     .nav-item{$/;"	function	line:17
-a	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_navbar.scss	/^    a{$/;"	function	line:21
 PostsController	/Users/katsuki/Desktop/Rails/MyBlog/app/controllers/posts_controller.rb	/^class PostsController < ApplicationController$/;"	class	line:1
 index	/Users/katsuki/Desktop/Rails/MyBlog/app/controllers/posts_controller.rb	/^  def index$/;"	method	line:3	class:PostsController
 show	/Users/katsuki/Desktop/Rails/MyBlog/app/controllers/posts_controller.rb	/^  def show$/;"	method	line:14	class:PostsController
@@ -191,3 +169,29 @@ show	/Users/katsuki/Desktop/Rails/MyBlog/app/controllers/posts_controller.rb	/^ 
 .recent-posts	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_side.scss	/^.recent-posts {$/;"	function	line:41
 #posts-header	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_side.scss	/^  #posts-header {$/;"	function	line:42
 li	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_side.scss	/^  li {$/;"	function	line:45
+Movie	/Users/katsuki/Desktop/Rails/MyBlog/db/seeds.rb	/^class Movie$/;"	class	line:29
+initialize	/Users/katsuki/Desktop/Rails/MyBlog/db/seeds.rb	/^  def initialize(name)$/;"	method	line:30	class:Movie
+Movie	/Users/katsuki/Desktop/Rails/MyBlog/db/seeds.rb	/^class Movie$/;"	class	line:44
+initialize	/Users/katsuki/Desktop/Rails/MyBlog/db/seeds.rb	/^  def initialize(name)$/;"	method	line:45	class:Movie
+getName	/Users/katsuki/Desktop/Rails/MyBlog/db/seeds.rb	/^  def getName #「ゲッター」$/;"	method	line:49	class:Movie
+Movie	/Users/katsuki/Desktop/Rails/MyBlog/db/seeds.rb	/^class Movie$/;"	class	line:67
+initialize	/Users/katsuki/Desktop/Rails/MyBlog/db/seeds.rb	/^  def initialize(name)$/;"	method	line:68	class:Movie
+Movie	/Users/katsuki/Desktop/Rails/MyBlog/db/seeds.rb	/^class Movie$/;"	class	line:82
+initialize	/Users/katsuki/Desktop/Rails/MyBlog/db/seeds.rb	/^  def initialize(name)$/;"	method	line:83	class:Movie
+getName	/Users/katsuki/Desktop/Rails/MyBlog/db/seeds.rb	/^  def getName #「ゲッター」$/;"	method	line:87	class:Movie
+changeName=	/Users/katsuki/Desktop/Rails/MyBlog/db/seeds.rb	/^  def changeName=(name) #「セッター」$/;"	method	line:91	class:Movie
+Movie	/Users/katsuki/Desktop/Rails/MyBlog/db/seeds.rb	/^class Movie$/;"	class	line:114
+initialize	/Users/katsuki/Desktop/Rails/MyBlog/db/seeds.rb	/^  def initialize(name)$/;"	method	line:117	class:Movie
+Movie	/Users/katsuki/Desktop/Rails/MyBlog/db/seeds.rb	/^class Movie$/;"	class	line:128
+initialize	/Users/katsuki/Desktop/Rails/MyBlog/db/seeds.rb	/^  def initialize(name)$/;"	method	line:131	class:Movie
+Movie	/Users/katsuki/Desktop/Rails/MyBlog/db/seeds.rb	/^class Movie$/;"	class	line:144
+initialize	/Users/katsuki/Desktop/Rails/MyBlog/db/seeds.rb	/^  def initialize(name)$/;"	method	line:146	class:Movie
+.navbar	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_navbar.scss	/^.navbar {$/;"	function	line:1
+.navbar-brand	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_navbar.scss	/^  .navbar-brand{$/;"	function	line:7
+#home-menu-icon	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_navbar.scss	/^  #home-menu-icon {$/;"	function	line:14
+.home-menu-icon-bar	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_navbar.scss	/^    .home-menu-icon-bar {$/;"	function	line:19
+.navbar-side	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_navbar.scss	/^.navbar-side {$/;"	function	line:28
+.navbar-side-item	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_navbar.scss	/^.navbar-side-item {$/;"	function	line:47
+.side-link	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_navbar.scss	/^.side-link {$/;"	function	line:54
+.reveal	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_navbar.scss	/^.reveal {$/;"	function	line:58
+#overlay	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_navbar.scss	/^#overlay {$/;"	function	line:66
