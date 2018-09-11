@@ -8,7 +8,22 @@
       <% end %>
     </div>
   </div>
-  <% @categories.each do |category| %>
-   <%= link_to category.name, posts_path(category: category.id) %>
-  <% end %>
+  <div class="card my-4">
+    <h5 class="card-header" id = 'category-header'>Category</h5>
+      <div class="card-body">
+        <% @categories.each do |category| %>
+         <%= link_to category.name, posts_path(category: category.id) %>
+        <% end %>
+      </div>
+  </div>
+  <div class="card my-4 recent-posts">
+    <h5 class="card-header" id = 'posts-header'>Recent Posts</h5>
+      <div class="card-body">
+        <ul>
+          <% @recent_posts.each do |post| %>
+           <li><%= link_to post.title, post_path(post) %></li>
+          <% end %>
+        </ul>
+      </div>
+  </div>
 </div>

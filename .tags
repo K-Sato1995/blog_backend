@@ -101,13 +101,6 @@ p	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_global.scss	/^p {$
 a	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_global.scss	/^a {$/;"	function	line:26
 a:hover	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_global.scss	/^a:hover {$/;"	function	line:29
 .container	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_global.scss	/^.container {$/;"	function	line:32
-.side	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_side.scss	/^.side {$/;"	function	line:1
-#search-box	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_side.scss	/^#search-box {$/;"	function	line:7
-#search-header	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_side.scss	/^  #search-header {$/;"	function	line:8
-.user-top	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_side.scss	/^.user-top {$/;"	function	line:13
-.bio	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_side.scss	/^.bio {$/;"	function	line:20
-.user-intro	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_side.scss	/^.user-intro {$/;"	function	line:24
-.user-img	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_side.scss	/^.user-img {$/;"	function	line:28
 #post-box	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_postbox.scss	/^#post-box {$/;"	function	line:1
 .card-body	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_postbox.scss	/^  .card-body {$/;"	function	line:2
 .card-text	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_postbox.scss	/^  .card-text {$/;"	function	line:5
@@ -140,11 +133,6 @@ Movie	/Users/katsuki/Desktop/Rails/MyBlog/db/seeds.rb	/^class Movie$/;"	class	li
 initialize	/Users/katsuki/Desktop/Rails/MyBlog/db/seeds.rb	/^  def initialize(name)$/;"	method	line:146	class:Movie
 setPreview	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/javascripts/form.js	/^function setPreview(val){$/;"	function	line:2
 setPreview	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/javascripts/form.js	/^function setPreview(val){$/;"	function	line:2
-.navbar	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_navbar.scss	/^.navbar {$/;"	function	line:1
-.navbar-brand	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_navbar.scss	/^  .navbar-brand{$/;"	function	line:7
-.link-list	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_navbar.scss	/^  .link-list {$/;"	function	line:12
-.nav-item	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_navbar.scss	/^     .nav-item{$/;"	function	line:15
-a	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_navbar.scss	/^    a{$/;"	function	line:19
 #preview	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_form.scss	/^#preview {$/;"	function	line:1
 .form-container	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_form.scss	/^.form-container {$/;"	function	line:6
 .form-link-lists	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_form.scss	/^  .form-link-lists {$/;"	function	line:9
@@ -154,9 +142,6 @@ search	/Users/katsuki/Desktop/Rails/MyBlog/app/models/post.rb	/^  def self.searc
 category_name=	/Users/katsuki/Desktop/Rails/MyBlog/app/models/post.rb	/^  def category_name=(name)$/;"	method	line:19	class:Post
 category_name	/Users/katsuki/Desktop/Rails/MyBlog/app/models/post.rb	/^  def category_name$/;"	method	line:23	class:Post
 category_search	/Users/katsuki/Desktop/Rails/MyBlog/app/models/post.rb	/^  def self.category_search(category)$/;"	singleton method	line:27	class:Post
-PostsController	/Users/katsuki/Desktop/Rails/MyBlog/app/controllers/posts_controller.rb	/^class PostsController < ApplicationController$/;"	class	line:1
-index	/Users/katsuki/Desktop/Rails/MyBlog/app/controllers/posts_controller.rb	/^  def index$/;"	method	line:3	class:PostsController
-show	/Users/katsuki/Desktop/Rails/MyBlog/app/controllers/posts_controller.rb	/^  def show$/;"	method	line:12	class:PostsController
 #admin-sidebar	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_admin.scss	/^#admin-sidebar {$/;"	function	line:4
 .admin-container	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_admin.scss	/^.admin-container {$/;"	function	line:19
 .admin-content	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_admin.scss	/^  .admin-content {$/;"	function	line:25
@@ -187,3 +172,22 @@ find_post	/Users/katsuki/Desktop/Rails/MyBlog/app/controllers/admin/posts_contro
 .posts-table	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_admin_content.scss	/^.posts-table {$/;"	function	line:1
 thead > tr > td	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_admin_content.scss	/^    thead > tr > td,$/;"	function	line:3
 thead > tr > th	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_admin_content.scss	/^    thead > tr > th {$/;"	function	line:4
+.navbar	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_navbar.scss	/^.navbar {$/;"	function	line:1
+.navbar-brand	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_navbar.scss	/^  .navbar-brand{$/;"	function	line:7
+.link-list	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_navbar.scss	/^  .link-list {$/;"	function	line:14
+.nav-item	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_navbar.scss	/^     .nav-item{$/;"	function	line:17
+a	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_navbar.scss	/^    a{$/;"	function	line:21
+PostsController	/Users/katsuki/Desktop/Rails/MyBlog/app/controllers/posts_controller.rb	/^class PostsController < ApplicationController$/;"	class	line:1
+index	/Users/katsuki/Desktop/Rails/MyBlog/app/controllers/posts_controller.rb	/^  def index$/;"	method	line:3	class:PostsController
+show	/Users/katsuki/Desktop/Rails/MyBlog/app/controllers/posts_controller.rb	/^  def show$/;"	method	line:14	class:PostsController
+.side	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_side.scss	/^.side {$/;"	function	line:1
+#search-box	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_side.scss	/^#search-box {$/;"	function	line:7
+#search-header	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_side.scss	/^  #search-header {$/;"	function	line:8
+.user-top	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_side.scss	/^.user-top {$/;"	function	line:13
+.bio	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_side.scss	/^.bio {$/;"	function	line:20
+.user-intro	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_side.scss	/^.user-intro {$/;"	function	line:24
+.user-img	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_side.scss	/^.user-img {$/;"	function	line:28
+#category-header	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_side.scss	/^#category-header {$/;"	function	line:37
+.recent-posts	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_side.scss	/^.recent-posts {$/;"	function	line:41
+#posts-header	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_side.scss	/^  #posts-header {$/;"	function	line:42
+li	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_side.scss	/^  li {$/;"	function	line:45
