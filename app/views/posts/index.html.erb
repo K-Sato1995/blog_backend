@@ -1,7 +1,7 @@
 <%= render 'nav' %>
 <div class = 'container'>
   <div class = 'row'>
-      <div class="col-md-8">
+      <div class="col-md-8 post-content">
         <% if (@posts) %>
           <% if (@posts.empty?) %>
               <h3>No posts found.</h3>
@@ -28,3 +28,24 @@
       </div>
   </div>
 </div>
+
+<script>
+  let menuIcone = document.getElementById('home-menu-icon')
+  let dropdown = document.getElementById('dropdown-lists')
+
+  function openDropdown() {
+    dropdown.style.display = 'block';
+  }
+
+  function closeDropdown(){
+    dropdown.style.display = 'none';
+  }
+
+  function toggleDropdown(){
+    if(dropdown.style.display === 'block'){
+      closeDropdown()
+    }else{
+      openDropdown()
+    }
+  }
+</script>
