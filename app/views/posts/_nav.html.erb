@@ -1,36 +1,24 @@
-<nav class="navbar fixed-top">
-  <div id="overlay" onClick = 'closeHomeSideBar()'></div>
-  <h3><%= link_to 'My Blog', root_path, class:"navbar-brand" %></h3>
-  <div id="home-menu-icon" onClick = 'openHomeSideBar()'>
-    <div class="home-menu-icon-bar"></div>
-    <div class="home-menu-icon-bar"></div>
-    <div class="home-menu-icon-bar"></div>
-  </div>
-</nav>
+<nav class="navbar">
+  <h3><%= link_to 'My Blog', root_path %></h3>
+  <%= render 'author'%>
 
-<ul class="navbar-side" id="navbarSide">
-   <li class="navbar-side-item">
-     <%= link_to 'Home', root_path, class:'side-link' %>
-   </li>
-   <% if user_signed_in? %>
-     <li class="navbar-side-item">
-       <%= link_to 'Admin Home', admin_posts_path, class:'side-link' %>
-     </li>
+  <div class="card my-4">
+  <%= form_tag(posts_path, method: :get) do %>
+    <%= text_field_tag :title, params[:title],class:'form-control', placeholder:'Search' %>
+  <% end %>
+</div>
+  <div class="card my-4">
+    <% @categories.each do |category| %>
+     <%= link_to category.name, posts_path(category: category.id) %>
     <% end %>
-</ul>
-
-<script>
-  let menuBtn = document.getElementById('home-menu-icon')
-  let homeSideBar = document.getElementById('navbarSide')
-  let overlay = document.getElementById('overlay')
-
-  function openHomeSideBar(){
-    homeSideBar.classList.add('reveal');
-    overlay.style.display = 'block';
-  }
-
-  function closeHomeSideBar(){
-    homeSideBar.classList.remove('reveal');
-    overlay.style.display = 'none';
-  }
-</script>
+  </div>
+  <div class="card my-4">
+    <% @recent_posts.each do |post| %>
+     <li><%= link_to post.title, post_path(post) %></li>
+    <% end %>
+  </div>
+  <ul>
+    <%= link_to 'Home', root_path %>
+    <%= link_to 'Admin Home', admin_posts_path %>
+  </ul>
+</nav>

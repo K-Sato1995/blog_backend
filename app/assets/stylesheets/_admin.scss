@@ -29,7 +29,11 @@
 
 //Navbar
 .admin-navbar {
-  @extend .navbar;
+    top: 0;
+    height:  60px;
+    width: 100%;
+    border-bottom: solid 1px #efefef;
+    background-color: #fff;
    .admin-navbar-brand {
      margin: 15px;
      margin-top: 22px;

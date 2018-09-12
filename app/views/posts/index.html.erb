@@ -1,51 +1,33 @@
-<%= render 'nav' %>
-<div class = 'container'>
+<div class ="container-fluid">
   <div class = 'row'>
-      <div class="col-md-8 post-content">
-        <% if (@posts) %>
-          <% if (@posts.empty?) %>
+    <!-- SIDE-NAV -->
+    <div class="col-md-2">
+      <%= render 'nav' %>
+    </div>
+    <!-- Main Content  -->
+    <div class="col-md-10">
+      <div id="posts" class="transitions-enabled">
+        <!-- POST IF -->
+        <% if (@posts) %><!-- IF1 -->
+          <% if (@posts.empty?) %><!-- IF2 -->
               <h3>No posts found.</h3>
             <% else %>
-            <% @posts.each do |post| %>
-              <div class = 'card mb-4' id = 'post-box'>
-                  <div class = 'post-top' style="background-image: url(<%= post.image%>);"></div>
-                  <div class="card-body">
-                    <h3  class="card-title"><%= post.title %></h3>
-                      <%= link_to 'Read More', post_path(post), class:"btn btn-outline-primary"%>
-                  </div>
-                  <div class="card-footer">
-                      <%= post.category_name %>
-                      <span>Posted on <%= post.created_at.strftime("%B %d, %Y") %> by K-Sato</span>
+            <!-- POST -->
+             <% @posts.each do |post| %>
+               <div class="box">
+                   <div class= "card card-default">
+                      <%= link_to (image_tag post.image,class:"image"), post_path(post.id)%>
+                      <div class="card-body">
+                        <%= link_to post.title, post_path(post.id)%><hr>
+                        <%= post.category_name %>
+                      </div>
+                    </div>
                 </div>
-              </div>
-            <% end %>
-          <% end %>
-        <% end %>
-        <%= paginate @posts %>
+              <% end %>
+              <!-- END OF POST -->
+          <% end %> <!-- of IF2-->
+        <% end %> <!-- of IF1-->
       </div>
-      <div class="col-md-4">
-        <%= render 'side' %>
-      </div>
+    </div>
   </div>
 </div>
-
-<script>
-  let menuIcone = document.getElementById('home-menu-icon')
-  let dropdown = document.getElementById('dropdown-lists')
-
-  function openDropdown() {
-    dropdown.style.display = 'block';
-  }
-
-  function closeDropdown(){
-    dropdown.style.display = 'none';
-  }
-
-  function toggleDropdown(){
-    if(dropdown.style.display === 'block'){
-      closeDropdown()
-    }else{
-      openDropdown()
-    }
-  }
-</script>
