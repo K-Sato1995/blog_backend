@@ -46,8 +46,8 @@
    #menu-icon {
      position: absolute;
      cursor: pointer;
-     top: 20px;
-     left: 170px;
+     top: 26px;
+     left: 160px;
      .menu-icon-bar {
        width: 25px;
        height: 3px;
@@ -57,7 +57,9 @@
      }
    }
    .admin-btn-list {
-     margin-top: 20px;
+     position: absolute;
+     top: 5px;
+     right: 30px;
      li {
        display: inline-block;
        margin:10px;

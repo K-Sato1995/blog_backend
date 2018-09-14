@@ -12,22 +12,18 @@
           <% if (@posts.empty?) %><!-- IF2 -->
               <h3>No posts found.</h3>
             <% else %>
-            <!-- POST -->
-             <% @posts.each do |post| %>
-               <div class="box">
-                   <div class= "card card-default">
-                      <%= link_to (image_tag post.image,class:"image"), post_path(post.id)%>
-                      <div class="card-body">
-                        <%= link_to post.title, post_path(post.id)%><hr>
-                        <%= post.category_name %>
-                      </div>
-                    </div>
-                </div>
-              <% end %>
-              <!-- END OF POST -->
+              <%= render 'post' %>
           <% end %> <!-- of IF2-->
         <% end %> <!-- of IF1-->
       </div>
     </div>
   </div>
 </div>
+
+<script>
+//Box FadeIn
+$(".box").each(function(index) {
+  $('.box').css('display', 'none');
+  $(this).delay(300*index).fadeIn(200);
+});
+</script>

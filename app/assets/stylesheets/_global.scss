@@ -2,22 +2,12 @@ $p-color: #E0E0E0;
 $p2-color: #EEEEEE;
 $h-color: #444;
 $a-color: #666;
+$theme-color: #20AD9F;
+
 body{
   font-family: Arial, Helvetica, sans-serif;
 }
-h1 {
-  color: $h-color;
-}
-h2 {
-  color: $h-color;
-}
-h3 {
-  color: $h-color;
-}
-h4 {
-  color: $h-color;
-}
-h5 {
+h1, h2, h3, h4, h5 {
   color: $h-color;
 }
 p {
