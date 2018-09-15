@@ -1,0 +1,60 @@
+@import "global";
+
+.post-container {
+  margin-top: 25px;
+}
+#posts {
+  margin: 0 auto;
+  width: 100%;
+  .box {
+	  margin: 10px;
+	  width: 350px;
+	  border-radius: 7px;
+	  text-align: center;
+    .post-title {
+      color: #21252A;
+      font-size: 20px;
+      margin: 0;
+      padding: 0;
+      text-decoration: none;
+    }
+    .post-title:hover {
+      color: $p-color;
+    }
+    .btn-outline-info {
+      color: $theme-color;
+      border-color: $theme-color;
+    }
+    .btn-outline-info:hover {
+      color: #fff;
+      background-color: $theme-color;
+    }
+	  img {
+	  	max-width: 100%;
+	  	height: auto;
+	  }
+	}
+}
+
+.pagination {
+  position: absolute;
+  margin: 0 auto;
+  bottom: -90px;
+  left: 45%;
+  padding: 20px;
+  .page-link {
+    color: $theme-color;
+    border-radius: 5px;
+    padding: 10px;
+  }
+}
+
+
+/////////////SHOW PAGE///////////////
+.show-container {
+  padding: 15px 100px 15px 150px;
+  .post-created-on {
+    color: #A9A9A9;
+    letter-spacing: 1px;
+  }
+}

@@ -1,36 +1,83 @@
-<nav class="navbar fixed-top">
-  <div id="overlay" onClick = 'closeHomeSideBar()'></div>
-  <h3><%= link_to 'My Blog', root_path, class:"navbar-brand" %></h3>
-  <div id="home-menu-icon" onClick = 'openHomeSideBar()'>
-    <div class="home-menu-icon-bar"></div>
-    <div class="home-menu-icon-bar"></div>
-    <div class="home-menu-icon-bar"></div>
+<!-- Modal -->
+<!-- CATEGORY -->
+<div id="myModal" class="modal">
+  <div class="card modal-content">
+    <span class="close">&times;</span>
+    <div class="category-box">
+      <!-- <ul> -->
+        <% @categories.each do |category| %>
+         <%= link_to category.name, posts_path(category: category.id), class: 'category-item' %></li>
+        <% end %>
+      <!-- </ul> -->
+    </div>
   </div>
+</div>
+<!-- Modal Ends Here -->
+
+<nav class = "navbar">
+  <!-- Nav-content -->
+  <div class = "navbar-content">
+    <!-- Nav-intro -->
+    <div class = 'nav-intro'>
+      <h4><%= link_to "Kat's Blog", root_path, class:'navbrand' %></h4>
+          <div class="intro-body">
+            Computer programmer based in Tokyo.
+          </div>
+    </div>
+    <div class="search-box">
+      <%= form_tag(posts_path, method: :get) do %>
+        <%= text_field_tag :title, params[:title],class:'form-control search-bar', placeholder:'Search' %>
+      <% end %>
+    </div>
+
+    <!-- Link Lists -->
+    <div class="link-list">
+      <ul>
+        <li id = "category">Category</li>
+        <li>Recent Posts</li>
+      </ul>
+    </div>
+
+    <!-- RECENT POSTS -->
+    <div class="recent-posts-box">
+      <ul>
+        <% @recent_posts.each do |post| %>
+         <li><%= link_to post.title, post_path(post), class: 'post-item' %></li>
+        <% end %>
+      </ul>
+    </div>
+
+  </div>
+   <% if user_signed_in? %>
+    <%= link_to 'Admin Home', admin_posts_path, class:"btn btn-outline-info admin-btn" %>
+   <% end %>
 </nav>
 
-<ul class="navbar-side" id="navbarSide">
-   <li class="navbar-side-item">
-     <%= link_to 'Home', root_path, class:'side-link' %>
-   </li>
-   <% if user_signed_in? %>
-     <li class="navbar-side-item">
-       <%= link_to 'Admin Home', admin_posts_path, class:'side-link' %>
-     </li>
-    <% end %>
-</ul>
-
 <script>
-  let menuBtn = document.getElementById('home-menu-icon')
-  let homeSideBar = document.getElementById('navbarSide')
-  let overlay = document.getElementById('overlay')
+// Get the modal
+var modal = document.getElementById('myModal');
 
-  function openHomeSideBar(){
-    homeSideBar.classList.add('reveal');
-    overlay.style.display = 'block';
-  }
+// Get the button that opens the modal
+var btn = document.getElementById("category");
 
-  function closeHomeSideBar(){
-    homeSideBar.classList.remove('reveal');
-    overlay.style.display = 'none';
-  }
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
 </script>

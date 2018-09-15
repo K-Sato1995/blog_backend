@@ -182,3 +182,52 @@ image: 'https://images.pexels.com/photos/747964/pexels-photo-747964.jpeg?auto=co
 user_id: 1,
 status: 'published',
 category_name: 'Go')
+
+Post.create(
+  title:'Blog Title',
+  context:'s',
+  user_id: 1,
+  image: 'https://images.pexels.com/photos/709851/pexels-photo-709851.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+  status: 'published',
+  category_name:'Ruby'
+)
+Post.create(
+  title:'Blog Title',
+  context:'s',
+  user_id: 1,
+  image: 'https://images.pexels.com/photos/1083626/pexels-photo-1083626.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+  status: 'published',
+  category_name:'Ruby'
+)
+Post.create(
+  title:'Blog Title',
+  context:'s',
+  user_id: 1,
+  image: 'https://images.pexels.com/photos/736166/pexels-photo-736166.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+  status: 'published',
+  category_name:'Ruby'
+)
+Post.create(
+  title:'Blog Title',
+  context:'s',
+  user_id: 1,
+  image: 'https://images.pexels.com/photos/699466/pexels-photo-699466.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+  status: 'published',
+  category_name:'Ruby'
+)
+Post.create(
+  title:'Blog Title',
+  context:'s',
+  user_id: 1,
+  image: 'https://images.pexels.com/photos/1406822/pexels-photo-1406822.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+  status: 'published',
+  category_name:'Ruby'
+)
+Post.create(
+  title:'Blog Title',
+  context:'s',
+  user_id: 1,
+  image: 'https://images.pexels.com/photos/893896/pexels-photo-893896.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+  status: 'published',
+  category_name:'Ruby'
+)

@@ -1,10 +1,17 @@
-<%= render 'nav' %>
-<article class = 'container'>
- <h1 class="mt-4"><%=@post.title%></h1>
- <hr/>
-   <p>Posted on <%= @post.created_at.strftime("%B %d, %Y") %> <span class = 'tag'><%= @post.category_name %></span></p>
- <hr/>
-   <div style="background-image: url(<%= @post.image%>);" class="img-fluid rounded" id = 'show-img'></div>
- <hr/>
-     <%= qiita_markdown(@post.context) %>
-</article>
+<div class="show-container">
+  <div class = 'row'>
+    <div class="col-md-2">
+      <%= render 'nav' %>
+    </div>
+    <div class = 'col-md-10 article-container'>
+     <h3 class="mt-4"><%=@post.title%></h3>
+     <hr/>
+       <p class = 'post-created-on'>Posted on <%= @post.created_at.strftime("%Y-%m-%d") %> <span class = 'tag'><%= @post.category_name %></span></p>
+       <!-- <div style="background-image: url(<%= @post.image%>);" class="img-fluid rounded" id = 'show-img'></div> -->
+     <hr/>
+     <div class="post-context">
+         <%= qiita_markdown(@post.context) %>
+      </div>
+    </div>
+  </div>
+</div>
