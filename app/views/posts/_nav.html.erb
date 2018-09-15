@@ -1,19 +1,18 @@
-<!-- Modal -->
-<!-- CATEGORY -->
-<div id="myModal" class="modal">
-  <div class="card modal-content">
-    <span class="close">&times;</span>
-    <div class="category-box">
-      <!-- <ul> -->
-        <% @categories.each do |category| %>
-         <%= link_to category.name, posts_path(category: category.id), class: 'category-item' %></li>
-        <% end %>
-      <!-- </ul> -->
-    </div>
-  </div>
-</div>
-<!-- Modal Ends Here -->
-
+<!-- SIDE NAV -->
+<div id="overlay" onClick = "closeHomeSideBar()"></div>
+<!-- SIDE NAV1 -->
+  <ul class="navbar-side" id="navbarSide">
+       <% @categories.each do |category| %>
+        <li class = "navbar-side-item"><%= link_to "#{category.name} (#{category.posts.size})", posts_path(category: category.id), class:"category-name #{category.name}" %></li>
+       <% end %>
+  </ul>
+<!-- SIDE NAV2 -->
+  <ul class="navbar-side2" id="navbarSide2">
+    <% @recent_posts.each do |post| %>
+     <li class = "navbar-side-item"><%= link_to post.title, post_path(post), class: 'recent-post-item' %></li>
+    <% end %>
+  </ul>
+<!-- MAIN NAV -->
 <nav class = "navbar">
   <!-- Nav-content -->
   <div class = "navbar-content">
@@ -33,51 +32,35 @@
     <!-- Link Lists -->
     <div class="link-list">
       <ul>
-        <li id = "category">Category</li>
-        <li>Recent Posts</li>
+        <li id = "category" onClick = 'openHomeSideBar()'>Category</li>
+        <li onClick = 'openHomeSideBar2()'>Recent Posts</li>
       </ul>
     </div>
 
-    <!-- RECENT POSTS -->
-    <div class="recent-posts-box">
-      <ul>
-        <% @recent_posts.each do |post| %>
-         <li><%= link_to post.title, post_path(post), class: 'post-item' %></li>
-        <% end %>
-      </ul>
     </div>
-
-  </div>
-   <% if user_signed_in? %>
-    <%= link_to 'Admin Home', admin_posts_path, class:"btn btn-outline-info admin-btn" %>
-   <% end %>
+     <% if user_signed_in? %>
+      <%= link_to 'Admin Home', admin_posts_path, class:"btn btn-outline-info admin-btn" %>
+     <% end %>
 </nav>
 
 <script>
-// Get the modal
-var modal = document.getElementById('myModal');
+  let homeSideBar = document.getElementById('navbarSide')
+  let homeSideBar2 = document.getElementById('navbarSide2')
+  let overlay = document.getElementById('overlay')
 
-// Get the button that opens the modal
-var btn = document.getElementById("category");
+  function openHomeSideBar(){
+    homeSideBar.classList.add('reveal');
+    overlay.style.display = 'block';
+  }
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+  function openHomeSideBar2(){
+    homeSideBar2.classList.add('reveal');
+    overlay.style.display = 'block';
+  }
 
-// When the user clicks the button, open the modal
-btn.onclick = function() {
-    modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-    modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
-
+  function closeHomeSideBar(){
+    homeSideBar.classList.remove('reveal');
+    homeSideBar2.classList.remove('reveal');
+    overlay.style.display = 'none';
+  }
 </script>
