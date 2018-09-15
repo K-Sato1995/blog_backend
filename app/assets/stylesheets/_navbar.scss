@@ -134,6 +134,21 @@
   color: #212542;
 }
 
+.user-image {
+  position: absolute;
+  top: 65%;
+  left: 30%;
+  height: 180px;
+  width: 180px;
+  border: solid 1px #efefef;
+  border-radius: 100px;
+}
+
+.recent-post-item:hover {
+  color: #B8BEC1;
+  text-decoration: none;
+}
+
 .category-name:hover {
   color: #fff;
   text-decoration: none;

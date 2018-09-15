@@ -299,9 +299,11 @@ li	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_navbar.scss	/^   
 #overlay	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_navbar.scss	/^#overlay {$/;"	function	line:115
 .category-link	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_navbar.scss	/^.category-link {$/;"	function	line:129
 .recent-post-item	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_navbar.scss	/^.recent-post-item {$/;"	function	line:133
-.category-name:hover	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_navbar.scss	/^.category-name:hover {$/;"	function	line:137
-.Ruby	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_navbar.scss	/^.Ruby {$/;"	function	line:142
-.Go	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_navbar.scss	/^.Go {$/;"	function	line:146
-.Javascript	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_navbar.scss	/^.Javascript {$/;"	function	line:150
-.React	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_navbar.scss	/^.React {$/;"	function	line:154
-.Life	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_navbar.scss	/^.Life {$/;"	function	line:158
+.user-image	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_navbar.scss	/^.user-image {$/;"	function	line:137
+.recent-post-item:hover	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_navbar.scss	/^.recent-post-item:hover {$/;"	function	line:147
+.category-name:hover	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_navbar.scss	/^.category-name:hover {$/;"	function	line:152
+.Ruby	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_navbar.scss	/^.Ruby {$/;"	function	line:157
+.Go	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_navbar.scss	/^.Go {$/;"	function	line:161
+.Javascript	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_navbar.scss	/^.Javascript {$/;"	function	line:165
+.React	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_navbar.scss	/^.React {$/;"	function	line:169
+.Life	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_navbar.scss	/^.Life {$/;"	function	line:173
