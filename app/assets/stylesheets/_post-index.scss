@@ -1,3 +1,5 @@
+@import "global";
+
 #posts {
   margin: 0 auto;
   width: 100%;
@@ -11,4 +13,17 @@
 	  	height: auto;
 	  }
 	}
+}
+
+.pagination {
+  position: absolute;
+  margin: 0 auto;
+  bottom: -90px;
+  left: 45%;
+  padding: 20px;
+  .page-link {
+    color: $theme-color;
+    border-radius: 5px;
+    padding: 10px;
+  }
 }
