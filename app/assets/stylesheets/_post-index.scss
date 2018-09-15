@@ -11,6 +11,54 @@
 	  width: 350px;
 	  border-radius: 7px;
 	  text-align: center;
+    .card {
+      #c-btn {
+        position: absolute;
+        padding: 2px 15px 2px 15px;
+        top: 10px;
+        right: 10px;
+      }
+      .btn-Ruby {
+        color: #fff;
+        border: solid 1px $Ruby;
+        background-color: $Ruby;
+      }
+      .btn-Go {
+        color: #fff;
+        border: solid 1px $Go;
+        background-color: $Go;
+      }
+      .btn-Javascript {
+        color: #fff;
+        border: solid 1px $Javascript;
+        background-color: $Javascript;
+      }
+      .btn-React {
+        color: #fff;
+        border: solid 1px $React;
+        background-color: $React;
+      }
+      .btn-Life {
+        color: #fff;
+        border: solid 1px $Life;
+        background-color: $Life;
+      }
+    }
+    .Ruby {
+      border-bottom: solid 3px $Ruby;
+    }
+    .Go {
+      border-bottom: solid 3px $Go;
+    }
+    .Javascript {
+      border-bottom: solid 3px $Javascript;
+    }
+    .React {
+      border-bottom: solid 3px $React;
+    }
+    .Life {
+      border-bottom: solid 3px $Life;
+    }
     .post-title {
       color: #21252A;
       font-size: 20px;
@@ -33,6 +81,10 @@
 	  	max-width: 100%;
 	  	height: auto;
 	  }
+    img:hover {
+      opacity: 0.6;
+      transition: 0.5s;
+    }
 	}
 }
 

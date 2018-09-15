@@ -135,7 +135,6 @@
 }
 
 .user-image {
-  position: absolute;
   top: 65%;
   left: 30%;
   height: 180px;
@@ -155,21 +154,21 @@
 }
 
 .Ruby {
-  color: #C12214;
+  color: $Ruby;
 }
 
 .Go {
-  color: #74CDDD;
+  color: $Go;
 }
 
 .Javascript {
-  color: #F5DE1A;
+  color: $Javascript;
 }
 
 .React {
-  color: #06D9FE;
+  color: $React;
 }
 
 .Life {
-  color: #80F222;
+  color: $Life;
 }
