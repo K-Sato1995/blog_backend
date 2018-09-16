@@ -15,6 +15,14 @@
          <%= qiita_markdown(@post.context) %>
       </div>
       <hr/>
+      <a href="#top"><%= fa_icon "angle-up" , base: "square", class: "fa-3x go-top" %></a>
     </div>
   </div>
 </div>
+
+<script>
+$("a[href='#top']").click(function() {
+   $("html, body").animate({ scrollTop: 0 }, "slow");
+   return false;
+});
+</script>

@@ -31,6 +31,7 @@
 	  width: 350px;
 	  border-radius: 7px;
 	  text-align: center;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
     .card {
       #c-btn {
         position: absolute;
@@ -123,6 +124,13 @@
   }
   .post-context {
     padding-bottom: 50px;
+  }
+  .go-top {
+    float: right;
+    border: solid 1px #efefef;
+    background-color: #E9EEF3;
+    padding: 0px 15px 0px 15px;
+    color: #fff;
   }
 }
 .category-Ruby {

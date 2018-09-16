@@ -5,7 +5,7 @@
           <%= link_to (image_tag post.image, class: 'image'), post_path(post.id)%>
          <div class="card-body">
            <%= link_to post.title, post_path(post.id), class:'post-title'%><hr>
-           <%= link_to 'Read the post', post_path(post.id), class:"btn btn-outline-info" %>
+           <%= link_to 'Read the post', post_path(post.id), class:"btn btn-outline category-#{post.category_name}" %>
          </div>
        </div>
    </div>
