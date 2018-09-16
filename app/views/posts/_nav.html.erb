@@ -11,7 +11,7 @@
     <% @recent_posts.each do |post| %>
      <li class = "navbar-side-item"><%= link_to post.title, post_path(post), class: 'recent-post-item' %></li>
     <% end %>
-    <%= image_tag("https://pbs.twimg.com/media/DeMEs8WU8AAuGXA.jpg",class:"user-image") %>
+    <%#= image_tag("https://pbs.twimg.com/media/DeMEs8WU8AAuGXA.jpg",class:"user-image") %>
   </ul>
 <!-- MAIN NAV -->
 <nav class = "navbar">
@@ -38,7 +38,10 @@
       </ul>
     </div>
 
+    <div class = 'snn-links'>
+      
     </div>
+  </div>
      <% if user_signed_in? %>
       <%= link_to 'Admin Home', admin_posts_path, class:"btn btn-outline-info admin-btn" %>
      <% end %>

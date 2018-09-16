@@ -6,8 +6,10 @@
     <div class = 'col-md-10 article-container'>
      <h3 class="mt-4"><%=@post.title%></h3>
      <hr/>
-       <p class = 'post-created-on'>Posted on <%= @post.created_at.strftime("%Y-%m-%d") %> <span class = 'tag'><%= @post.category_name %></span></p>
-       <!-- <div style="background-image: url(<%= @post.image%>);" class="img-fluid rounded" id = 'show-img'></div> -->
+       <p>
+         <%= link_to "#{@post.category_name}", posts_path(category: @post.category.id), class:"category-#{@post.category_name}" %>
+         <span class = 'post-created-on'>Posted on <%= @post.created_at.strftime("%Y-%m-%d") %></span>
+      </p>
      <hr/>
      <div class="post-context">
          <%= qiita_markdown(@post.context) %>
