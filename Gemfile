@@ -9,7 +9,9 @@ end
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.6'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+gem 'sqlite3', group: [:development, :test]
+
+gem 'pg', group: :production
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
@@ -41,10 +43,11 @@ group :development, :test do
   gem 'selenium-webdriver'
 end
 
-group :development do
+group :development, :production do
   gem 'bootstrap', '~> 4.1.3'
   gem 'devise'
-  gem "font-awesome-rails"
+  gem 'font-awesome-rails'
+  gem 'github-linguist'
   gem 'jquery-rails'
   gem 'kaminari'
   gem 'listen', '>= 3.0.5', '< 3.2'
