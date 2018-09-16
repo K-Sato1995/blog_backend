@@ -46,7 +46,8 @@ end
 group :development, :production do
   gem 'bootstrap', '~> 4.1.3'
   gem 'devise'
-  gem "font-awesome-rails"
+  gem 'font-awesome-rails'
+  gem 'github-linguist'
   gem 'jquery-rails'
   gem 'kaminari'
   gem 'listen', '>= 3.0.5', '< 3.2'
