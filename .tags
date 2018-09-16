@@ -1,7 +1,5 @@
 CreateCategories	/Users/katsuki/Desktop/Rails/MyBlog/db/migrate/20180902215833_create_categories.rb	/^class CreateCategories < ActiveRecord::Migration[5.1]$/;"	class	line:1
 change	/Users/katsuki/Desktop/Rails/MyBlog/db/migrate/20180902215833_create_categories.rb	/^  def change$/;"	method	line:2	class:CreateCategories
-ApplicationHelper	/Users/katsuki/Desktop/Rails/MyBlog/app/helpers/application_helper.rb	/^module ApplicationHelper$/;"	module	line:1
-qiita_markdown	/Users/katsuki/Desktop/Rails/MyBlog/app/helpers/application_helper.rb	/^  def qiita_markdown(markdown)$/;"	method	line:2	class:ApplicationHelper
 AddUserToPosts	/Users/katsuki/Desktop/Rails/MyBlog/db/migrate/20180903111032_add_user_to_posts.rb	/^class AddUserToPosts < ActiveRecord::Migration[5.1]$/;"	class	line:1
 change	/Users/katsuki/Desktop/Rails/MyBlog/db/migrate/20180903111032_add_user_to_posts.rb	/^  def change$/;"	method	line:2	class:AddUserToPosts
 CreateUsers	/Users/katsuki/Desktop/Rails/MyBlog/db/migrate/20180903110440_create_users.rb	/^class CreateUsers < ActiveRecord::Migration[5.1]$/;"	class	line:1
@@ -342,3 +340,5 @@ img:hover	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_post-index
 .category-React:hover	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_post-index.scss	/^.category-React:hover {$/;"	function	line:164
 .category-Life	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_post-index.scss	/^.category-Life {$/;"	function	line:168
 .category-Life:hover	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_post-index.scss	/^.category-Life:hover {$/;"	function	line:172
+ApplicationHelper	/Users/katsuki/Desktop/Rails/MyBlog/app/helpers/application_helper.rb	/^module ApplicationHelper$/;"	module	line:1
+qiita_markdown	/Users/katsuki/Desktop/Rails/MyBlog/app/helpers/application_helper.rb	/^  def qiita_markdown(markdown)$/;"	method	line:2	class:ApplicationHelper
