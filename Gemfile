@@ -55,6 +55,7 @@ group :development, :production do
   gem 'masonry-rails'
   gem 'qiita-markdown'
   gem 'ransack'
+  gem 'rugged'
   gem 'rouge'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'

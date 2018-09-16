@@ -305,6 +305,7 @@ DEPENDENCIES
   ransack
   rouge
   rspec-rails (~> 3.7)
+  rugged
   sass-rails (~> 5.0)
   selenium-webdriver
   spring
