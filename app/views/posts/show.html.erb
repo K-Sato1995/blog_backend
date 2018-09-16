@@ -11,9 +11,10 @@
          <span class = 'post-created-on'>Posted on <%= @post.created_at.strftime("%Y-%m-%d") %></span>
       </p>
      <hr/>
-     <div class="post-context">
+      <div class="post-context">
          <%= qiita_markdown(@post.context) %>
       </div>
+      <hr/>
     </div>
   </div>
 </div>
