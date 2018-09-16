@@ -1,0 +1,174 @@
+@import "global";
+
+@mixin category_btn($color){
+  color: #fff;
+  border: solid 1px $color;
+  background-color: $color;
+}
+
+@mixin category_name($color){
+  color: $color;
+  border: solid 1px $color;
+  padding: 5px 15px 5px 15px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+@mixin category_name_hover($color){
+  background-color: $color;
+  color: #fff;
+  text-decoration: none;
+}
+
+.post-container {
+  margin-top: 25px;
+}
+#posts {
+  margin: 0 auto;
+  width: 100%;
+  .box {
+	  margin: 10px;
+	  width: 350px;
+	  border-radius: 7px;
+	  text-align: center;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
+    .card {
+      #c-btn {
+        position: absolute;
+        padding: 2px 15px 2px 15px;
+        top: 10px;
+        right: 10px;
+      }
+      .btn-Ruby {
+        @include category-btn($Ruby);
+      }
+      .btn-Go {
+        @include category-btn($Go);
+      }
+      .btn-Javascript {
+        @include category-btn($Javascript);
+      }
+      .btn-React {
+        @include category-btn($React);
+      }
+      .btn-Life {
+        @include category-btn($Life)
+      }
+    }
+    .Ruby {
+      border-bottom: solid 3px $Ruby;
+    }
+    .Go {
+      border-bottom: solid 3px $Go;
+    }
+    .Javascript {
+      border-bottom: solid 3px $Javascript;
+    }
+    .React {
+      border-bottom: solid 3px $React;
+    }
+    .Life {
+      border-bottom: solid 3px $Life;
+    }
+    .post-title {
+      color: #21252A;
+      font-size: 20px;
+      margin: 0;
+      padding: 0;
+      text-decoration: none;
+    }
+    .post-title:hover {
+      color: $p-color;
+    }
+    .btn-outline-info {
+      color: $theme-color;
+      border-color: $theme-color;
+    }
+    .btn-outline-info:hover {
+      color: #fff;
+      background-color: $theme-color;
+    }
+	  img {
+	  	max-width: 100%;
+	  	height: auto;
+	  }
+    img:hover {
+      opacity: 0.6;
+      transition: 0.5s;
+    }
+	}
+}
+
+.pagination {
+  position: absolute;
+  margin: 0 auto;
+  bottom: -90px;
+  left: 45%;
+  padding: 20px;
+  .page-link {
+    color: $theme-color;
+    border-radius: 5px;
+    padding: 10px;
+  }
+}
+
+
+/////////////SHOW PAGE///////////////
+.show-container {
+  padding: 15px 100px 15px 150px;
+  .post-created-on {
+    color: #A9A9A9;
+    font-weight: lighter;
+    margin-left: 15px;
+    letter-spacing: 1px;
+  }
+  .post-context {
+    padding-bottom: 50px;
+  }
+  .go-top {
+    float: right;
+    border: solid 1px #efefef;
+    background-color: #E9EEF3;
+    padding: 0px 15px 0px 15px;
+    color: #fff;
+  }
+}
+.category-Ruby {
+  @include category_name($Ruby)
+}
+
+.category-Ruby:hover {
+  @include category_name_hover($Ruby)
+}
+
+.category-Go {
+  @include category_name($Go)
+}
+
+.category-Go:hover {
+  @include category_name_hover($Go)
+}
+
+.category-Javascript {
+  @include category_name($Javascript)
+}
+
+.category-Javascript:hover {
+  @include category_name_hover($Javascript)
+}
+
+.category-React {
+  @include category_name($React)
+}
+
+.category-React:hover {
+  @include category_name_hover($React)
+}
+
+.category-Life {
+  @include category_name($Life)
+}
+
+.category-Life:hover {
+  @include category_name_hover($Life)
+}

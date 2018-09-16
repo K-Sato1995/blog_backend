@@ -11,5 +11,8 @@
 // about supported directives.
 //
 //= require markdown
+//= require jquery
+//= require jquery_ujs
+//= require masonry/jquery.masonry
 //= require rails-ujs
 //= require_tree .
