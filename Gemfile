@@ -43,7 +43,7 @@ group :development, :test do
   gem 'selenium-webdriver'
 end
 
-group :development do
+group :development, :production do
   gem 'bootstrap', '~> 4.1.3'
   gem 'devise'
   gem "font-awesome-rails"
