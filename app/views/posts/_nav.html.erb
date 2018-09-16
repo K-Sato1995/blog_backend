@@ -1,12 +1,72 @@
-<nav class="navbar fixed-top">
-  <h3 class="navbar-brand">My Blog</h3>
-    <ul class="link-list">
-      <li class = 'nav-item'><%= link_to 'Home', root_path %></li>
-      <% if user_signed_in? %>
-        <li class = 'nav-item'><%= link_to 'Logout as admin', destroy_user_session_path, method: :delete %></li>
+<!-- SIDE NAV -->
+<div id="overlay" onClick = "closeHomeSideBar()"></div>
+<!-- SIDE NAV1 -->
+  <ul class="navbar-side" id="navbarSide">
+       <% @categories.each do |category| %>
+        <li class = "navbar-side-item"><%= link_to "#{category.name} (#{category.posts.size})", posts_path(category: category.id), class:"category-name #{category.name}" %></li>
+       <% end %>
+  </ul>
+<!-- SIDE NAV2 -->
+  <ul class="navbar-side2" id="navbarSide2">
+    <% @recent_posts.each do |post| %>
+     <li class = "navbar-side-item"><%= link_to post.title, post_path(post), class: 'recent-post-item' %></li>
+    <% end %>
+    <%#= image_tag("https://pbs.twimg.com/media/DeMEs8WU8AAuGXA.jpg",class:"user-image") %>
+  </ul>
+<!-- MAIN NAV -->
+<nav class = "navbar">
+  <!-- Nav-content -->
+  <div class = "navbar-content">
+    <!-- Nav-intro -->
+    <div class = 'nav-intro'>
+      <h4><%= link_to "Kat's Blog", root_path, class:'navbrand' %></h4>
+          <div class="intro-body">
+            Computer programmer based in Tokyo.
+          </div>
+    </div>
+    <div class="search-box">
+      <%= form_tag(posts_path, method: :get) do %>
+        <%= text_field_tag :title, params[:title],class:'form-control search-bar', placeholder:'Search' %>
       <% end %>
-      <li class = 'nav-item'><%=link_to 'New', new_admin_post_path%></li>
-      <!-- <li class = 'nav-item'><Link to = '/About' >About</Link></li> -->
-      <!-- <li class = 'nav-item'><Link to = '/Contact' >Contact</Link></li> -->
-    </ul>
+    </div>
+
+    <!-- Link Lists -->
+    <div class="link-list">
+      <ul>
+        <li id = "category" onClick = 'openHomeSideBar()'>Category</li>
+        <li onClick = 'openHomeSideBar2()'>Recent Posts</li>
+      </ul>
+    </div>
+
+    <div class = 'snn-links'>
+      <a href = 'https://github.com/KatsukiSato'><%= fa_icon "github",  class: "fa-2x" %></a>
+      <a href = 'https://twitter.com/'><%= fa_icon "twitter", class: "fa-2x" %></a>
+      <a href = 'https://www.google.com/'><%= fa_icon "google", class: "fa-2x" %></a>
+    </div>
+  </div>
+     <% if user_signed_in? %>
+      <%= link_to 'Admin Home', admin_posts_path, class:"btn btn-outline-info admin-btn" %>
+     <% end %>
 </nav>
+
+<script>
+  let homeSideBar = document.getElementById('navbarSide')
+  let homeSideBar2 = document.getElementById('navbarSide2')
+  let overlay = document.getElementById('overlay')
+
+  function openHomeSideBar(){
+    homeSideBar.classList.add('reveal');
+    overlay.style.display = 'block';
+  }
+
+  function openHomeSideBar2(){
+    homeSideBar2.classList.add('reveal');
+    overlay.style.display = 'block';
+  }
+
+  function closeHomeSideBar(){
+    homeSideBar.classList.remove('reveal');
+    homeSideBar2.classList.remove('reveal');
+    overlay.style.display = 'none';
+  }
+</script>

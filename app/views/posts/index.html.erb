@@ -1,30 +1,33 @@
-<%= render 'nav' %>
-<div class = 'container'>
+<div class ="post-container">
   <div class = 'row'>
-      <div class="col-md-8">
-        <% if (@posts) %>
-          <% if (@posts.empty?) %>
+    <!-- SIDE-NAV -->
+    <div class="col-md-2">
+      <%= render 'nav' %>
+    </div>
+    <!-- Main Content  -->
+    <div class="col-md-10 post-contailer">
+      <div id="posts" class="transitions-enabled">
+        <!-- POST IF -->
+        <% if (@posts) %><!-- IF1 -->
+          <% if (@posts.empty?) %><!-- IF2 -->
               <h3>No posts found.</h3>
             <% else %>
-            <% @posts.each do |post| %>
-              <div class = 'card mb-4' id = 'post-box'>
-                  <div class = 'post-top' style="background-image: url(<%= post.image%>);"></div>
-                  <div class="card-body">
-                    <h3  class="card-title"><%= post.title %></h3>
-                      <%= link_to 'Read More', post_path(post), class:"btn btn-outline-primary"%>
-                  </div>
-                  <div class="card-footer">
-                      <%= post.category_name %>
-                      <span>Posted on <%= post.created_at.strftime("%B %d, %Y") %> by K-Sato</span>
-                </div>
-              </div>
-            <% end %>
-          <% end %>
-        <% end %>
-        <%= paginate @posts %>
+              <%= render 'post' %>
+          <% end %> <!-- of IF2-->
+        <% end %> <!-- of IF1-->
       </div>
-      <div class="col-md-4">
-        <%= render 'side' %>
+      <div class="pagination">
+        <%= link_to_prev_page @posts, 'Previous Page', class: 'page-link' %>
+        <%= link_to_next_page @posts, 'Next Page', class: 'page-link' %>
       </div>
+    </div>
   </div>
 </div>
+
+<script>
+//Box FadeIn
+$(".box").each(function(index) {
+  $('.box').css('display', 'none');
+  $(this).delay(200*index).fadeIn(100);
+});
+</script>

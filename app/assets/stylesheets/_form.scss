@@ -4,5 +4,11 @@
   min-height: 500px;
 }
 .form-container {
-  margin-top: 90px;
+  padding: 50px;
+  margin-top: 30px;
+  .form-link-lists {
+    position:absolute;
+    top: 70px;
+    left: 25px;
+  }
 }
