@@ -1,3 +1,10 @@
+GIT
+  remote: git://github.com/libgit2/rugged.git
+  revision: ccff8cc4177f590e0552df4f743a7ea4151c87e4
+  submodules: true
+  specs:
+    rugged (0.27.2)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -225,7 +232,6 @@ GEM
     rspec-support (3.7.1)
     ruby_dep (1.5.0)
     rubyzip (1.2.2)
-    rugged (0.27.4)
     sanitize (4.6.6)
       crass (~> 1.0.2)
       nokogiri (>= 1.4.4)
@@ -305,7 +311,7 @@ DEPENDENCIES
   ransack
   rouge
   rspec-rails (~> 3.7)
-  rugged (= 0.27.4)
+  rugged!
   sass-rails (~> 5.0)
   selenium-webdriver
   spring
