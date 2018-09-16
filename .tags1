@@ -4,3 +4,6 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
+RougeHelper	/Users/katsuki/Desktop/Rails/MyBlog/app/helpers/rouge_helper.rb	/^module RougeHelper$/;"	module	line:1
+HTML	/Users/katsuki/Desktop/Rails/MyBlog/app/helpers/rouge_helper.rb	/^  class HTML < Redcarpet::Render::HTML$/;"	class	line:6	class:RougeHelper
+rouge_markdown	/Users/katsuki/Desktop/Rails/MyBlog/app/helpers/rouge_helper.rb	/^  def rouge_markdown(text)$/;"	method	line:10	class:RougeHelper
