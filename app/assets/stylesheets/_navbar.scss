@@ -70,6 +70,14 @@
      }
   }
 }
+
+.snn-links {
+  position: absolute;
+  bottom: 50px;
+  a {
+    margin: 10px;
+  }
+}
 ///////////SIDE BAR/////////////////////
 .navbar-side {
   height: 100%;
@@ -172,3 +180,5 @@
 .Life {
   color: $Life;
 }
+
+/////////////

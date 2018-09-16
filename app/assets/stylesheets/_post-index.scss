@@ -121,6 +121,9 @@
     margin-left: 15px;
     letter-spacing: 1px;
   }
+  .post-context {
+    padding-bottom: 50px;
+  }
 }
 .category-Ruby {
   @include category_name($Ruby)
