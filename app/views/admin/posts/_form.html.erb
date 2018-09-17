@@ -44,7 +44,7 @@
 </div>
 
 <script>
-  const preview_content = document.getElementById('preview')
-  const context = document.getElementById('context')
+  var preview_content = document.getElementById('preview')
+  var context = document.getElementById('context')
   preview_content.innerHTML = markdown.toHTML(context.value);
 </script>

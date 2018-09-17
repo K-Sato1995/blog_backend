@@ -51,7 +51,7 @@
             <td><%= post.updated_at.strftime("%Y/%m/%d") %></td>
             <td>
               <%= link_to 'Edit', edit_admin_post_path(post) %>
-              <%= link_to 'Delete',admin_post_path(post), method: :delete, data: { confirm: 'Are you sure?' } %>
+              <%= link_to 'Devare',admin_post_path(post), method: :devare, data: { confirm: 'Are you sure?' } %>
             </td>
           </tr>
           <% end %>
@@ -63,10 +63,10 @@
 
 <script>
 /////////TOGGLE SIDEBAR//////////////////////////////
-let sidebar = document.getElementById('admin-sidebar')
-let adminWrapper = document.getElementById('admin-wrapper')
-let adminContent = document.getElementById('admin-content')
-let adminContainer = document.getElementById('admin-container')
+var sidebar = document.getElementById('admin-sidebar')
+var adminWrapper = document.getElementById('admin-wrapper')
+var adminContent = document.getElementById('admin-content')
+var adminContainer = document.getElementById('admin-container')
 
 function openNav(){
   sidebar.style.width = '200px';
