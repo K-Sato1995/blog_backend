@@ -1,19 +1,63 @@
-class PostsController < ApplicationController
+class Admin::PostsController < ApplicationController
+  before_action:authenticate_user!
+  before_action:find_post, only: [ :edit, :update, :destroy ]
 
   def index
-    @categories = Category.all
-    @recent_posts = Post.order(created_at: :DESC).limit(5)
+    @q = Post.ransack(params[:q])
+    @posts = @q.result(distinct: true)
 
-    if params[:category]
-      @posts = Post.published.category_search(params[:category]).page(params[:page]).per(12).order(created_at: :desc)
+    if params[:status] == 'draft'
+      @posts = Post.draft
+      @active1 = 'active'
+    elsif params[:status] == 'confidential'
+      @posts = Post.confidential
+      @active2 = 'active'
     else
-      @posts = Post.published.search(params[:title]).page(params[:page]).per(12).order(created_at: :desc)
+      @posts = Post.published
+      @active3 = 'active'
     end
   end
 
-  def show
-    @categories = Category.all
-    @recent_posts = Post.order(created_at: :DESC).limit(5)
+  def new
+    @post = Post.new
+  end
+
+  def edit
+  end
+
+  def create
+    @post = Post.new(post_params)
+    if @post.save
+      flash[:success] = 'Your post was successfully created'
+      redirect_to admin_posts_path
+    else
+      render 'new'
+    end
+  end
+
+  def update
+    @post.update(post_params)
+    if @post.save
+      flash[:warning] = 'The post was successfully updated'
+      redirect_to admin_posts_path
+    else
+      render 'edit'
+    end
+  end
+
+  def destroy
+    @post.destroy
+    flash[:danger] = 'The post was successfully deleted'
+    redirect_to admin_posts_path
+  end
+
+  private
+
+  def post_params
+    params.require(:post).permit(:title, :context, :category, :status, :image, :category_name, :user_id).merge(user_id: current_user.id)
+  end
+
+  def find_post
     @post = Post.find(params[:id])
   end
 end
