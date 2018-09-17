@@ -9,7 +9,9 @@ end
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.6'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+gem 'sqlite3', group: [:development, :test]
+
+gem 'pg', group: :production
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
@@ -52,12 +54,7 @@ group :development do
   gem 'markdownjs-rails'
   gem 'masonry-rails'
   gem 'ransack'
-<<<<<<< HEAD
-  gem 'rouge'
-  gem 'rugged', git: 'git://github.com/libgit2/rugged.git', submodules: true
-=======
   gem 'redcarpet'
->>>>>>> topic/markdown
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'web-console', '>= 3.3.0'
