@@ -192,6 +192,14 @@ img:hover	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_post-index
 .category-React:hover	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_post-index.scss	/^.category-React:hover {$/;"	function	line:164
 .category-Life	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_post-index.scss	/^.category-Life {$/;"	function	line:168
 .category-Life:hover	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_post-index.scss	/^.category-Life:hover {$/;"	function	line:172
+BlogRender	/Users/katsuki/Desktop/Rails/MyBlog/lib/post_render.rb	/^class BlogRender < Redcarpet::Render::HTML$/;"	class	line:5
+RougeHelper	/Users/katsuki/Desktop/Rails/MyBlog/app/helpers/rouge_helper.rb	/^module RougeHelper$/;"	module	line:1
+HTML	/Users/katsuki/Desktop/Rails/MyBlog/app/helpers/rouge_helper.rb	/^  class HTML < Redcarpet::Render::HTML$/;"	class	line:6	class:RougeHelper
+rouge_markdown	/Users/katsuki/Desktop/Rails/MyBlog/app/helpers/rouge_helper.rb	/^  def rouge_markdown(text)$/;"	method	line:10	class:RougeHelper
+ApplicationHelper	/Users/katsuki/Desktop/Rails/MyBlog/app/helpers/application_helper.rb	/^module ApplicationHelper$/;"	module	line:1
+HTMLwithPygments	/Users/katsuki/Desktop/Rails/MyBlog/app/helpers/application_helper.rb	/^  class HTMLwithPygments < Redcarpet::Render::HTML$/;"	class	line:2	class:ApplicationHelper
+block_code	/Users/katsuki/Desktop/Rails/MyBlog/app/helpers/application_helper.rb	/^    def block_code(code, language)$/;"	method	line:3	class:ApplicationHelper.HTMLwithPygments
+markdown	/Users/katsuki/Desktop/Rails/MyBlog/app/helpers/application_helper.rb	/^  def markdown(text)$/;"	method	line:11
 .post-context	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^.post-context {$/;"	function	line:1
 html, body	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^html, body {$/;"	function	line:2
 #wrapper	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^#wrapper {$/;"	function	line:5
@@ -340,11 +348,3 @@ td::selection, th::selection, caption::selection	/Users/katsuki/Desktop/Rails/My
 .type-csharp .highlight .nn	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^.type-csharp .highlight .nn {$/;"	function	line:377
 .type-csharp .highlight .s, .type-csharp .highlight .sc	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^.type-csharp .highlight .s, .type-csharp .highlight .sc {$/;"	function	line:379
 body.dark #wrapper	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^body.dark #wrapper {$/;"	function	line:382
-BlogRender	/Users/katsuki/Desktop/Rails/MyBlog/lib/post_render.rb	/^class BlogRender < Redcarpet::Render::HTML$/;"	class	line:5
-ApplicationHelper	/Users/katsuki/Desktop/Rails/MyBlog/app/helpers/application_helper.rb	/^module ApplicationHelper$/;"	module	line:2
-HTML	/Users/katsuki/Desktop/Rails/MyBlog/app/helpers/application_helper.rb	/^class HTML < Redcarpet::Render::HTML$/;"	class	line:3	class:ApplicationHelper
-block_code	/Users/katsuki/Desktop/Rails/MyBlog/app/helpers/application_helper.rb	/^  def block_code(code, language)$/;"	method	line:6	class:ApplicationHelper.HTML
-markdown	/Users/katsuki/Desktop/Rails/MyBlog/app/helpers/application_helper.rb	/^def markdown(text)$/;"	method	line:11	class:ApplicationHelper
-RougeHelper	/Users/katsuki/Desktop/Rails/MyBlog/app/helpers/rouge_helper.rb	/^module RougeHelper$/;"	module	line:1
-HTML	/Users/katsuki/Desktop/Rails/MyBlog/app/helpers/rouge_helper.rb	/^  class HTML < Redcarpet::Render::HTML$/;"	class	line:6	class:RougeHelper
-rouge_markdown	/Users/katsuki/Desktop/Rails/MyBlog/app/helpers/rouge_helper.rb	/^  def rouge_markdown(text)$/;"	method	line:10	class:RougeHelper

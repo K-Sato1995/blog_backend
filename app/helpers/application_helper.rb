@@ -1,33 +1,23 @@
-
 module ApplicationHelper
-class HTML < Redcarpet::Render::HTML
-  include Rouge::Plugins::Redcarpet
-
-  def block_code(code, language)
-    Rouge.highlight(code, language || 'text', 'html')
+  class HTMLwithPygments < Redcarpet::Render::HTML
+    def block_code(code, language)
+      sha = Digest::SHA1.hexdigest(code)
+      Rails.cache.fetch ["code", language, sha].join('-') do
+        Pygments.highlight(code, lexer: language)
+      end
+    end
   end
-end
 
-def markdown(text)
+  def markdown(text)
+    renderer = HTMLwithPygments.new(hard_wrap: true, filter_html: true)
     options = {
-      filter_html:     true,
-      hard_wrap:       true,
-      link_attributes: { rel: 'nofollow', target: "_blank" }
+      autolink: true,
+      no_intra_emphasis: true,
+      fenced_code_blocks: true,
+      lax_html_blocks: true,
+      strikethrough: true,
+      superscript: true
     }
-
-    extensions = {
-      autolink:           true,
-      highlight:          true,
-      superscript:        true,
-      disable_indented_code_blocks: true,
-      space_after_headers: true,
-      fenced_code_blocks: true
-    }
-
-    #renderer = Redcarpet::Render::HTML.new(options)
-    renderer = HTML.new(options)
-    markdown = Redcarpet::Markdown.new(renderer, extensions)
-
-    markdown.render(text).html_safe
+    Redcarpet::Markdown.new(renderer, options).render(text).html_safe
   end
 end

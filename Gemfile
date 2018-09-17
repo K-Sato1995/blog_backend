@@ -51,7 +51,7 @@ group :development do
   gem 'markdownjs-rails'
   gem 'masonry-rails'
   gem 'redcarpet'
-  gem 'rouge'
+  gem 'pygments.rb', '~> 0.6.3'
   gem 'ransack'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
