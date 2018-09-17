@@ -4,6 +4,7 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
-PostsController	/Users/katsuki/Desktop/Rails/MyBlog/app/controllers/posts_controller.rb	/^class PostsController < ApplicationController$/;"	class	line:1
-index	/Users/katsuki/Desktop/Rails/MyBlog/app/controllers/posts_controller.rb	/^  def index$/;"	method	line:3	class:PostsController
-show	/Users/katsuki/Desktop/Rails/MyBlog/app/controllers/posts_controller.rb	/^  def show$/;"	method	line:14	class:PostsController
+ApplicationHelper	/Users/katsuki/Desktop/Rails/MyBlog/app/helpers/application_helper.rb	/^module ApplicationHelper$/;"	module	line:1
+HTMLwithPygments	/Users/katsuki/Desktop/Rails/MyBlog/app/helpers/application_helper.rb	/^  class HTMLwithPygments < Redcarpet::Render::HTML$/;"	class	line:2	class:ApplicationHelper
+block_code	/Users/katsuki/Desktop/Rails/MyBlog/app/helpers/application_helper.rb	/^    def block_code(code, language)$/;"	method	line:3	class:ApplicationHelper.HTMLwithPygments
+markdown	/Users/katsuki/Desktop/Rails/MyBlog/app/helpers/application_helper.rb	/^  def markdown(text)$/;"	method	line:11
