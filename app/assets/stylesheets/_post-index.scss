@@ -34,25 +34,45 @@
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
     .card {
       #c-btn {
-        position: absolute;
         padding: 2px 15px 2px 15px;
-        top: 10px;
-        right: 10px;
+      }
+      #c-btn:hover {
+        opacity: 0.9;
+        background-color: #fff;
       }
       .btn-Ruby {
         @include category-btn($Ruby);
       }
+      .btn-Ruby:hover {
+        color: $Ruby;
+      }
+
       .btn-Go {
         @include category-btn($Go);
       }
+      .btn-Go:hover  {
+        color: $Go;
+      }
+
       .btn-Javascript {
         @include category-btn($Javascript);
       }
+      .btn-Javascript:hover  {
+        color: $Javascript;
+      }
+
       .btn-React {
         @include category-btn($React);
       }
+      .btn-React:hover  {
+        color: $React;
+      }
+
       .btn-Life {
         @include category-btn($Life)
+      }
+      .btn-Life:hover  {
+        color: $Life;
       }
     }
     .Ruby {
@@ -76,6 +96,7 @@
       margin: 0;
       padding: 0;
       text-decoration: none;
+      letter-spacing: 1px;
     }
     .post-title:hover {
       color: $p-color;
