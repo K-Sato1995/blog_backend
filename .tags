@@ -153,10 +153,6 @@ BlogRender	/Users/katsuki/Desktop/Rails/MyBlog/lib/post_render.rb	/^class BlogRe
 RougeHelper	/Users/katsuki/Desktop/Rails/MyBlog/app/helpers/rouge_helper.rb	/^module RougeHelper$/;"	module	line:1
 HTML	/Users/katsuki/Desktop/Rails/MyBlog/app/helpers/rouge_helper.rb	/^  class HTML < Redcarpet::Render::HTML$/;"	class	line:6	class:RougeHelper
 rouge_markdown	/Users/katsuki/Desktop/Rails/MyBlog/app/helpers/rouge_helper.rb	/^  def rouge_markdown(text)$/;"	method	line:10	class:RougeHelper
-ApplicationHelper	/Users/katsuki/Desktop/Rails/MyBlog/app/helpers/application_helper.rb	/^module ApplicationHelper$/;"	module	line:1
-HTMLwithPygments	/Users/katsuki/Desktop/Rails/MyBlog/app/helpers/application_helper.rb	/^  class HTMLwithPygments < Redcarpet::Render::HTML$/;"	class	line:2	class:ApplicationHelper
-block_code	/Users/katsuki/Desktop/Rails/MyBlog/app/helpers/application_helper.rb	/^    def block_code(code, language)$/;"	method	line:3	class:ApplicationHelper.HTMLwithPygments
-markdown	/Users/katsuki/Desktop/Rails/MyBlog/app/helpers/application_helper.rb	/^  def markdown(text)$/;"	method	line:11
 .navbar	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_navbar.scss	/^.navbar {$/;"	function	line:3
 .nav-intro	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_navbar.scss	/^  .nav-intro {$/;"	function	line:17
 .intro-body	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_navbar.scss	/^    .intro-body {$/;"	function	line:20
@@ -348,3 +344,7 @@ find_post	/Users/katsuki/Desktop/Rails/MyBlog/app/controllers/admin/posts_contro
 PostsController	/Users/katsuki/Desktop/Rails/MyBlog/app/controllers/posts_controller.rb	/^class PostsController < ApplicationController$/;"	class	line:1
 index	/Users/katsuki/Desktop/Rails/MyBlog/app/controllers/posts_controller.rb	/^  def index$/;"	method	line:3	class:PostsController
 show	/Users/katsuki/Desktop/Rails/MyBlog/app/controllers/posts_controller.rb	/^  def show$/;"	method	line:14	class:PostsController
+ApplicationHelper	/Users/katsuki/Desktop/Rails/MyBlog/app/helpers/application_helper.rb	/^module ApplicationHelper$/;"	module	line:1
+HTMLwithPygments	/Users/katsuki/Desktop/Rails/MyBlog/app/helpers/application_helper.rb	/^  class HTMLwithPygments < Redcarpet::Render::HTML$/;"	class	line:2	class:ApplicationHelper
+block_code	/Users/katsuki/Desktop/Rails/MyBlog/app/helpers/application_helper.rb	/^    def block_code(code, language)$/;"	method	line:3	class:ApplicationHelper.HTMLwithPygments
+markdown	/Users/katsuki/Desktop/Rails/MyBlog/app/helpers/application_helper.rb	/^  def markdown(text)$/;"	method	line:11
