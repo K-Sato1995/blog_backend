@@ -285,8 +285,6 @@ td::selection, th::selection, caption::selection	/Users/katsuki/Desktop/Rails/My
 .type-csharp .highlight .nn	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^.type-csharp .highlight .nn {$/;"	function	line:378
 .type-csharp .highlight .s, .type-csharp .highlight .sc	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^.type-csharp .highlight .s, .type-csharp .highlight .sc {$/;"	function	line:380
 body.dark #wrapper	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^body.dark #wrapper {$/;"	function	line:383
-setPreview	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/javascripts/form.js	/^function setPreview(val){$/;"	function	line:2
-setPreview	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/javascripts/form.js	/^function setPreview(val){$/;"	function	line:2
 Admin	/Users/katsuki/Desktop/Rails/MyBlog/app/controllers/admin/posts_controller.rb	/^class Admin::PostsController < ApplicationController$/;"	class	line:1
 index	/Users/katsuki/Desktop/Rails/MyBlog/app/controllers/admin/posts_controller.rb	/^  def index$/;"	method	line:5	class:Admin
 new	/Users/katsuki/Desktop/Rails/MyBlog/app/controllers/admin/posts_controller.rb	/^  def new$/;"	method	line:21	class:Admin
@@ -354,3 +352,4 @@ img:hover	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_post-index
 .category-React:hover	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_post-index.scss	/^.category-React:hover {$/;"	function	line:185
 .category-Life	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_post-index.scss	/^.category-Life {$/;"	function	line:189
 .category-Life:hover	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_post-index.scss	/^.category-Life:hover {$/;"	function	line:193
+setPreview	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/javascripts/form.js	/^\/\/ function setPreview(val){$/;"	function	line:2
