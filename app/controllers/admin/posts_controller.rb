@@ -54,7 +54,7 @@ class Admin::PostsController < ApplicationController
   private
 
   def post_params
-    params.require(:post).permit(:title, :context, :category, :status, :image, :category_name, :user_id).merge(user_id: current_user.id)
+    params.require(:post).permit(:title, :context, :intro, :category, :status, :image, :category_name, :user_id).merge(user_id: current_user.id)
   end
 
   def find_post
