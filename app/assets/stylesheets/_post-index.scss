@@ -33,63 +33,12 @@
 	  text-align: center;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
     .card {
-      #c-btn {
-        padding: 2px 15px 2px 15px;
-      }
-      #c-btn:hover {
-        opacity: 0.9;
-        background-color: #fff;
-      }
-      .btn-Ruby {
-        @include category-btn($Ruby);
-      }
-      .btn-Ruby:hover {
-        color: $Ruby;
-      }
-
-      .btn-Go {
-        @include category-btn($Go);
-      }
-      .btn-Go:hover  {
-        color: $Go;
-      }
-
-      .btn-Javascript {
-        @include category-btn($Javascript);
-      }
-      .btn-Javascript:hover  {
-        color: $Javascript;
-      }
-
-      .btn-React {
-        @include category-btn($React);
-      }
-      .btn-React:hover  {
-        color: $React;
-      }
-
-      .btn-Life {
-        @include category-btn($Life)
-      }
-      .btn-Life:hover  {
-        color: $Life;
-      }
+      text-align: left;
+    .post-intro {
+      color: #757575;
+      text-align: left;
+      font-size: 17px;
     }
-    // .Ruby {
-    //   border-bottom: solid 3px $Ruby;
-    // }
-    // .Go {
-    //   border-bottom: solid 3px $Go;
-    // }
-    // .Javascript {
-    //   border-bottom: solid 3px $Javascript;
-    // }
-    // .React {
-    //   border-bottom: solid 3px $React;
-    // }
-    // .Life {
-    //   border-bottom: solid 3px $Life;
-    // }
     .post-title {
       color: #21252A;
       font-size: 20px;
@@ -109,6 +58,12 @@
       color: #fff;
       background-color: $theme-color;
     }
+    .post-created-on {
+      margin-top: 10px;
+      color: #757575;
+      font-size: 14px;
+      float: right;
+    }
 	  img {
 	  	max-width: 100%;
 	  	height: auto;
@@ -117,7 +72,52 @@
       opacity: 0.6;
       transition: 0.5s;
     }
-	}
+    #c-btn {
+      padding: 2px 15px 2px 15px;
+    }
+    #c-btn:hover {
+      opacity: 0.9;
+      background-color: #fff;
+    }
+    .btn-Ruby {
+      @include category-btn($Ruby);
+    }
+    .btn-Ruby:hover {
+      color: $Ruby;
+    }
+
+    .btn-Go {
+      @include category-btn($Go);
+    }
+    .btn-Go:hover  {
+      color: $Go;
+    }
+
+    .btn-Javascript {
+      @include category-btn($Javascript);
+    }
+    .btn-Javascript:hover  {
+      color: $Javascript;
+    }
+
+    .btn-React {
+      @include category-btn($React);
+    }
+    .btn-React:hover  {
+      color: $React;
+    }
+
+    .btn-Life {
+      @include category-btn($Life)
+    }
+    .btn-Life:hover  {
+      color: $Life;
+    }
+  }
+ }
+}
+.card:hover {
+  box-shadow: 0 15px 30px 0 rgba(0,0,0,0.11);
 }
 
 .pagination {
@@ -132,8 +132,6 @@
     padding: 10px;
   }
 }
-
-
 /////////////SHOW PAGE///////////////
 .show-container {
   padding: 15px 100px 15px 150px;
