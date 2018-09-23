@@ -1,11 +1,12 @@
 <% @posts.each do |post| %>
   <div class="box">
-      <div class= "card card-default <%= post.category_name %>">
-          <div id = 'c-btn' class = "btn btn-outline-info btn-<%= post.category_name %>"><%= post.category_name %> </div>
+      <div class= "card card-default">
           <%= link_to (image_tag post.image, class: 'image'), post_path(post.id)%>
          <div class="card-body">
            <%= link_to post.title, post_path(post.id), class:'post-title'%><hr>
-           <%= link_to 'Read the post', post_path(post.id), class:"btn btn-outline category-#{post.category_name}" %>
+           <p class = 'post-intro'><%= truncate( post.intro, :length => 100, :separator => ' ' )%></p><hr>
+           <%= link_to post.category_name, posts_path(category: post.category.id), id: 'c-btn', class: "btn btn-outline-info btn-#{post.category_name}"%>
+           <span class = 'post-created-on'>Posted on <%= post.created_at.strftime("%Y-%m-%d") %></span>
          </div>
        </div>
    </div>

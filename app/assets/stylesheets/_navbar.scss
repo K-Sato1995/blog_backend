@@ -87,8 +87,8 @@
   right: 0;
   padding: 0;
   list-style: none;
-  border-left: 1px solid #EFEFEF;
-  background: rgba(0, 0, 0, 0.9);
+  border-left: 1px solid grey;
+  background: rgba(0, 0, 0, 0.8);
   overflow-y: scroll;
   z-index: 2000;
   -webkit-transform: translateX(100%);
@@ -100,15 +100,15 @@
 
 .navbar-side2 {
   @extend .navbar-side;
-  width: 40%;
-  background: #fff;
+  width: 30%;
+  background: rgba(0, 0, 0, 0.8);
 }
 
 .navbar-side-item {
  padding: 1.5rem 0;
  font-size: 19px;
  text-align: center;
- border-bottom: 1px solid #EFEFEF;
+ border-bottom: 1px solid grey;
  height: 5rem;
 }
 
@@ -139,7 +139,7 @@
 }
 
 .recent-post-item {
-  color: #212542;
+  color: $theme-color;
 }
 
 .user-image {
@@ -151,9 +151,17 @@
   border-radius: 100px;
 }
 
+.recent-post-item {
+  letter-spacing: 2px;
+}
+
 .recent-post-item:hover {
   color: #B8BEC1;
   text-decoration: none;
+}
+
+.category-name {
+  letter-spacing: 2px;
 }
 
 .category-name:hover {
