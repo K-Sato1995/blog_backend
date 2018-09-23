@@ -22,9 +22,6 @@ class Admin::PostsController < ApplicationController
     @post = Post.new
   end
 
-  def edit
-  end
-
   def create
     @post = Post.new(post_params)
     if @post.save
@@ -54,7 +51,7 @@ class Admin::PostsController < ApplicationController
   private
 
   def post_params
-    params.require(:post).permit(:title, :context, :category, :status, :image, :category_name, :user_id).merge(user_id: current_user.id)
+    params.require(:post).permit(:title, :context, :category, :status, :image, :category_name, :intro, :user_id).merge(user_id: current_user.id)
   end
 
   def find_post
