@@ -3,8 +3,8 @@
   <% flash.each do |key, value| %>
     <div class = "alert alert-<%= key %>"><%= value%></div>
   <% end %>
-
 <div class = 'admin-container' id = 'admin-container'>
+
   <div class = 'row'>
     <!-- SideBar -->
     <div class="col-md-2 admin-wrapper" id = 'admin-wrapper'>
@@ -15,8 +15,21 @@
           <li><%= link_to 'Blog Home', root_path %></li>
       </div>
     </div>
+
     <!-- Content -->
     <div class="col-md-11 admin-content" id = 'admin-content'>
+      <div class = 'row'>
+        <div class = 'card col-md-6 chart'>
+            <div class = 'card-body'>
+              <%= pie_chart posts_data,  donut: true, library: {legend: {position: "right"}}, colors: chart_colors %>
+            </div>
+        </div>
+        <div class = 'card col-md-5 chart2'>
+            <div class = 'card-body'>
+              <%= pie_chart posts_status, donut: true, library: {legend: {position: "right"}}, colors: chart_colors2 %>
+            </div>
+        </div>
+      </div>
       <!-- Tab Panels -->
       <ul class="nav nav-tabs" >
         <li class="nav-item">
