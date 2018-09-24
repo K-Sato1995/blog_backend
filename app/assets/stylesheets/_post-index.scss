@@ -113,6 +113,14 @@
     .btn-Life:hover  {
       color: $Life;
     }
+
+    .btn-Rails {
+      @include category-btn($Rails)
+    }
+
+    .btn-Rails:hover {
+      color: $Rails;
+    }
   }
  }
 }
@@ -190,4 +198,12 @@
 
 .category-Life:hover {
   @include category_name_hover($Life)
+}
+
+.category-Rails {
+  @include category_name($Rails)
+}
+
+.category-Rails:hover {
+  @include category_name_hover($Rails)
 }
