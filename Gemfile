@@ -45,14 +45,15 @@ end
 
 group :development, :production do
   gem 'bootstrap', '~> 4.1.3'
+  gem 'chartkick'
   gem 'devise'
   gem 'font-awesome-rails'
   gem 'jquery-rails'
   gem 'kaminari'
   gem 'listen', '>= 3.0.5', '< 3.2'
   gem 'pygments.rb', '~> 0.6.3'
-  gem 'markdownjs-rails'
   gem 'masonry-rails'
+  gem 'markdownjs-rails'
   gem 'ransack'
   gem 'redcarpet'
   gem 'spring'
