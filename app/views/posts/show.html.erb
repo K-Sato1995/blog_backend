@@ -15,9 +15,25 @@
          <%= markdown(@post.context) %>
       </div>
       <hr/>
-      <a href="#top"><%= fa_icon "angle-up" , base: "square", class: "fa-3x go-top" %></a>
+      <!--RELATED POSTS  -->
+      <h4 class = 'related-post-column'>Related Posts</h4>
+      <div class = 'related-posts'>
+          <% @related_posts.each do |post| %>
+              <div class="related-posts-box">
+                <div class= "card related-post-card">
+                   <%= link_to (image_tag post.image, class: 'related-post-image'), post_path(post.id)%>
+                   <div class="card-body">
+                     <%= link_to post.title, post_path(post.id), class:'related-post-title'%><hr>
+                     <p class = 'related-post-intro'><%= truncate( post.intro, :length => 100, :separator => ' ' )%></p><hr>
+                     <%= link_to post.category_name, posts_path(category: post.category.id), class:"category-#{@post.category_name}"%>
+                     </div>
+                </div>
+             </div>
+        <% end %><!-- of @related_posts.each -->
+      </div>
     </div>
   </div>
+  <a href="#top"><%= fa_icon "angle-up" , base: "square", class: "fa-3x go-top" %></a>
 </div>
 
 <script>
