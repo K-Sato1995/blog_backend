@@ -23,6 +23,7 @@
 .post-container {
   margin-top: 25px;
 }
+
 #posts {
   margin: 0 auto;
   width: 100%;
@@ -68,10 +69,6 @@
 	  	max-width: 100%;
 	  	height: auto;
 	  }
-    img:hover {
-      opacity: 0.6;
-      transition: 0.5s;
-    }
     #c-btn {
       padding: 2px 15px 2px 15px;
     }
@@ -124,10 +121,62 @@
   }
  }
 }
+
 .card:hover {
   box-shadow: 0 15px 30px 0 rgba(0,0,0,0.11);
+  img {
+    opacity: 0.6;
+    transition: 0.5s;
+  }
 }
 
+/////////////////////////Related Posts//////////////////////////////
+.related-post-column{
+  margin-top: 60px;
+  border-bottom: solid 3px $theme-color;
+  letter-spacing: 1px;
+}
+.related-posts {
+  padding-left: 20px;
+  margin-bottom: 50px;
+  padding-bottom: 50px;
+  border-bottom: solid 1px #E8E8E8;
+  .related-posts-box {
+    margin: 10px;
+    margin-top: 25px;
+    width: 30%;
+    display: inline-block;
+    .related-post-card{
+      min-width: 250px;
+    }
+    .related-post-title {
+        color: #21252A;
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+    }
+    .related-post-title:hover {
+      color: $p-color;
+    }
+    .related-post-intro {
+      color: #757575;
+      text-align: left;
+      font-size: 17px;
+    }
+    .related-post-image{
+      height: 180px;
+      width: 100%;
+    }
+  }
+}
+
+.related-posts-box:hover {
+  .related-post-image {
+    opacity: 0.6;
+    transition: 0.5s;
+  }
+}
+//////////////////////////Pagination////////////////////////////////////
 .pagination {
   position: absolute;
   margin: 0 auto;
@@ -150,16 +199,20 @@
     letter-spacing: 1px;
   }
   .post-context {
-    padding-bottom: 50px;
-  }
-  .go-top {
-    float: right;
-    border: solid 1px #efefef;
-    background-color: #E9EEF3;
-    padding: 0px 15px 0px 15px;
-    color: #fff;
+    padding-bottom: 20px;
   }
 }
+
+.go-top {
+  position: absolute;
+  bottom: 1;
+  right: 120px;
+  border: solid 1px #efefef;
+  background-color: #E9EEF3;
+  padding: 0px 15px 0px 15px;
+  color: #fff;
+}
+
 .category-Ruby {
   @include category_name($Ruby)
 }
