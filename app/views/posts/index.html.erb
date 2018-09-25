@@ -1,11 +1,10 @@
-<div class ="post-container">
   <div class = 'row'>
     <!-- SIDE-NAV -->
-    <div class="col-md-2">
+    <div class="nav-area col-xs-0 col-sm-0 col-md-2">
       <%= render 'nav' %>
     </div>
     <!-- Main Content  -->
-    <div class="col-md-10 post-contailer">
+    <div class="col-xs-12 col-sm-12 col-md-10 post-container">
       <div id="posts" class="transitions-enabled">
         <!-- POST IF -->
         <% if (@posts) %><!-- IF1 -->
@@ -22,7 +21,6 @@
       </div>
     </div>
   </div>
-</div>
 
 <script>
 //Box FadeIn
