@@ -4,3 +4,10 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
+@media (max-width: 576px)	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_mobile.scss	/^@media (max-width: 576px) {$/;"	function	line:1
+.navbar, .nav-intro, .intro-body, .snn-links, .search-bar, .link-list, .navbar-side, .navbar-side2, .nav-area	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_mobile.scss	/^  .navbar, .nav-intro, .intro-body, .snn-links, .search-bar, .link-list, .navbar-side, .navbar-side2, .nav-area   {$/;"	function	line:3
+.post-container	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_mobile.scss	/^  .post-container {$/;"	function	line:7
+#posts	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_mobile.scss	/^  #posts {$/;"	function	line:12
+.masonry-brick	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_mobile.scss	/^    .masonry-brick{$/;"	function	line:15
+.box	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_mobile.scss	/^    .box {$/;"	function	line:24
+img	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_mobile.scss	/^    img {$/;"	function	line:27
