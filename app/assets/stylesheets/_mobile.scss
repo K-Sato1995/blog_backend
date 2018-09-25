@@ -3,14 +3,46 @@
   .navbar, .nav-intro, .intro-body, .snn-links, .search-bar, .link-list, .navbar-side, .navbar-side2, .nav-area   {
     display: none;
   }
+  .mobile-nav {
+    display: block;
+    z-index: 1;
+    position: fixed;
+    height: 70px;
+    width: 100%;
+    background-color: #fff;
+    border-bottom: solid 1px #efefef;
+  }
+  #mobile-menu-icon {
+    position: absolute;
+    cursor: pointer;
+    top: 26px;
+    right: 20px;
+    .menu-icon-bar {
+      width: 25px;
+      height: 3px;
+      background-color: $h-color;
+      margin: 3px 0;
+      border-radius: 5px;
+    }
+  }
+  .mobile-navbrand {
+    color: $theme-color;
+    position: absolute;
+    top: 23px;
+    margin-left: 20px;
+    text-decoration: none;
+  }
 ////////////BODY////////////////////////
+  body {
+    background-color: #F9F9F9;
+  }
   .post-container {
     width: 100%;
     padding: 0;
-    background-color: #F9F9F9;
   }
   #posts {
     margin: 0 auto;
+    margin-top: 70px;
     width: 90%;
     .masonry-brick{
       position: relative !important;
@@ -24,10 +56,45 @@
     .box {
       margin-top: 20px;
     }
-    img {
-      width: 100%;
-    }
+  }
+/////////////////////////////////PAGINATION
+.pagination {
+  position: absolute;
+  margin-top: 90px;
+  left: 30%;
+ }
+
+/////////////////////////////////SHOW
+  .show-container {
+    padding: 0;
+    background-color: #F9F9F9;
   }
 
+ .article-container {
+   margin: 0 auto;
+   margin-top: 90px;
+   padding: 10px;
+   width: 90%;
+   background-color: #fff;
+   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
+ }
+
+ .post-content {
+   padding: 0;
+ }
+
+  .related-post-column {
+    display: none;
+  }
+
+ .related-posts {
+   display: none;
+ }
+
+ .go-top {
+  left: 30%;
+  right: 30%;
+  margin-top: 30px;
+ }
 
 }
