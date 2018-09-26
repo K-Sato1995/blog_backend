@@ -100,11 +100,11 @@
   .mobile-dropdown {
     visibility: hidden;
     position: absolute;
+    padding-bottom: 25px;
     top: 70px;
     width: 100%;
     border-bottom: solid 1px #efefef;
     background-color: #fff;
-    z-index: 5000;
   }
 
   .mobile-dropdown-list {
