@@ -17,10 +17,10 @@
           <% end %> <!-- of IF2-->
         <% end %> <!-- of IF1-->
       </div>
-      <div class="pagination">
-        <%= link_to_prev_page @posts, 'Previous Page', class: 'page-link' %>
-        <%= link_to_next_page @posts, 'Next Page', class: 'page-link' %>
-      </div>
+      <ul class="pagination">
+        <li><%= link_to_prev_page @posts, '<< Previous Page', class: 'page-link' %></li>
+        <li><%= link_to_next_page @posts, 'Next Page >>', class: 'page-link' %></li>
+      </ul>
     </div>
   </div>
 </div>

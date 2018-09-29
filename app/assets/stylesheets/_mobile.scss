@@ -59,11 +59,12 @@
   }
 /////////////////////////////////PAGINATION
 .pagination {
-  position: absolute;
-  margin-top: 90px;
-  left: 30%;
+  text-align: center;
+  .page-link {
+    margin: 0 auto;
+    left: -200px;
+  }
  }
-
 /////////////////////////////////SHOW
   .show-container {
     padding: 0;
@@ -92,9 +93,8 @@
  }
 
  .go-top {
-  left: 30%;
-  right: 30%;
   margin-top: 30px;
+  right: 5%;
  }
 /////////////////////////////////dropdown-menu
   .mobile-dropdown {
