@@ -1,0 +1,92 @@
+@mixin c-btn($color){
+  color: $color;
+  border: solid 1px $color;
+  padding: 5px 15px 5px 15px;
+  border-radius: 5px;
+  background-color: #fff;
+  letter-spacing: 1.5px;
+}
+///Clear Fix
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+.content-header {
+  margin: 0 auto;
+  width: 95%;
+  padding: 10px;
+  background-color: #fff;
+  border: solid 1px #DEE2E6;
+  border-radius: 5px;
+  // box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
+  .header-category-list{
+    float: left;
+    margin: 0 auto;
+    li {
+      display: inline;
+      margin-right: 10px;
+    }
+    .header-c-Ruby {
+      @include c-btn($Ruby);
+    }
+    .header-c-Ruby:hover {
+      color: #fff;
+      background-color: $Ruby;
+    }
+    .header-c-Go {
+      @include c-btn($Go);
+    }
+    .header-c-Go:hover  {
+      color: #fff;
+      background-color: $Go;
+    }
+
+    .header-c-Javascript {
+      @include c-btn($Javascript);
+    }
+    .header-c-Javascript:hover  {
+      color: #fff;
+      background-color: $Javascript;
+    }
+
+    .header-c-React {
+      @include c-btn($React);
+    }
+    .header-c-React:hover  {
+      color: #fff;
+      background-color: $React;
+    }
+
+    .header-c-Life {
+      @include c-btn($Life)
+    }
+    .header-c-Life:hover  {
+      color: #fff;
+      background-color: $Life;
+    }
+
+    .header-c-Rails {
+      @include c-btn($Rails)
+    }
+    .header-c-Rails:hover {
+      color: #fff;
+      background-color: $Rails;
+    }
+  }
+  .search-box {
+    float: right;
+    margin-top: 5px;
+    .btn {
+      padding: 2px 5px 2px 5px;;
+    }
+  }
+  .search-bar {
+    border: solid 1px #DEE2E6;
+    border-radius: 5px;
+  }
+  .search-bar::placeholder{
+    color:#B8BEC1;
+  }
+}

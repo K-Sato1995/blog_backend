@@ -21,11 +21,12 @@
 }
 
 .post-container {
-  margin-top: 25px;
+  margin-top: 20px;
 }
 
 #posts {
   margin: 0 auto;
+  margin-top: 20px;
   width: 100%;
   .box {
 	  margin: 10px;
@@ -129,7 +130,6 @@
     transition: 0.5s;
   }
 }
-
 /////////////////////////Related Posts//////////////////////////////
 .related-post-column{
   margin-top: 60px;
@@ -179,38 +179,15 @@
 .pagination {
   position: absolute;
   text-align: center;
-  padding: 20px;
+  margin: 0 auto;
+  bottom: -90px;
   left: 45%;
+  padding: 20px;
   .page-link {
-    width: 200px;
-    left: -100px;
     color: $theme-color;
     border-radius: 5px;
     padding: 10px;
   }
-}
-/////////////SHOW PAGE///////////////
-.show-container {
-  padding: 15px 100px 15px 150px;
-  .post-created-on {
-    color: #A9A9A9;
-    font-weight: lighter;
-    margin-left: 15px;
-    letter-spacing: 1px;
-  }
-  .post-context {
-    padding-bottom: 20px;
-  }
-}
-
-.go-top {
-  position: absolute;
-  bottom: 1;
-  right: 120px;
-  border: solid 1px #efefef;
-  background-color: #E9EEF3;
-  padding: 0px 15px 0px 15px;
-  color: #fff;
 }
 
 .category-Ruby {

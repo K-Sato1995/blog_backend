@@ -14,7 +14,9 @@
     <%#= image_tag("https://pbs.twimg.com/media/DeMEs8WU8AAuGXA.jpg",class:"user-image") %>
   </ul>
 <!-- MAIN NAV -->
+
 <nav class = "navbar">
+  <div class="layer"></div>
   <!-- Nav-content -->
   <div class = "navbar-content">
     <!-- Nav-intro -->
@@ -23,11 +25,6 @@
           <div class="intro-body">
             Computer programmer based in Tokyo.
           </div>
-    </div>
-    <div class="search-box">
-      <%= form_tag(posts_path, method: :get) do %>
-        <%= text_field_tag :title, params[:title],class:'form-control search-bar', placeholder:'Search' %>
-      <% end %>
     </div>
 
     <!-- Link Lists -->

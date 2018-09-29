@@ -1,6 +1,9 @@
-@media (max-width: 576px) {
+@media (max-width: 1128px) {
+  .search-box { display: none; }
+}
+@media (max-width: 776px) {
 /////////////NAV//////////////////////////
-  .navbar, .nav-intro, .intro-body, .snn-links, .search-bar, .link-list, .nav-area   {
+  .navbar, .nav-intro, .intro-body, .snn-links, .search-bar, .link-list, .nav-area, .content-header  {
     display: none;
   }
   .mobile-nav {
@@ -56,13 +59,13 @@
     .box {
       margin-top: 20px;
     }
+    img {
+      min-width: 100%;
+    }
   }
 /////////////////////////////////PAGINATION
 .pagination {
-  text-align: center;
   .page-link {
-    margin: 0 auto;
-    left: -200px;
   }
  }
 /////////////////////////////////SHOW
@@ -74,7 +77,7 @@
  .article-container {
    margin: 0 auto;
    margin-top: 90px;
-   padding: 10px;
+   padding: 10px !important;
    width: 90%;
    background-color: #fff;
    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
