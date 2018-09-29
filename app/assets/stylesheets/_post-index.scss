@@ -137,7 +137,6 @@
   letter-spacing: 1px;
 }
 .related-posts {
-  padding-left: 20px;
   margin-bottom: 50px;
   padding-bottom: 50px;
   border-bottom: solid 1px #E8E8E8;
@@ -179,11 +178,12 @@
 //////////////////////////Pagination////////////////////////////////////
 .pagination {
   position: absolute;
-  margin: 0 auto;
-  bottom: -90px;
-  left: 45%;
+  text-align: center;
   padding: 20px;
+  left: 45%;
   .page-link {
+    width: 200px;
+    left: -100px;
     color: $theme-color;
     border-radius: 5px;
     padding: 10px;

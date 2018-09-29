@@ -1,3 +1,5 @@
+<%= render 'mobile_nav' %>
+<div class = 'container-fluid'>
   <div class = 'row'>
     <!-- SIDE-NAV -->
     <div class="nav-area col-xs-0 col-sm-0 col-md-2">
@@ -15,13 +17,13 @@
           <% end %> <!-- of IF2-->
         <% end %> <!-- of IF1-->
       </div>
-      <div class="pagination">
-        <%= link_to_prev_page @posts, 'Previous Page', class: 'page-link' %>
-        <%= link_to_next_page @posts, 'Next Page', class: 'page-link' %>
-      </div>
+      <ul class="pagination">
+        <li><%= link_to_prev_page @posts, '<< Previous Page', class: 'page-link' %></li>
+        <li><%= link_to_next_page @posts, 'Next Page >>', class: 'page-link' %></li>
+      </ul>
     </div>
   </div>
-
+</div>
 <script>
 //Box FadeIn
 $(".box").each(function(index) {
