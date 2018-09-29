@@ -21,18 +21,33 @@
   padding-left: 250px;
   height: 100%;
   width: 100%;
-  .nav {
+  .admin-card {
     margin-top: 30px;
+    .card-header {
+      background-color: #fff;
+       h5 {
+         margin: 0;
+       }
+    }
+    .card-body {
+      padding: 30px;
+      .nav {
+        margin-bottom: -10px;
+      }
+      .posts-table {
+        border: solid  1px #DEE2E6;
+        border-top: none;
+        background-color: #fff;
+      }
+    }
   }
-  .posts-table {
-    border: solid  1px #DEE2E6;
-    border-top: none;
-  }
-  .chart {
-    margin-left: 20px;
-  }
-  .chart2 {
-    margin-left: 30px;
+  .chart-list {
+    .chart {
+      margin-left: 30px;
+    }
+    .chart2 {
+      margin-left: 30px;
+    }
   }
 }
 

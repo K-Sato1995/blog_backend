@@ -1,6 +1,18 @@
 @import "global";
 
+.layer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(20,20,20,0.8);
+}
+
 .navbar {
+  background-image: url('https://images.pexels.com/photos/1450082/pexels-photo-1450082.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+  background-position: 'center';
+  background-size: 'cover';
   height: 100%;
   width: 250px;
   position: fixed;
@@ -10,7 +22,6 @@
   margin:0;
   list-style: none;
   border-right: 1px solid #EFEFEF;
-  background-color: #fff;
   overflow-y: scroll;
   letter-spacing: 2px;
   padding: 15px 15px 15px 30px;
@@ -34,39 +45,17 @@
   left: 30px;
 }
 
-// Search Box
-.search-box {
-  position: absolute;
-  top:150px;
-  left: 20px;
-}
-.search-bar {
-  border: none;
-  border-radius: 0;
-  border-bottom: solid 2px $theme-color;
-}
-.search-bar::placeholder{
-  color:#B8BEC1;
-}
-
-.search-bar:focus{
-  outline: none;
-  outline-style:none;
-  box-shadow:none;
-  border-color: #BFEE90;
-  transition: 1s;
-}
-
 .link-list {
   position: absolute;
-  top: 220px;
+  top: 180px;
   left: -10px;
   ul {
     list-style: none;
      li {
        margin: 0;
        cursor: pointer;
-       margin-bottom: 20px;
+       margin-bottom: 30px;
+       color: #fff;
      }
   }
 }
