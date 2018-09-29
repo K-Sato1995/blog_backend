@@ -1,7 +1,30 @@
-#show-img{
-  width: 100%;
-  height: 450px;
-  background-position: center;
-  background-size: cover;
-  border-bottom: solid 1px #E0E0E0;
+.show-container {
+  padding: 15px 100px 15px 100px;
+  margin: 0 auto;
+  .post-created-on {
+    color: #A9A9A9;
+    font-weight: lighter;
+    margin-left: 15px;
+    letter-spacing: 1px;
+  }
+  .article-container {
+    padding: 20px 70px 20px 70px;
+    background-color: #fff;
+    border: solid 1px #DEE2E6;
+    border-radius: 5px;
+  }
+  .post-context {
+    padding-bottom: 20px;
+  }
+}
+
+.go-top {
+  position: absolute;
+  margin-top: 30px;
+  bottom: 1;
+  right: 120px;
+  border: solid 1px #efefef;
+  background-color: #E9EEF3;
+  padding: 0px 15px 0px 15px;
+  color: #fff;
 }

@@ -3,93 +3,94 @@
   <% flash.each do |key, value| %>
     <div class = "alert alert-<%= key %>"><%= value%></div>
   <% end %>
-<div class = 'admin-container' id = 'admin-container'>
-
-  <div class = 'row'>
+<div class = 'container-fluid'>
+  <div class = 'admin-container' id = 'admin-container'>
     <!-- SideBar -->
-    <div class="col-md-2 admin-wrapper" id = 'admin-wrapper'>
-      <div id = 'admin-sidebar'>
-        <!-- Sidebar-list -->
-        <ul class="sidebar-nav">
-          <li class = 'nav-item'><%= link_to 'Admin Home', admin_posts_path %></li>
-          <li><%= link_to 'Blog Home', root_path %></li>
-      </div>
-    </div>
-
-    <!-- Content -->
-    <div class="col-md-11 admin-content" id = 'admin-content'>
-      <div class = 'row'>
-        <div class = 'card col-md-6 chart'>
-            <div class = 'card-body'>
-              <%= pie_chart posts_data,  donut: true, library: {legend: {position: "right"}}, colors: chart_colors %>
-            </div>
-        </div>
-        <div class = 'card col-md-5 chart2'>
-            <div class = 'card-body'>
-              <%= pie_chart posts_status, donut: true, library: {legend: {position: "right"}}, colors: chart_colors2 %>
-            </div>
-        </div>
-      </div>
-      <!-- Tab Panels -->
-      <ul class="nav nav-tabs" >
-        <li class="nav-item">
-          <%= link_to 'Published', admin_posts_path(status: 'published'), class: "nav-link #{@active3} published" %>
-        </li>
-        <li class="nav-item" >
-            <%= link_to 'Draft', admin_posts_path(status: 'draft'), class: "nav-link #{@active1} draft" %>
-        </li>
-        <li class="nav-item">
-            <%= link_to 'Private', admin_posts_path(status: 'confidential'), class: "nav-link #{@active2} private"%>
-        </li>
+    <div id = 'admin-sidebar'>
+      <!-- Sidebar-list -->
+      <ul class="sidebar-nav">
+        <li class = 'nav-item'><%= link_to 'Admin Home', admin_posts_path %></li>
+        <li><%= link_to 'Blog Home', root_path %></li>
       </ul>
-      <!-- Table for Publised Posts-->
-      <table class="table table-striped table-hover posts-table" id = 'publised_posts'>
-        <thead>
-          <tr>
-            <th><%= sort_link @q, :id%></th>
-            <th><%= sort_link @q, :title%></th>
-            <th><%= sort_link @q, :category_name, 'Category'%></th>
-            <th><%= sort_link @q, :created_at, 'Posted on'%></th>
-            <th><%= sort_link @q, :updated_at, 'Last updated on'%></th>
-            <th scope = 'col'>Actions</th>
-          </tr>
-        </thead>
-        <tbody>
-          <% @posts.each do |post| %>
-          <tr>
-            <td><%= post.id %></td>
-            <td><%= link_to post.title, post_path(post) %></td>
-            <td><%= post.category_name %></td>
-            <td><%= post.created_at.strftime("%Y/%m/%d") %></td>
-            <td><%= post.updated_at.strftime("%Y/%m/%d") %></td>
-            <td>
-              <%= link_to 'Edit', edit_admin_post_path(post) %>
-              <%= link_to 'Delete',admin_post_path(post), method: :delete, data: { confirm: 'Are you sure?' } %>
-            </td>
-          </tr>
-          <% end %>
-        </tbody>
-      </table>
+    </div>
+    <div class = 'row'>
+      <!-- Content -->
+      <div class="col-md-11 admin-content" id = 'admin-content'>
+        <div class = 'row chart-list'>
+          <div class = 'card col-md-6 chart'>
+              <div class = 'card-body'>
+                <%= pie_chart posts_data,  donut: true, library: {legend: {position: "right"}}, colors: chart_colors %>
+              </div>
+          </div>
+          <div class = 'card col-md-5 chart2'>
+              <div class = 'card-body'>
+                <%= pie_chart posts_status, donut: true, library: {legend: {position: "right"}}, colors: chart_colors2 %>
+              </div>
+          </div>
+        </div>
+        <!-- Tab Panels -->
+        <div class="card admin-card">
+          <div class="card-header"><h5>Posts Table</h5></div>
+          <div class="card-body">
+            <ul class="nav nav-tabs" >
+              <li class="nav-item">
+                <%= link_to 'Published', admin_posts_path(status: 'published'), class: "nav-link #{@active3} published" %>
+              </li>
+              <li class="nav-item" >
+                  <%= link_to 'Draft', admin_posts_path(status: 'draft'), class: "nav-link #{@active1} draft" %>
+              </li>
+              <li class="nav-item">
+                  <%= link_to 'Private', admin_posts_path(status: 'confidential'), class: "nav-link #{@active2} private"%>
+              </li>
+            </ul>
+            <!-- Table for Publised Posts-->
+            <table class="table table-striped table-hover posts-table" id = 'publised_posts'>
+              <thead>
+                <tr>
+                  <th><%= sort_link @q, :id%></th>
+                  <th><%= sort_link @q, :title%></th>
+                  <th><%= sort_link @q, :category_name, 'Category'%></th>
+                  <th><%= sort_link @q, :created_at, 'Posted on'%></th>
+                  <th><%= sort_link @q, :updated_at, 'Last updated on'%></th>
+                  <th scope = 'col'>Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <% @posts.each do |post| %>
+                <tr>
+                  <td><%= post.id %></td>
+                  <td><%= link_to post.title, post_path(post) %></td>
+                  <td><%= post.category_name %></td>
+                  <td><%= post.created_at.strftime("%Y/%m/%d") %></td>
+                  <td><%= post.updated_at.strftime("%Y/%m/%d") %></td>
+                  <td>
+                    <%= link_to 'Edit', edit_admin_post_path(post) %>
+                    <%= link_to 'Delete',admin_post_path(post), method: :delete, data: { confirm: 'Are you sure?' } %>
+                  </td>
+                </tr>
+                <% end %>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
 <script>
 /////////TOGGLE SIDEBAR//////////////////////////////
 var sidebar = document.getElementById('admin-sidebar')
-var adminWrapper = document.getElementById('admin-wrapper')
 var adminContent = document.getElementById('admin-content')
 var adminContainer = document.getElementById('admin-container')
 
 function openNav(){
   sidebar.style.width = '200px';
-  adminWrapper.className = 'col-md-2 admin-wrapper';
   adminContent.className = 'col-md-11 admin-content';
   adminContainer.style.paddingLeft = '250px'
 }
 
 function closeNav(){
   sidebar.style.width = '0px';
-  adminWrapper.className = 'col-md-0 admin-wrapper';
   adminContent.className = 'col-md-12 admin-content';
   adminContainer.style.paddingLeft = '0px'
 }

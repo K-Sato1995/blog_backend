@@ -2,11 +2,26 @@
 <div class = 'container-fluid'>
   <div class = 'row'>
     <!-- SIDE-NAV -->
-    <div class="nav-area col-xs-0 col-sm-0 col-md-2">
+    <div class="nav-area col-md-2">
       <%= render 'nav' %>
     </div>
     <!-- Main Content  -->
-    <div class="col-xs-12 col-sm-12 col-md-10 post-container">
+    <div class="col-md-10 post-container">
+      <!-- Content  Header -->
+      <div class="content-header clearfix">
+        <ul class = 'header-category-list'>
+          <% @categories.each do |category| %>
+            <li><%= link_to "#{category.name}", posts_path(category: category.id), class:"btn header-c-#{category.name}" %></li>
+          <% end %>
+        </ul>
+        <!--SEARCH BAR  -->
+        <div class="search-box">
+          <%= form_tag(posts_path, method: :get) do %>
+            <%= text_field_tag :title, params[:title],class:'search-bar', placeholder:'Type Here...' %>
+            <%= submit_tag 'Search', class:'btn btn-outline-info'%>
+          <% end %>
+        </div>
+      </div>
       <div id="posts" class="transitions-enabled">
         <!-- POST IF -->
         <% if (@posts) %><!-- IF1 -->
