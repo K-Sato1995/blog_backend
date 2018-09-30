@@ -1,5 +1,10 @@
 @media (max-width: 1128px) {
+  .navbar { width: 200px; transition: 2s;}
   .search-box { display: none; }
+  .content-header { width: 80% !important;
+    .btn { margin-top: 10px !important; margin-bottom: 10px !important;}
+  }
+  .article-container { margin-left: 200px; }
 }
 @media (max-width: 776px) {
 /////////////NAV//////////////////////////
