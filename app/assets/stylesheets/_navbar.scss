@@ -1,81 +1,54 @@
 @import "global";
 
-@mixin c-btn($color){
-  color: $color;
-  border: solid 1px $color;
-  padding: 5px 15px 5px 15px;
-  border-radius: 5px;
-  background-color: #fff;
-  letter-spacing: 1.5px;
-}
-
 .navbar {
   height: 65px;
   background-color: #fff;
-  border-bottom: solid 1px #efefef;
-  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
-  .header-category-list{
-    list-style: none;
-    li{
-      display: inline-block;
-    }
-  }
+  border-bottom: solid 1px $border-color;
+  box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.10);
+  z-index: 1;
   .navbrand {
+    position: absolute;
+    font-style: oblique;
+    top: 20px;
+    left: 50px;
+    font-size: 22px;
     color: $theme-color;
+    letter-spacing: 1px;
     text-decoration: none;
   }
+  .nav-list {
+    position: absolute;
+    top: 22px;
+    right: 100px;
+    list-style: none;
+    .nav-item {
+      font-size: 17px;
+      margin-right: 20px;
+      letter-spacing: 1px;
+      color: #626262;
+      display: inline-block;
+      cursor: pointer;
+    }
+    .nav-item:hover {
+      color: $theme-color;
+    }
+  }
 }
 
-.header-c-Ruby {
-  @include c-btn($Ruby);
+//////////////SEARCHBAR
+.fa-search {
+  position: absolute;
+  font-size: 25px;
+  top: 22px;
+  right: 50px;
+  color: #626262;
+  cursor: pointer;
 }
 
-.header-c-Ruby:hover {
-  color: #fff;
-  background-color: $Ruby;
+.fa-search:hover {
+  color: $theme-color;
 }
 
-.header-c-Go {
-  @include c-btn($Go);
-}
-.header-c-Go:hover  {
-  color: #fff;
-  background-color: $Go;
-}
-
-.header-c-Javascript {
-  @include c-btn($Javascript);
-}
-.header-c-Javascript:hover  {
-  color: #fff;
-  background-color: $Javascript;
-}
-
-.header-c-React {
-  @include c-btn($React);
-}
-.header-c-React:hover  {
-  color: #fff;
-  background-color: $React;
-}
-
-.header-c-Life {
-  @include c-btn($Life)
-}
-.header-c-Life:hover  {
-  color: #fff;
-  background-color: $Life;
-}
-
-.header-c-Rails {
-  @include c-btn($Rails)
-}
-.header-c-Rails:hover {
-  color: #fff;
-  background-color: $Rails;
-}
-
-//////////////SEARCHBARR
 .search-box {
   float: right;
   margin-top: 5px;
@@ -94,24 +67,9 @@
   color:#B8BEC1;
 }
 
-.link-list {
-  position: absolute;
-  top: 180px;
-  left: -10px;
-  ul {
-    list-style: none;
-     li {
-       margin: 0;
-       cursor: pointer;
-       margin-bottom: 30px;
-       color: #fff;
-     }
-  }
-}
+///////////////////////////SIDE BAR
 
-///////////////////////////FOR MOBILE
-
-.mobile-nav, .navbar-side, .navbar-side2 { display: none; }
+.mobile-nav { display: none; }
 
 .navbar-side {
   height: 100%;
@@ -121,8 +79,8 @@
   right: 0;
   padding: 0;
   list-style: none;
-  border-left: 1px solid grey;
-  background: rgba(0, 0, 0, 0.8);
+  border-left: 1px solid $border-color;
+  background-color: #FFF;
   overflow-y: scroll;
   z-index: 2000;
   -webkit-transform: translateX(100%);
@@ -135,14 +93,14 @@
 .navbar-side2 {
   @extend .navbar-side;
   width: 30%;
-  background: rgba(0, 0, 0, 0.8);
+  background-color: #FFF;
 }
 
 .navbar-side-item {
  padding: 1.5rem 0;
  font-size: 19px;
  text-align: center;
- border-bottom: 1px solid grey;
+ border-bottom: 1px solid $border-color;
  height: 5rem;
 }
 
@@ -162,68 +120,28 @@
   right: 0;
   bottom: 0;
   cursor: pointer;
-  background-color: #ccc;
+  background: rgba(0, 0, 0, 0.8);
   opacity: 0.6;
   z-index: 990;
 }
 
-/////////////CATEGORY COLORS///////////////
-.category-link {
-  text-decoration: none;
-}
-
-.recent-post-item {
-  color: $theme-color;
-}
-
-.user-image {
-  top: 65%;
-  left: 30%;
-  height: 180px;
-  width: 180px;
-  border: solid 1px #efefef;
-  border-radius: 100px;
-}
-
-.recent-post-item {
-  letter-spacing: 2px;
-}
-
-.recent-post-item:hover {
-  color: #B8BEC1;
-  text-decoration: none;
-}
-
 .category-name {
+  color: #626262;
   letter-spacing: 2px;
 }
 
 .category-name:hover {
-  color: #fff;
+  color: $theme-color;
   text-decoration: none;
 }
 
-.Ruby {
-  color: $Ruby;
+.recent-post-item {
+  text-decoration: none;
+  color: #626262;
+  letter-spacing: 2px;
 }
 
-.Go {
-  color: $Go;
+.recent-post-item:hover {
+  color: $theme-color;
+  text-decoration: none;
 }
-
-.Javascript {
-  color: $Javascript;
-}
-
-.React {
-  color: $React;
-}
-
-.Life {
-  color: $Life;
-}
-
-.Rails {
-  color: $Rails;
-}
-/////////////

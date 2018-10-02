@@ -32,7 +32,8 @@
 	  width: 350px;
     height: 450px;
 	  text-align: center;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
+    border-radius: 5px;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.10);
     .card {
       width: 350px;
       height: 450px;
@@ -46,7 +47,6 @@
          height: 200px;
        }
        .card-body {
-         background-color: blue;
          height: 200px;
        }
     }
@@ -142,53 +142,10 @@
   }
 }
 
-/////////////////////////Related Posts//////////////////////////////
-.related-post-column{
-  margin-top: 60px;
-  border-bottom: solid 3px $theme-color;
-  letter-spacing: 1px;
-}
-.related-posts {
-  margin-bottom: 50px;
-  padding-bottom: 50px;
-  border-bottom: solid 1px #E8E8E8;
-  .related-posts-box {
-    margin: 10px;
-    margin-top: 25px;
-    width: 30%;
-    display: inline-block;
-    .related-post-card{
-      min-width: 250px;
-    }
-    .related-post-title {
-        color: #21252A;
-        margin: 0;
-        padding: 0;
-        text-decoration: none;
-    }
-    .related-post-title:hover {
-      color: $p-color;
-    }
-    .related-post-intro {
-      color: #757575;
-      text-align: left;
-      font-size: 17px;
-    }
-    .related-post-image{
-      height: 180px;
-      width: 100%;
-    }
-  }
-}
-
-.related-posts-box:hover {
-  .related-post-image {
-    opacity: 0.6;
-    transition: 0.5s;
-  }
-}
 //////////////////////////Pagination////////////////////////////////////
 .pagination {
+  margin-top: 50px;
+  // margin-left: 100px;
   .page-link {
     color: $theme-color;
   }
