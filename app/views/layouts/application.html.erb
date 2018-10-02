@@ -12,6 +12,14 @@
     <%= yield %>
     <footer>
       <p>Designed and coded by <a href = 'https://github.com/KatsukiSato'>K-Sato</a></p>
+      <div class = 'snn-links'>
+        <a href = 'https://github.com/KatsukiSato'><%= fa_icon "github",  class: "fa-2x" %></a>
+        <a href = 'https://twitter.com/'><%= fa_icon "twitter", class: "fa-2x" %></a>
+        <a href = 'https://www.google.com/'><%= fa_icon "google", class: "fa-2x" %></a>
+      </div>
+       <% if user_signed_in? %>
+        <%= link_to 'Admin Home', admin_posts_path, class:"btn btn-outline-info admin-btn" %>
+       <% end %>
     </footer>
   </body>
 </html>

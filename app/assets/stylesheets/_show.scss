@@ -1,6 +1,7 @@
 .show-container {
   padding: 15px 100px 15px 100px;
   margin: 0 auto;
+  margin-top: 80px;
   .post-created-on {
     color: #A9A9A9;
     font-weight: lighter;
@@ -8,9 +9,8 @@
     letter-spacing: 1px;
   }
   .article-container {
-    padding: 20px 70px 20px 70px;
+    margin: 0 auto;
     background-color: #fff;
-    border: solid 1px #DEE2E6;
     border-radius: 5px;
   }
   .post-context {

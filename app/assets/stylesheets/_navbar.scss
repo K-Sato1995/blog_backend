@@ -1,38 +1,23 @@
 @import "global";
 
-.layer {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  background-color: rgba(20,20,20,0.8);
+@mixin c-btn($color){
+  color: $color;
+  border: solid 1px $color;
+  padding: 5px 15px 5px 15px;
+  border-radius: 5px;
+  background-color: #fff;
+  letter-spacing: 1.5px;
 }
 
 .navbar {
-  background-image: url('https://images.pexels.com/photos/1450082/pexels-photo-1450082.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
-  background-position: 'center';
-  background-size: 'cover';
-  height: 100%;
-  width: 250px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  padding: 0;
-  margin:0;
-  list-style: none;
-  // border-right: 1px solid #EFEFEF;
-  overflow-y: scroll;
-  letter-spacing: 2px;
-  padding: 15px 15px 15px 30px;
-  // box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.35);
-  .nav-intro {
-    position: absolute;
-    top: 40px;
-    .intro-body {
-      color: #B8BEC1;
-      font-size: 15px;
-      letter-spacing: 1px;
+  height: 65px;
+  background-color: #fff;
+  border-bottom: solid 1px #efefef;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
+  .header-category-list{
+    list-style: none;
+    li{
+      display: inline-block;
     }
   }
   .navbrand {
@@ -40,10 +25,73 @@
     text-decoration: none;
   }
 }
-.admin-btn {
-  position: absolute;
-  bottom: 100px;
-  left: 30px;
+
+.header-c-Ruby {
+  @include c-btn($Ruby);
+}
+
+.header-c-Ruby:hover {
+  color: #fff;
+  background-color: $Ruby;
+}
+
+.header-c-Go {
+  @include c-btn($Go);
+}
+.header-c-Go:hover  {
+  color: #fff;
+  background-color: $Go;
+}
+
+.header-c-Javascript {
+  @include c-btn($Javascript);
+}
+.header-c-Javascript:hover  {
+  color: #fff;
+  background-color: $Javascript;
+}
+
+.header-c-React {
+  @include c-btn($React);
+}
+.header-c-React:hover  {
+  color: #fff;
+  background-color: $React;
+}
+
+.header-c-Life {
+  @include c-btn($Life)
+}
+.header-c-Life:hover  {
+  color: #fff;
+  background-color: $Life;
+}
+
+.header-c-Rails {
+  @include c-btn($Rails)
+}
+.header-c-Rails:hover {
+  color: #fff;
+  background-color: $Rails;
+}
+
+//////////////SEARCHBARR
+.search-box {
+  float: right;
+  margin-top: 5px;
+  .btn {
+    padding: 2px 5px 2px 5px;;
+  }
+}
+
+.search-bar {
+  padding: 3px;
+  border: solid 1px #DEE2E6;
+  border-radius: 5px;
+}
+
+.search-bar::placeholder{
+  color:#B8BEC1;
 }
 
 .link-list {
@@ -61,14 +109,10 @@
   }
 }
 
-.snn-links {
-  position: absolute;
-  bottom: 50px;
-  a {
-    margin: 10px;
-  }
-}
-///////////SIDE BAR/////////////////////
+///////////////////////////FOR MOBILE
+
+.mobile-nav, .navbar-side, .navbar-side2 { display: none; }
+
 .navbar-side {
   height: 100%;
   width: 20%;
@@ -183,4 +227,3 @@
   color: $Rails;
 }
 /////////////
-.mobile-nav { display: none; }
