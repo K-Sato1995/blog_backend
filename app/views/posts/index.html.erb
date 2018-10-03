@@ -3,7 +3,7 @@
   <div class = 'row'>
       <%= render 'nav' %>
     <!-- Main Content  -->
-    <div class="col-md-11 post-container">
+    <div class="col-md-12 post-container">
       <div id="posts" class="transitions-enabled">
         <!-- POST IF -->
         <% if (@posts) %><!-- IF1 -->
@@ -13,8 +13,8 @@
               <%= render 'post' %>
           <% end %> <!-- of IF2-->
         <% end %> <!-- of IF1-->
+        <%= paginate @posts %>
       </div>
-      <%= paginate @posts %>
     </div>
   </div>
 </div>

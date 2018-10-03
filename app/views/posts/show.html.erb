@@ -5,7 +5,7 @@
   <div class="show-container">
     <div class = 'row'>
       <div class = 'col-md-10 article-container'>
-       <h3 class="mt-4"><%=@post.title%></h3>
+       <h1 class='show-post-title'><%=@post.title%></h1>
        <hr/>
          <p>
            <%= link_to "#{@post.category_name}", posts_path(category: @post.category.id), class:"category-#{@post.category_name}" %>

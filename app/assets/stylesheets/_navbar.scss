@@ -8,10 +8,9 @@
   z-index: 1;
   .navbrand {
     position: absolute;
-    font-style: oblique;
     top: 20px;
     left: 50px;
-    font-size: 22px;
+    font-size: 23px;
     color: $theme-color;
     letter-spacing: 1px;
     text-decoration: none;
@@ -40,7 +39,7 @@
   position: absolute;
   font-size: 25px;
   top: 22px;
-  right: 50px;
+  right: 70px;
   color: #626262;
   cursor: pointer;
 }
@@ -50,17 +49,46 @@
 }
 
 .search-box {
-  float: right;
-  margin-top: 5px;
-  .btn {
-    padding: 2px 5px 2px 5px;;
-  }
+  margin-top: 7px;
+  display: none;
+  position: relative;
+  height: 100%;
+  transition: 5s;
+  width: 80%;
 }
 
 .search-bar {
-  padding: 3px;
-  border: solid 1px #DEE2E6;
+  position: absolute;
+  top: 0;
+  right: 100px;
+  padding-left: 10px;
+  height: 45px;
+  width: 80%;
+  color: #626262;
+  background-color: #F4F4F4;
+  border: none;
   border-radius: 5px;
+}
+
+.search-bar:focus {
+  outline: none;
+}
+
+#close-icon {
+  position: absolute;
+  top: 0;
+  right: 40px;
+  height: 95%;
+  padding: 0 15px 0 15px;
+  cursor: pointer;
+  font-size: 30px;
+  color: #626262;
+  background-color: #F4F4F4;
+  border-radius: 5px;
+}
+
+#close-icon:hover {
+  color: #121212;
 }
 
 .search-bar::placeholder{

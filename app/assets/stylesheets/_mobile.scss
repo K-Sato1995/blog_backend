@@ -1,10 +1,11 @@
 @media (max-width: 776px) {
 /////////////NAV//////////////////////////
-  .navbar, .nav-intro, .intro-body, .snn-links, .search-bar, .link-list {  display: none; }
+  .navbar, .nav-intro, .intro-body, .snn-links, .search-bar, .link-list, .pre-footer {  display: none; }
   .mobile-nav {
     display: block;
     z-index: 1;
     position: fixed;
+    top: 0;
     height: 70px;
     width: 100%;
     background-color: #fff;
@@ -66,6 +67,7 @@
   }
 /////////////////////////////////PAGINATION
 .pagination {
+  left: 0;
   .page-link {
   }
  }
@@ -139,4 +141,12 @@
   .navbar-side2 {
     width: 70%;
   }
+/////////////////FOOOTER
+  footer {
+    margin-top: 100px;
+    .author-stamp {
+      display: none;
+    }
+  }
+
 }
