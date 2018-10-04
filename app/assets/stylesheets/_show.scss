@@ -2,6 +2,10 @@
   padding: 15px 100px 15px 100px;
   margin: 0 auto;
   margin-top: 80px;
+  .show-image {
+    max-height: 500px;
+    width: 100%;
+  }
   .show-post-title {
     margin: 0;
     font-weight: bold;
@@ -40,16 +44,19 @@
   letter-spacing: 1px;
 }
 .related-posts {
+  text-align: center;
+  margin: 0 auto;
   margin-bottom: 50px;
   padding-bottom: 50px;
   border-bottom: solid 1px #E8E8E8;
   .related-posts-box {
     margin: 10px;
     margin-top: 25px;
-    width: 30%;
+    margin-left: 25px;
+    width: 350px;
     display: inline-block;
     .related-post-card{
-      min-width: 250px;
+      min-width: 350px;
     }
     .related-post-title {
         color: #21252A;
