@@ -25,6 +25,6 @@ class Post < ApplicationRecord
   end
 
   def self.category_search(category)
-    where('category_id LIKE ?', "%#{category}%")
+    where('category_id LIKE ?', "%#{category.to_s}%")
   end
 end
