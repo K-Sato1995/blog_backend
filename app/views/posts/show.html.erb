@@ -12,6 +12,7 @@
            <span class = 'post-created-on'>Posted on <%= @post.created_at.strftime("%Y-%m-%d") %></span>
         </p>
        <hr/>
+        <%= image_tag @post.image, class: 'show-image' %>
         <div class="post-context">
            <%= markdown(@post.context) %>
         </div>
@@ -37,6 +38,7 @@
     <a href="#top"><%= fa_icon "angle-up" , base: "square", class: "fa-3x go-top" %></a>
   </div>
 </div>
+<%= render 'footer'%>
 <script>
 $("a[href='#top']").click(function() {
    $("html, body").animate({ scrollTop: 0 }, "slow");
