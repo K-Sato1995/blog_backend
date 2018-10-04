@@ -1,22 +1,60 @@
 @import "global";
+.pre-footer {
+   margin-top: 100px;
+   background-color: #F8F8F8;
+   text-align: center;
+   height: 200px;
+   h4 {
+     color: #222222;
+     padding-top: 30px;
+     letter-spacing: 1px;
+   }
+   .snn-links {
+     margin: 0 auto;
+     margin-top: 40px;
+     width: 300px;
+     text-align: center;
+     a {
+       margin: 15px;
+     }
+   }
+}
 
-footer {
-  bottom: 0;
-  margin-top: 100px;
-  height: 60px;
-  width: 100%;
-  border-top: solid 1px #efefef;
+.footer-container {
+  @extend .container;
+  position: relative;
+  height: 200px;
+  border-top: solid 1px $border-color;
   background-color: #fff;
-  p {
-    font-size: 17px;
-    margin-right: 50px;
-    margin-top: 25px;
-    float: right;
-    color: #B8BEC1;
-    bottom: 0;
+  margin: 0 auto!important;
+  padding: 0 !important;
+  width: 100% !important;
+  .description {
+    border: solid 1px;
+  }
+  .blog-description {
     letter-spacing: 1px;
+    margin-top: 40px;
+    margin-left: 30px;
+    display: inline-block;
+    vertical-align: top;
+    p {
+      font-size: 18px;
+      color: #626262;
+    }
+    .copy-right {
+     font-size: 15px;
+    }
   }
-  a {
-    color: $theme-color;
+  .user-description {
+    @extend .blog-description;
   }
+}
+
+.author-stamp {
+  display: none;
+}
+
+.admin-btn {
+  position: absolute;
 }

@@ -1,7 +1,9 @@
 <% @posts.each do |post| %>
   <div class="box">
       <div class= "card card-default">
-          <%= link_to (image_tag post.image, class: 'image'), post_path(post.id)%>
+          <div class="card-head">
+            <%= link_to (image_tag post.image, class: 'image'), post_path(post.id)%>
+          </div>
          <div class="card-body">
            <%= link_to post.title, post_path(post.id), class:'post-title'%><hr>
            <p class = 'post-intro'><%= truncate( post.intro, :length => 100, :separator => ' ' )%></p><hr>
