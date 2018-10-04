@@ -4,19 +4,3 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
-.show-container	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_show.scss	/^.show-container {$/;"	function	line:1
-.show-post-title	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_show.scss	/^  .show-post-title {$/;"	function	line:5
-.post-created-on	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_show.scss	/^  .post-created-on {$/;"	function	line:10
-.article-container	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_show.scss	/^  .article-container {$/;"	function	line:16
-.post-context	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_show.scss	/^  .post-context {$/;"	function	line:21
-.go-top	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_show.scss	/^.go-top {$/;"	function	line:26
-.related-post-column	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_show.scss	/^.related-post-column{$/;"	function	line:37
-.related-posts	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_show.scss	/^.related-posts {$/;"	function	line:42
-.related-posts-box	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_show.scss	/^  .related-posts-box {$/;"	function	line:46
-.related-post-card	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_show.scss	/^    .related-post-card{$/;"	function	line:51
-.related-post-title	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_show.scss	/^    .related-post-title {$/;"	function	line:54
-.related-post-title:hover	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_show.scss	/^    .related-post-title:hover {$/;"	function	line:60
-.related-post-intro	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_show.scss	/^    .related-post-intro {$/;"	function	line:63
-.related-post-image	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_show.scss	/^    .related-post-image{$/;"	function	line:68
-.related-posts-box:hover	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_show.scss	/^.related-posts-box:hover {$/;"	function	line:75
-.related-post-image	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_show.scss	/^  .related-post-image {$/;"	function	line:76
