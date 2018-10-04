@@ -1,27 +1,9 @@
 <%= render 'mobile_nav' %>
 <div class = 'container-fluid'>
   <div class = 'row'>
-    <!-- SIDE-NAV -->
-    <div class="nav-area col-md-2">
       <%= render 'nav' %>
-    </div>
     <!-- Main Content  -->
-    <div class="col-md-10 post-container">
-      <!-- Content  Header -->
-      <div class="content-header clearfix">
-        <ul class = 'header-category-list'>
-          <% @categories.each do |category| %>
-            <li><%= link_to "#{category.name}", posts_path(category: category.id), class:"btn header-c-#{category.name}" %></li>
-          <% end %>
-        </ul>
-        <!--SEARCH BAR  -->
-        <div class="search-box">
-          <%= form_tag(posts_path, method: :get) do %>
-            <%= text_field_tag :title, params[:title],class:'search-bar', placeholder:'Type Here...' %>
-            <%= submit_tag 'Search', class:'btn btn-outline-info'%>
-          <% end %>
-        </div>
-      </div>
+    <div class="col-md-12 post-container">
       <div id="posts" class="transitions-enabled">
         <!-- POST IF -->
         <% if (@posts) %><!-- IF1 -->
@@ -31,14 +13,12 @@
               <%= render 'post' %>
           <% end %> <!-- of IF2-->
         <% end %> <!-- of IF1-->
+        <%= paginate @posts %>
       </div>
-      <ul class="pagination">
-        <li><%= link_to_prev_page @posts, '<< Previous Page', class: 'page-link' %></li>
-        <li><%= link_to_next_page @posts, 'Next Page >>', class: 'page-link' %></li>
-      </ul>
     </div>
   </div>
 </div>
+
 <script>
 //Box FadeIn
 $(".box").each(function(index) {
