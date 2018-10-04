@@ -3,8 +3,9 @@
   margin: 0 auto;
   margin-top: 80px;
   .show-post-title {
-    font-family: "Times New Roman", Times, serif;
     margin: 0;
+    font-weight: bold;
+    letter-spacing: 1px;
   }
   .post-created-on {
     color: #A9A9A9;
@@ -24,7 +25,6 @@
 
 .go-top {
   position: absolute;
-  bottom: 1;
   right: 120px;
   border: solid 1px $border-color;
   background-color: #E9EEF3;

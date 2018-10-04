@@ -18,22 +18,26 @@
         <a href = 'https://www.google.com/'><%= fa_icon "google", class: "fa-3x" %></a>
       </div>
     </div>
-    <footer>
-      <div class="row">
-        <div class="col-md-12 blog-description">
-          <h5>K-Sato's Blog</h5>
-          <p>This is my personal blog where I write about programming and my life.</p>
-          <p class = 'copy-right'>Copyright © 2018</p>
+    <div class = 'footer-container'>
+        <div class = 'row'>
+          <div class="col-md-4 blog-description">
+            <h5><a href = 'https://github.com/K-Sato1995/MyBlog'>K-Sato's Blog</a></h5>
+            <p>This is my personal blog where I write about programming and my life.</p>
+            <p class = 'copy-right'>Copyright © 2018</p>
+          </div>
+          <div class="col-md-4 user-description">
+            <h5><a href = 'https://github.com/K-Sato1995'>K-Sato</a></h5>
+            <p>A silly boy aspiring to be a competent programmer.</p>
+          </div>
         </div>
-      </div>
 
-      <div class="author-stamp">
-        <p>Designed and coded by <a href = 'https://github.com/K-Sato1995'>K-Sato</a></p>
-      </div>
-<!--
-       <% if user_signed_in? %>
+
+       <!-- <% if user_signed_in? %>
         <%= link_to 'Admin Home', admin_posts_path, class:"btn btn-outline-info admin-btn" %>
        <% end %> -->
+    </div>
+    <footer>
+        <p class = 'author-stamp'>Designed and coded by <a href = 'https://github.com/K-Sato1995'>K-Sato</a></p>
     </footer>
   </body>
 </html>

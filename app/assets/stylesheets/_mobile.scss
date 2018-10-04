@@ -10,6 +10,7 @@
     width: 100%;
     background-color: #fff;
     border-bottom: solid 1px #efefef;
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.10);
   }
   #mobile-menu-icon {
     position: absolute;
@@ -53,8 +54,10 @@
       padding: 0 !important;
     }
     .box {
+      max-width: 370px;
       box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
       .card {
+        max-width: 370px;
         width: 100%;
         height: 100%;
       }
@@ -66,13 +69,11 @@
     }
   }
 /////////////////////////////////PAGINATION
-.pagination {
-  left: 0;
-  .page-link {
-  }
- }
+// .pagination {
+//  }
 /////////////////////////////////SHOW
   .show-container {
+    margin-top: 90px;
     padding: 0;
     background-color: #F9F9F9;
   }
@@ -80,7 +81,7 @@
  .article-container {
    margin: 0 auto;
    margin-top: 90px;
-   padding: 10px !important;
+   padding: 15px !important;
    width: 90%;
    background-color: #fff;
    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
@@ -142,11 +143,26 @@
     width: 70%;
   }
 /////////////////FOOOTER
+  .footer-container {display: none;}
+  .com { display: block;}
   footer {
-    margin-top: 100px;
-    .author-stamp {
-      display: none;
-    }
+  bottom: 0;
+  margin-top: 100px;
+  height: 60px;
+  width: 100%;
+  border-top: solid 1px #efefef;
+  background-color: #fff;
+  p {
+    font-size: 17px;
+    margin-right: 50px;
+    margin-top: 25px;
+    float: right;
+    color: #B8BEC1;
+    bottom: 0;
+    letter-spacing: 1px;
   }
-
+  a {
+    color: $theme-color;
+  }
+}
 }
