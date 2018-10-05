@@ -204,3 +204,15 @@
 .category-Rails:hover {
   @include category_name_hover($Rails)
 }
+
+
+//No Posts
+.no-posts {
+  margin: 0 auto;
+  margin-top: 20px;
+  text-align: center;
+}
+.penguin {
+  margin-top: 20px;
+  margin-bottom: -50px;
+}
