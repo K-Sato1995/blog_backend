@@ -23,8 +23,4 @@ class Post < ApplicationRecord
   def category_name
     self.category ? self.category.name: nil
   end
-
-  def self.category_search(category)
-    where('category_id LIKE ?', "%#{category.to_s}%")
-  end
 end

@@ -5,7 +5,7 @@ class PostsController < ApplicationController
     @recent_posts = Post.includes(:category).order(created_at: :DESC).limit(5)
 
     if params[:category]
-      @posts = Post.published.includes(:category).category_search(params[:category]).page(params[:page]).per(12).order(created_at: :desc)
+      @posts = Post.published.includes(:category).where(category_id: params[:category].to_i).page(params[:page]).per(12).order(created_at: :desc)
     else
       @posts = Post.published.includes(:category).search(params[:title]).page(params[:page]).per(12).order(created_at: :desc)
     end
