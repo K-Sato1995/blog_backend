@@ -40,7 +40,8 @@
 /////////////////////////Related Posts//////////////////////////////
 .related-post-column{
   margin-top: 60px;
-  border-bottom: solid 3px $theme-color;
+  padding-bottom: 10px;
+  border-bottom: solid 2px $theme-color;
   letter-spacing: 1px;
 }
 .related-posts {
@@ -52,7 +53,7 @@
   .related-posts-box {
     margin: 10px;
     margin-top: 25px;
-    margin-left: 25px;
+    margin-right: 25px;
     width: 350px;
     display: inline-block;
     .related-post-card{
