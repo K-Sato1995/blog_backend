@@ -25,20 +25,18 @@
   @extend .container;
   position: relative;
   height: 200px;
-  border-top: solid 1px $border-color;
   background-color: #fff;
+  // background-color: blue;
   margin: 0 auto!important;
   padding: 0 !important;
   width: 100% !important;
-  .description {
-    border: solid 1px;
-  }
   .blog-description {
     letter-spacing: 1px;
     margin-top: 40px;
-    margin-left: 30px;
     display: inline-block;
     vertical-align: top;
+    // background-color: red;
+    padding-left: 70px;
     p {
       font-size: 18px;
       color: #626262;
@@ -48,6 +46,9 @@
     }
   }
   .user-description {
+    @extend .blog-description;
+  }
+  .links {
     @extend .blog-description;
   }
 }
