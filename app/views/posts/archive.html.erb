@@ -1,0 +1,13 @@
+<%= render 'nav' %>
+<div class = "post-archive">
+  <div class="archive-container">
+    <h2>K-Sato's Blog Archive</h2>
+    <% @posts.each do |post| %>
+    <div class = "post">
+      <%= post.created_at.strftime('%b %d') %> -
+      <%= link_to post.title, post_path(post) %>
+    </div>
+    <% end %>
+  </div>
+</div>
+<%= render 'footer' %>
