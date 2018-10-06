@@ -74,7 +74,11 @@ p, blockquote, table, pre {
 }
 
 ul {
-  padding-left: 30px; }
+  padding-left: 30px;
+  li {
+    margin-top: 10px;
+  }
+}
 
 ol {
   padding-left: 30px; }
@@ -164,7 +168,7 @@ img {
 
 code, tt {
   margin: 3px;
-  padding: 4px;
+  padding: 1px 5px 1px 5px;
   white-space: nowrap;
   border: 1px solid #eaeaea;
   background-color: #f8f8f8;
