@@ -27,60 +27,74 @@
   }
 }
 
-.go-top {
-  position: absolute;
-  right: 120px;
-  border: solid 1px $border-color;
-  background-color: #E9EEF3;
-  padding: 0px 15px 0px 15px;
-  color: #fff;
-}
-
-
 /////////////////////////Related Posts//////////////////////////////
+.clearfix {
+  content: "";
+  clear: both;
+  display: table;
+}
 .related-post-column{
-  margin-top: 60px;
+  margin-top: 50px;
   padding-bottom: 10px;
   border-bottom: solid 2px $theme-color;
   letter-spacing: 1px;
 }
 .related-posts {
+  padding-bottom: 40px;
   text-align: center;
-  margin: 0 auto;
-  margin-bottom: 50px;
-  padding-bottom: 50px;
   border-bottom: solid 1px #E8E8E8;
+
   .related-posts-box {
-    margin: 10px;
+    border: solid 1px $border-color;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.10);
+    margin: 0 auto;
     margin-top: 25px;
-    margin-right: 25px;
-    width: 350px;
-    display: inline-block;
-    .related-post-card{
-      min-width: 350px;
+    max-height: 150px;
+    height: 100px;
+    width: 90%;
+    max-width: 800px;
+    .box-left {
+      float: left;
+      width: 25%;
+      height: 100%;
+      position: relative;
     }
+
+    .related-post-image{
+      height: 100%;
+      width: 100%;
+      opacity: 0.8;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      float: left;
+    }
+
+    .box-right {
+      background-color: #F9F9F9;
+      float: right;
+      padding-top: 30px;
+      width: 75%;
+      height: 100%;
+    }
+
     .related-post-title {
-        color: #21252A;
-        margin: 0;
-        padding: 0;
-        text-decoration: none;
+      color: #4B4B4B;
+      font-size: 20px;
+      letter-spacing: 1px;
+      text-decoration: none;
     }
     .related-post-title:hover {
       color: $p-color;
-    }
-    .related-post-intro {
-      color: #757575;
-      text-align: left;
-      font-size: 17px;
-    }
-    .related-post-image{
-      height: 180px;
-      width: 100%;
     }
   }
 }
 
 .related-posts-box:hover {
+   box-shadow: 0 15px 30px 0 rgba(0,0,0,0.11);
   .related-post-image {
     opacity: 0.6;
     transition: 0.5s;
