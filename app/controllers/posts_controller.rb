@@ -17,4 +17,10 @@ class PostsController < ApplicationController
     @post = Post.find(params[:id])
     @related_posts = @post.category.posts.where.not(id: @post.id).first(3)
   end
+
+  def archive
+    @posts = Post.all
+    @categories = Category.all
+    @recent_posts = Post.includes(:category).order(created_at: :DESC).limit(5)
+  end
 end
