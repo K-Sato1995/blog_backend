@@ -82,11 +82,6 @@ post_params	/Users/katsuki/Desktop/Rails/MyBlog/app/controllers/admin/posts_cont
 find_post	/Users/katsuki/Desktop/Rails/MyBlog/app/controllers/admin/posts_controller.rb	/^  def find_post$/;"	method	line:60	class:Admin
 setPreview	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/javascripts/form.js	/^\/\/ function setPreview(val){$/;"	function	line:2
 >>>>>>> production
-PostsHelper	/Users/katsuki/Desktop/Rails/MyBlog/app/helpers/posts_helper.rb	/^module PostsHelper$/;"	module	line:1
-posts_data	/Users/katsuki/Desktop/Rails/MyBlog/app/helpers/posts_helper.rb	/^  def posts_data$/;"	method	line:2	class:PostsHelper
-posts_status	/Users/katsuki/Desktop/Rails/MyBlog/app/helpers/posts_helper.rb	/^  def posts_status$/;"	method	line:8	class:PostsHelper
-chart_colors	/Users/katsuki/Desktop/Rails/MyBlog/app/helpers/posts_helper.rb	/^  def chart_colors$/;"	method	line:15	class:PostsHelper
-chart_colors2	/Users/katsuki/Desktop/Rails/MyBlog/app/helpers/posts_helper.rb	/^  def chart_colors2$/;"	method	line:19	class:PostsHelper
 Redcarpet	/Users/katsuki/Desktop/Rails/MyBlog/app/helpers/github_style_titles.rb	/^module Redcarpet::Render$/;"	module	line:2
 Custom	/Users/katsuki/Desktop/Rails/MyBlog/app/helpers/github_style_titles.rb	/^  class Custom < Base$/;"	class	line:3	class:Redcarpet
 header	/Users/katsuki/Desktop/Rails/MyBlog/app/helpers/github_style_titles.rb	/^    def header(title, level)$/;"	method	line:4	class:Redcarpet.Custom
@@ -99,158 +94,6 @@ header	/Users/katsuki/Desktop/Rails/MyBlog/config/initializers/redcarpet.rb	/^  
 Redcarpet	/Users/katsuki/Desktop/Rails/MyBlog/app/helpers/github_style_header.rb	/^module Redcarpet::Render$/;"	module	line:2
 Custom	/Users/katsuki/Desktop/Rails/MyBlog/app/helpers/github_style_header.rb	/^  class Custom < Base$/;"	class	line:3	class:Redcarpet
 header	/Users/katsuki/Desktop/Rails/MyBlog/app/helpers/github_style_header.rb	/^    def header(title, level)$/;"	method	line:4	class:Redcarpet.Custom
-ApplicationHelper	/Users/katsuki/Desktop/Rails/MyBlog/app/helpers/application_helper.rb	/^module ApplicationHelper$/;"	module	line:1
-HTMLwithPygments	/Users/katsuki/Desktop/Rails/MyBlog/app/helpers/application_helper.rb	/^  class HTMLwithPygments < Redcarpet::Render::HTML$/;"	class	line:2	class:ApplicationHelper
-block_code	/Users/katsuki/Desktop/Rails/MyBlog/app/helpers/application_helper.rb	/^    def block_code(code, language)$/;"	method	line:3	class:ApplicationHelper.HTMLwithPygments
-markdown	/Users/katsuki/Desktop/Rails/MyBlog/app/helpers/application_helper.rb	/^  def markdown(text)$/;"	method	line:11
-.post-context	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^.post-context {$/;"	function	line:1
-html, body	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^html, body {$/;"	function	line:2
-#wrapper	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^#wrapper {$/;"	function	line:5
-p	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^p {$/;"	function	line:15
-a	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^a {$/;"	function	line:20
-.fa-link	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^.fa-link {$/;"	function	line:24
-#wrapper	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^#wrapper {$/;"	function	line:28
-#wrapper > *:first-child	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^  #wrapper > *:first-child {$/;"	function	line:34
-#wrapper > *:last-child	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^  #wrapper > *:last-child {$/;"	function	line:36
-@media screen	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^@media screen {$/;"	function	line:39
-#wrapper	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^  #wrapper {$/;"	function	line:40
-h1, h2, h3, h4, h5, h6	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^h1, h2, h3, h4, h5, h6 {$/;"	function	line:42
-h1	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^h1 {$/;"	function	line:50
-h2	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^h2 {$/;"	function	line:54
-h3	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^h3 {$/;"	function	line:58
-h4	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^h4 {$/;"	function	line:61
-h5	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^h5 {$/;"	function	line:64
-h6	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^h6 {$/;"	function	line:67
-p, blockquote, table, pre	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^p, blockquote, table, pre {$/;"	function	line:71
-ul	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^ul {$/;"	function	line:76
-ol	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^ol {$/;"	function	line:79
-ol li ul:first-of-type	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^  ol li ul:first-of-type {$/;"	function	line:81
-hr	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^hr {$/;"	function	line:84
-#wrapper > h2:first-child	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^#wrapper > h2:first-child {$/;"	function	line:92
-#wrapper > h1:first-child	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^#wrapper > h1:first-child {$/;"	function	line:95
-#wrapper > h1:first-child + h2	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^  #wrapper > h1:first-child + h2 {$/;"	function	line:98
-#wrapper > h3:first-child, #wrapper > h4:first-child, #wrapper > h5:first-child, #wrapper > h6:first-child	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^#wrapper > h3:first-child, #wrapper > h4:first-child, #wrapper > h5:first-child, #wrapper > h6:first-child {$/;"	function	line:101
-a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {$/;"	function	line:105
-h1 + p, h2 + p, h3 + p, h4 + p, h5 + p, h6 + p, ul li > :first-child, ol li > :first-child	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^h1 + p, h2 + p, h3 + p, h4 + p, h5 + p, h6 + p, ul li > :first-child, ol li > :first-child {$/;"	function	line:109
-dl	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^dl {$/;"	function	line:112
-dl dt	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^  dl dt {$/;"	function	line:114
-dl dt:first-child	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^    dl dt:first-child {$/;"	function	line:120
-dl dt > :first-child	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^    dl dt > :first-child {$/;"	function	line:122
-dl dt > :last-child	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^    dl dt > :last-child {$/;"	function	line:124
-dl dd	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^  dl dd {$/;"	function	line:126
-dl dd > :first-child	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^    dl dd > :first-child {$/;"	function	line:129
-dl dd > :last-child	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^    dl dd > :last-child {$/;"	function	line:131
-blockquote	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^blockquote {$/;"	function	line:134
-blockquote > :first-child	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^  blockquote > :first-child {$/;"	function	line:138
-blockquote > :last-child	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^  blockquote > :last-child {$/;"	function	line:140
-table	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^table {$/;"	function	line:143
-table th	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^  table th {$/;"	function	line:148
-table td	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^  table td {$/;"	function	line:152
-table tr	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^  table tr {$/;"	function	line:155
-table tr:nth-child(2n)	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^    table tr:nth-child(2n) {$/;"	function	line:158
-img	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^img {$/;"	function	line:162
-code, tt	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^code, tt {$/;"	function	line:165
-pre > code	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^pre > code {$/;"	function	line:176
-.highlight pre	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^.highlight pre {$/;"	function	line:183
-pre	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^pre {$/;"	function	line:192
-pre code, pre tt	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^  pre code, pre tt {$/;"	function	line:201
-.poetry pre	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^.poetry pre {$/;"	function	line:205
-.poetry pre code	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^  .poetry pre code {$/;"	function	line:212
-sup, sub, a.footnote	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^sup, sub, a.footnote {$/;"	function	line:222
-sub	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^sub {$/;"	function	line:229
-@media print	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^@media print {$/;"	function	line:233
-body	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^  body {$/;"	function	line:234
-img, pre, blockquote, table, figure	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^  img, pre, blockquote, table, figure {$/;"	function	line:237
-#wrapper	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^  #wrapper {$/;"	function	line:240
-pre code	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^  pre code {$/;"	function	line:244
-@media screen	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^@media screen {$/;"	function	line:246
-body.inverted	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^  body.inverted {$/;"	function	line:247
-.inverted #wrapper, .inverted hr, .inverted p, .inverted td, .inverted li, .inverted h1, .inverted h2, .inverted h3, .inverted h4, .inverted h5, .inverted h6, .inverted th, .inverted .math, .inverted caption, .inverted dd, .inverted dt, .inverted blockquote	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^  .inverted #wrapper, .inverted hr, .inverted p, .inverted td, .inverted li, .inverted h1, .inverted h2, .inverted h3, .inverted h4, .inverted h5, .inverted h6, .inverted th, .inverted .math, .inverted caption, .inverted dd, .inverted dt, .inverted blockquote {$/;"	function	line:252
-.inverted td, .inverted th	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^  .inverted td, .inverted th {$/;"	function	line:256
-.inverted pre, .inverted code, .inverted tt	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^  .inverted pre, .inverted code, .inverted tt {$/;"	function	line:258
-.inverted h2	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^  .inverted h2 {$/;"	function	line:261
-.inverted hr	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^  .inverted hr {$/;"	function	line:263
-::selection	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^  ::selection {$/;"	function	line:267
-h1::selection	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^  h1::selection {$/;"	function	line:270
-h2::selection	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^  h2::selection {$/;"	function	line:273
-h3::selection, h4::selection, h5::selection, h6::selection, li::selection, ol::selection	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^  h3::selection, h4::selection, h5::selection, h6::selection, li::selection, ol::selection {$/;"	function	line:276
-code::selection	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^  code::selection {$/;"	function	line:279
-code span::selection	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^  code span::selection {$/;"	function	line:282
-a::selection	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^  a::selection {$/;"	function	line:286
-.inverted a::selection	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^  .inverted a::selection {$/;"	function	line:289
-td::selection, th::selection, caption::selection	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^  td::selection, th::selection, caption::selection {$/;"	function	line:292
-.inverted	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^  .inverted {$/;"	function	line:295
-.inverted #wrapper	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^    .inverted #wrapper {$/;"	function	line:299
-.inverted a	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^    .inverted a {$/;"	function	line:302
-.highlight	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^    .highlight {$/;"	function	line:306
-.hll	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .hll { background-color: #ffffcc }$/;"	function	line:307
-.c	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .c { color: #999988; font-style: italic } \/* Comment *\/$/;"	function	line:308
-.err	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .err { color: #a61717; background-color: #e3d2d2 } \/* Error *\/$/;"	function	line:309
-.k	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .k { color: #000000; font-weight: bold } \/* Keyword *\/$/;"	function	line:310
-.o	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .o { color: #000000; font-weight: bold } \/* Operator *\/$/;"	function	line:311
-.cm	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .cm { color: #999988; font-style: italic } \/* Comment.Multiline *\/$/;"	function	line:312
-.cp	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .cp { color: #999999; font-weight: bold; font-style: italic } \/* Comment.Preproc *\/$/;"	function	line:313
-.c1	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .c1 { color: #999988; font-style: italic } \/* Comment.Single *\/$/;"	function	line:314
-.cs	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .cs { color: #999999; font-weight: bold; font-style: italic } \/* Comment.Special *\/$/;"	function	line:315
-.gd	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .gd { color: #000000; background-color: #ffdddd } \/* Generic.Deleted *\/$/;"	function	line:316
-.ge	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .ge { color: #000000; font-style: italic } \/* Generic.Emph *\/$/;"	function	line:317
-.gr	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .gr { color: #aa0000 } \/* Generic.Error *\/$/;"	function	line:318
-.gh	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .gh { color: #999999 } \/* Generic.Heading *\/$/;"	function	line:319
-.gi	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .gi { color: #000000; background-color: #ddffdd } \/* Generic.Inserted *\/$/;"	function	line:320
-.go	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .go { color: #888888 } \/* Generic.Output *\/$/;"	function	line:321
-.gp	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .gp { color: #555555 } \/* Generic.Prompt *\/$/;"	function	line:322
-.gs	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .gs { font-weight: bold } \/* Generic.Strong *\/$/;"	function	line:323
-.gu	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .gu { color: #aaaaaa } \/* Generic.Subheading *\/$/;"	function	line:324
-.gt	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .gt { color: #aa0000 } \/* Generic.Traceback *\/$/;"	function	line:325
-.kc	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .kc { color: #000000; font-weight: bold } \/* Keyword.Constant *\/$/;"	function	line:326
-.kd	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .kd { color: #A642C1; } \/* Keyword.Declaration *\/$/;"	function	line:327
-.kn	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .kn { color: #A642C1; } \/* Keyword.Namespace *\/$/;"	function	line:328
-.kp	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .kp { color: #000000; font-weight: bold } \/* Keyword.Pseudo *\/$/;"	function	line:329
-.kr	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .kr { color: #A642C1;  } \/* Keyword.Reserved *\/$/;"	function	line:330
-.kt	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .kt { color: #445588; font-weight: bold } \/* Keyword.Type *\/$/;"	function	line:331
-.m	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .m { color: #009999 } \/* Literal.Number *\/$/;"	function	line:332
-.s	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .s { color: #d01040 } \/* Literal.String *\/$/;"	function	line:333
-.na	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .na { color: #008080 } \/* Name.Attribute *\/$/;"	function	line:334
-.nb	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .nb { color: #0086B3 } \/* Name.Builtin *\/$/;"	function	line:335
-.nc	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .nc { color: #445588; font-weight: bold } \/* Name.Class *\/$/;"	function	line:336
-.no	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .no { color: #008080 } \/* Name.Constant *\/$/;"	function	line:337
-.nd	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .nd { color: #3c5d5d; font-weight: bold } \/* Name.Decorator *\/$/;"	function	line:338
-.ni	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .ni { color: #800080 } \/* Name.Entity *\/$/;"	function	line:339
-.ne	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .ne { color: #990000; font-weight: bold } \/* Name.Exception *\/$/;"	function	line:340
-.nf	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .nf { color: #990000; font-weight: bold } \/* Name.Function *\/$/;"	function	line:341
-.nl	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .nl { color: #990000; font-weight: bold } \/* Name.Label *\/$/;"	function	line:342
-.nn	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .nn { color: #555555 } \/* Name.Namespace *\/$/;"	function	line:343
-.nt	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .nt { color: #000080 } \/* Name.Tag *\/$/;"	function	line:344
-.nx	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .nx { color: #000080;}$/;"	function	line:345
-.nv	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .nv { color: #008080 } \/* Name.Variable *\/$/;"	function	line:346
-.ow	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .ow { color: #000000; font-weight: bold } \/* Operator.Word *\/$/;"	function	line:347
-.w	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .w { color: #bbbbbb } \/* Text.Whitespace *\/$/;"	function	line:348
-.mf	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .mf { color: #009999 } \/* Literal.Number.Float *\/$/;"	function	line:349
-.mh	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .mh { color: #009999 } \/* Literal.Number.Hex *\/$/;"	function	line:350
-.mi	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .mi { color: #009999 } \/* Literal.Number.Integer *\/$/;"	function	line:351
-.mo	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .mo { color: #009999 } \/* Literal.Number.Oct *\/$/;"	function	line:352
-.sb	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .sb { color: #d01040 } \/* Literal.String.Backtick *\/$/;"	function	line:353
-.sc	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .sc { color: #d01040 } \/* Literal.String.Char *\/$/;"	function	line:354
-.sd	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .sd { color: #d01040 } \/* Literal.String.Doc *\/$/;"	function	line:355
-.s2	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .s2 { color: #d01040 } \/* Literal.String.Double *\/$/;"	function	line:356
-.se	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .se { color: #d01040 } \/* Literal.String.Escape *\/$/;"	function	line:357
-.sh	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .sh { color: #d01040 } \/* Literal.String.Heredoc *\/$/;"	function	line:358
-.si	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .si { color: #d01040 } \/* Literal.String.Interpol *\/$/;"	function	line:359
-.sx	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .sx { color: #d01040 } \/* Literal.String.Other *\/$/;"	function	line:360
-.sr	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .sr { color: #009926 } \/* Literal.String.Regex *\/$/;"	function	line:361
-.s1	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .s1 { color: #d01040 } \/* Literal.String.Single *\/$/;"	function	line:362
-.ss	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .ss { color: #990073 } \/* Literal.String.Symbol *\/$/;"	function	line:363
-.bp	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .bp { color: #999999 } \/* Name.Builtin.Pseudo *\/$/;"	function	line:364
-.vc	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .vc { color: #008080 } \/* Name.Variable.Class *\/$/;"	function	line:365
-.vg	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .vg { color: #008080 } \/* Name.Variable.Global *\/$/;"	function	line:366
-.vi	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .vi { color: #008080 } \/* Name.Variable.Instance *\/$/;"	function	line:367
-.il	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .il { color: #009999 } \/* Literal.Number.Integer.Long *\/$/;"	function	line:368
-.type-csharp .highlight .k, .type-csharp .highlight .kt	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^.type-csharp .highlight .k, .type-csharp .highlight .kt {$/;"	function	line:371
-.type-csharp .highlight .nf	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^.type-csharp .highlight .nf {$/;"	function	line:373
-.type-csharp .highlight .nc	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^.type-csharp .highlight .nc {$/;"	function	line:376
-.type-csharp .highlight .nn	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^.type-csharp .highlight .nn {$/;"	function	line:378
-.type-csharp .highlight .s, .type-csharp .highlight .sc	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^.type-csharp .highlight .s, .type-csharp .highlight .sc {$/;"	function	line:380
-body.dark #wrapper	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^body.dark #wrapper {$/;"	function	line:383
 @mixin c-btn($color)	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_content_header.scss	/^@mixin c-btn($color){$/;"	function	line:1
 .clearfix::after	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_content_header.scss	/^.clearfix::after {$/;"	function	line:10
 .content-header	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_content_header.scss	/^.content-header {$/;"	function	line:16
@@ -298,24 +141,6 @@ li	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_admin.scss	/^    
 .sidebar-nav>.sidebar-brand	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_admin.scss	/^.sidebar-nav>.sidebar-brand {$/;"	function	line:125
 .sidebar-nav>.sidebar-brand a	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_admin.scss	/^.sidebar-nav>.sidebar-brand a {$/;"	function	line:131
 .sidebar-nav>.sidebar-brand a:hover	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_admin.scss	/^.sidebar-nav>.sidebar-brand a:hover {$/;"	function	line:135
-p-color	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_global.scss	/^$p-color: #E0E0E0;$/;"	function	line:1
-p2-color	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_global.scss	/^$p2-color: #EEEEEE;$/;"	function	line:2
-h-color	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_global.scss	/^$h-color: #444;$/;"	function	line:3
-a-color	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_global.scss	/^$a-color: #666;$/;"	function	line:4
-Ruby	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_global.scss	/^$Ruby: #C12214;$/;"	function	line:5
-Go	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_global.scss	/^$Go: #74CDDD;$/;"	function	line:6
-Javascript	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_global.scss	/^$Javascript:#F5DE1A;$/;"	function	line:7
-React	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_global.scss	/^$React:#06D9FE;$/;"	function	line:8
-Life	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_global.scss	/^$Life:#80F222;$/;"	function	line:9
-Rails	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_global.scss	/^$Rails:#CC0001;$/;"	function	line:10
-theme-color	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_global.scss	/^$theme-color: #20AD9F;$/;"	function	line:11
-border-color	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_global.scss	/^$border-color :#efefef;$/;"	function	line:12
-body	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_global.scss	/^body{$/;"	function	line:13
-h1, h2, h3, h4, h5	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_global.scss	/^h1, h2, h3, h4, h5 {$/;"	function	line:17
-p	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_global.scss	/^p {$/;"	function	line:20
-a	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_global.scss	/^a {$/;"	function	line:23
-a:hover	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_global.scss	/^a:hover {$/;"	function	line:26
-.container	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_global.scss	/^.container {$/;"	function	line:29
 .navbar	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_navbar.scss	/^.navbar {$/;"	function	line:3
 .navbrand	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_navbar.scss	/^  .navbrand {$/;"	function	line:9
 .nav-list	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_navbar.scss	/^  .nav-list {$/;"	function	line:18
@@ -383,23 +208,6 @@ p	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_footer.scss	/^    
 .author-stamp	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_footer.scss	/^.author-stamp {$/;"	function	line:54
 .admin-btn	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_footer.scss	/^.admin-btn {$/;"	function	line:58
 .admin-footer	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_footer.scss	/^.admin-footer {$/;"	function	line:62
-.show-container	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_show.scss	/^.show-container {$/;"	function	line:1
-.show-image	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_show.scss	/^  .show-image {$/;"	function	line:5
-.show-post-title	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_show.scss	/^  .show-post-title {$/;"	function	line:9
-.post-created-on	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_show.scss	/^  .post-created-on {$/;"	function	line:14
-.article-container	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_show.scss	/^  .article-container {$/;"	function	line:20
-.post-context	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_show.scss	/^  .post-context {$/;"	function	line:25
-.go-top	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_show.scss	/^.go-top {$/;"	function	line:30
-.related-post-column	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_show.scss	/^.related-post-column{$/;"	function	line:41
-.related-posts	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_show.scss	/^.related-posts {$/;"	function	line:47
-.related-posts-box	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_show.scss	/^  .related-posts-box {$/;"	function	line:53
-.related-post-card	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_show.scss	/^    .related-post-card{$/;"	function	line:59
-.related-post-title	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_show.scss	/^    .related-post-title {$/;"	function	line:62
-.related-post-title:hover	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_show.scss	/^    .related-post-title:hover {$/;"	function	line:68
-.related-post-intro	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_show.scss	/^    .related-post-intro {$/;"	function	line:71
-.related-post-image	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_show.scss	/^    .related-post-image{$/;"	function	line:76
-.related-posts-box:hover	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_show.scss	/^.related-posts-box:hover {$/;"	function	line:83
-.related-post-image	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_show.scss	/^  .related-post-image {$/;"	function	line:84
 PostsController	/Users/katsuki/Desktop/Rails/MyBlog/app/controllers/posts_controller.rb	/^class PostsController < ApplicationController$/;"	class	line:1
 index	/Users/katsuki/Desktop/Rails/MyBlog/app/controllers/posts_controller.rb	/^  def index$/;"	method	line:3	class:PostsController
 show	/Users/katsuki/Desktop/Rails/MyBlog/app/controllers/posts_controller.rb	/^  def show$/;"	method	line:14	class:PostsController
@@ -407,6 +215,183 @@ Post	/Users/katsuki/Desktop/Rails/MyBlog/app/models/post.rb	/^class Post < Appli
 search	/Users/katsuki/Desktop/Rails/MyBlog/app/models/post.rb	/^  def self.search(title)$/;"	singleton method	line:11	class:Post
 category_name=	/Users/katsuki/Desktop/Rails/MyBlog/app/models/post.rb	/^  def category_name=(name)$/;"	method	line:19	class:Post
 category_name	/Users/katsuki/Desktop/Rails/MyBlog/app/models/post.rb	/^  def category_name$/;"	method	line:23	class:Post
+.post-context	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^.post-context {$/;"	function	line:1
+html, body	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^html, body {$/;"	function	line:2
+#wrapper	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^#wrapper {$/;"	function	line:5
+p	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^p {$/;"	function	line:15
+a	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^a {$/;"	function	line:20
+.fa-link	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^.fa-link {$/;"	function	line:24
+#wrapper	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^#wrapper {$/;"	function	line:28
+#wrapper > *:first-child	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^  #wrapper > *:first-child {$/;"	function	line:34
+#wrapper > *:last-child	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^  #wrapper > *:last-child {$/;"	function	line:36
+@media screen	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^@media screen {$/;"	function	line:39
+#wrapper	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^  #wrapper {$/;"	function	line:40
+h1, h2, h3, h4, h5, h6	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^h1, h2, h3, h4, h5, h6 {$/;"	function	line:42
+h1	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^h1 {$/;"	function	line:50
+h2	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^h2 {$/;"	function	line:54
+h3	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^h3 {$/;"	function	line:58
+h4	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^h4 {$/;"	function	line:61
+h5	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^h5 {$/;"	function	line:64
+h6	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^h6 {$/;"	function	line:67
+p, blockquote, table, pre	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^p, blockquote, table, pre {$/;"	function	line:71
+ul	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^ul {$/;"	function	line:76
+li	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^  li {$/;"	function	line:78
+ol	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^ol {$/;"	function	line:83
+ol li ul:first-of-type	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^  ol li ul:first-of-type {$/;"	function	line:85
+hr	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^hr {$/;"	function	line:88
+#wrapper > h2:first-child	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^#wrapper > h2:first-child {$/;"	function	line:96
+#wrapper > h1:first-child	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^#wrapper > h1:first-child {$/;"	function	line:99
+#wrapper > h1:first-child + h2	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^  #wrapper > h1:first-child + h2 {$/;"	function	line:102
+#wrapper > h3:first-child, #wrapper > h4:first-child, #wrapper > h5:first-child, #wrapper > h6:first-child	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^#wrapper > h3:first-child, #wrapper > h4:first-child, #wrapper > h5:first-child, #wrapper > h6:first-child {$/;"	function	line:105
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {$/;"	function	line:109
+h1 + p, h2 + p, h3 + p, h4 + p, h5 + p, h6 + p, ul li > :first-child, ol li > :first-child	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^h1 + p, h2 + p, h3 + p, h4 + p, h5 + p, h6 + p, ul li > :first-child, ol li > :first-child {$/;"	function	line:113
+dl	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^dl {$/;"	function	line:116
+dl dt	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^  dl dt {$/;"	function	line:118
+dl dt:first-child	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^    dl dt:first-child {$/;"	function	line:124
+dl dt > :first-child	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^    dl dt > :first-child {$/;"	function	line:126
+dl dt > :last-child	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^    dl dt > :last-child {$/;"	function	line:128
+dl dd	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^  dl dd {$/;"	function	line:130
+dl dd > :first-child	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^    dl dd > :first-child {$/;"	function	line:133
+dl dd > :last-child	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^    dl dd > :last-child {$/;"	function	line:135
+blockquote	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^blockquote {$/;"	function	line:138
+blockquote > :first-child	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^  blockquote > :first-child {$/;"	function	line:142
+blockquote > :last-child	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^  blockquote > :last-child {$/;"	function	line:144
+table	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^table {$/;"	function	line:147
+table th	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^  table th {$/;"	function	line:152
+table td	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^  table td {$/;"	function	line:156
+table tr	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^  table tr {$/;"	function	line:159
+table tr:nth-child(2n)	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^    table tr:nth-child(2n) {$/;"	function	line:162
+img	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^img {$/;"	function	line:166
+code, tt	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^code, tt {$/;"	function	line:169
+pre > code	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^pre > code {$/;"	function	line:180
+.highlight pre	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^.highlight pre {$/;"	function	line:187
+pre	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^pre {$/;"	function	line:196
+pre code, pre tt	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^  pre code, pre tt {$/;"	function	line:205
+.poetry pre	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^.poetry pre {$/;"	function	line:209
+.poetry pre code	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^  .poetry pre code {$/;"	function	line:216
+sup, sub, a.footnote	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^sup, sub, a.footnote {$/;"	function	line:226
+sub	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^sub {$/;"	function	line:233
+@media print	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^@media print {$/;"	function	line:237
+body	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^  body {$/;"	function	line:238
+img, pre, blockquote, table, figure	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^  img, pre, blockquote, table, figure {$/;"	function	line:241
+#wrapper	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^  #wrapper {$/;"	function	line:244
+pre code	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^  pre code {$/;"	function	line:248
+@media screen	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^@media screen {$/;"	function	line:250
+body.inverted	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^  body.inverted {$/;"	function	line:251
+.inverted #wrapper, .inverted hr, .inverted p, .inverted td, .inverted li, .inverted h1, .inverted h2, .inverted h3, .inverted h4, .inverted h5, .inverted h6, .inverted th, .inverted .math, .inverted caption, .inverted dd, .inverted dt, .inverted blockquote	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^  .inverted #wrapper, .inverted hr, .inverted p, .inverted td, .inverted li, .inverted h1, .inverted h2, .inverted h3, .inverted h4, .inverted h5, .inverted h6, .inverted th, .inverted .math, .inverted caption, .inverted dd, .inverted dt, .inverted blockquote {$/;"	function	line:256
+.inverted td, .inverted th	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^  .inverted td, .inverted th {$/;"	function	line:260
+.inverted pre, .inverted code, .inverted tt	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^  .inverted pre, .inverted code, .inverted tt {$/;"	function	line:262
+.inverted h2	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^  .inverted h2 {$/;"	function	line:265
+.inverted hr	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^  .inverted hr {$/;"	function	line:267
+::selection	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^  ::selection {$/;"	function	line:271
+h1::selection	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^  h1::selection {$/;"	function	line:274
+h2::selection	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^  h2::selection {$/;"	function	line:277
+h3::selection, h4::selection, h5::selection, h6::selection, li::selection, ol::selection	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^  h3::selection, h4::selection, h5::selection, h6::selection, li::selection, ol::selection {$/;"	function	line:280
+code::selection	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^  code::selection {$/;"	function	line:283
+code span::selection	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^  code span::selection {$/;"	function	line:286
+a::selection	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^  a::selection {$/;"	function	line:290
+.inverted a::selection	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^  .inverted a::selection {$/;"	function	line:293
+td::selection, th::selection, caption::selection	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^  td::selection, th::selection, caption::selection {$/;"	function	line:296
+.inverted	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^  .inverted {$/;"	function	line:299
+.inverted #wrapper	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^    .inverted #wrapper {$/;"	function	line:303
+.inverted a	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^    .inverted a {$/;"	function	line:306
+.highlight	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^    .highlight {$/;"	function	line:310
+.hll	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .hll { background-color: #ffffcc }$/;"	function	line:311
+.c	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .c { color: #999988; font-style: italic } \/* Comment *\/$/;"	function	line:312
+.err	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .err { color: #a61717; background-color: #e3d2d2 } \/* Error *\/$/;"	function	line:313
+.k	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .k { color: #000000; font-weight: bold } \/* Keyword *\/$/;"	function	line:314
+.o	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .o { color: #000000; font-weight: bold } \/* Operator *\/$/;"	function	line:315
+.cm	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .cm { color: #999988; font-style: italic } \/* Comment.Multiline *\/$/;"	function	line:316
+.cp	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .cp { color: #999999; font-weight: bold; font-style: italic } \/* Comment.Preproc *\/$/;"	function	line:317
+.c1	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .c1 { color: #999988; font-style: italic } \/* Comment.Single *\/$/;"	function	line:318
+.cs	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .cs { color: #999999; font-weight: bold; font-style: italic } \/* Comment.Special *\/$/;"	function	line:319
+.gd	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .gd { color: #000000; background-color: #ffdddd } \/* Generic.Deleted *\/$/;"	function	line:320
+.ge	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .ge { color: #000000; font-style: italic } \/* Generic.Emph *\/$/;"	function	line:321
+.gr	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .gr { color: #aa0000 } \/* Generic.Error *\/$/;"	function	line:322
+.gh	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .gh { color: #999999 } \/* Generic.Heading *\/$/;"	function	line:323
+.gi	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .gi { color: #000000; background-color: #ddffdd } \/* Generic.Inserted *\/$/;"	function	line:324
+.go	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .go { color: #888888 } \/* Generic.Output *\/$/;"	function	line:325
+.gp	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .gp { color: #555555 } \/* Generic.Prompt *\/$/;"	function	line:326
+.gs	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .gs { font-weight: bold } \/* Generic.Strong *\/$/;"	function	line:327
+.gu	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .gu { color: #aaaaaa } \/* Generic.Subheading *\/$/;"	function	line:328
+.gt	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .gt { color: #aa0000 } \/* Generic.Traceback *\/$/;"	function	line:329
+.kc	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .kc { color: #000000; font-weight: bold } \/* Keyword.Constant *\/$/;"	function	line:330
+.kd	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .kd { color: #A642C1; } \/* Keyword.Declaration *\/$/;"	function	line:331
+.kn	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .kn { color: #A642C1; } \/* Keyword.Namespace *\/$/;"	function	line:332
+.kp	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .kp { color: #000000; font-weight: bold } \/* Keyword.Pseudo *\/$/;"	function	line:333
+.kr	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .kr { color: #A642C1;  } \/* Keyword.Reserved *\/$/;"	function	line:334
+.kt	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .kt { color: #445588; font-weight: bold } \/* Keyword.Type *\/$/;"	function	line:335
+.m	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .m { color: #009999 } \/* Literal.Number *\/$/;"	function	line:336
+.s	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .s { color: #d01040 } \/* Literal.String *\/$/;"	function	line:337
+.na	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .na { color: #008080 } \/* Name.Attribute *\/$/;"	function	line:338
+.nb	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .nb { color: #0086B3 } \/* Name.Builtin *\/$/;"	function	line:339
+.nc	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .nc { color: #445588; font-weight: bold } \/* Name.Class *\/$/;"	function	line:340
+.no	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .no { color: #008080 } \/* Name.Constant *\/$/;"	function	line:341
+.nd	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .nd { color: #3c5d5d; font-weight: bold } \/* Name.Decorator *\/$/;"	function	line:342
+.ni	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .ni { color: #800080 } \/* Name.Entity *\/$/;"	function	line:343
+.ne	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .ne { color: #990000; font-weight: bold } \/* Name.Exception *\/$/;"	function	line:344
+.nf	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .nf { color: #990000; font-weight: bold } \/* Name.Function *\/$/;"	function	line:345
+.nl	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .nl { color: #990000; font-weight: bold } \/* Name.Label *\/$/;"	function	line:346
+.nn	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .nn { color: #555555 } \/* Name.Namespace *\/$/;"	function	line:347
+.nt	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .nt { color: #000080 } \/* Name.Tag *\/$/;"	function	line:348
+.nx	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .nx { color: #000080;}$/;"	function	line:349
+.nv	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .nv { color: #008080 } \/* Name.Variable *\/$/;"	function	line:350
+.ow	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .ow { color: #000000; font-weight: bold } \/* Operator.Word *\/$/;"	function	line:351
+.w	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .w { color: #bbbbbb } \/* Text.Whitespace *\/$/;"	function	line:352
+.mf	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .mf { color: #009999 } \/* Literal.Number.Float *\/$/;"	function	line:353
+.mh	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .mh { color: #009999 } \/* Literal.Number.Hex *\/$/;"	function	line:354
+.mi	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .mi { color: #009999 } \/* Literal.Number.Integer *\/$/;"	function	line:355
+.mo	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .mo { color: #009999 } \/* Literal.Number.Oct *\/$/;"	function	line:356
+.sb	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .sb { color: #d01040 } \/* Literal.String.Backtick *\/$/;"	function	line:357
+.sc	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .sc { color: #d01040 } \/* Literal.String.Char *\/$/;"	function	line:358
+.sd	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .sd { color: #d01040 } \/* Literal.String.Doc *\/$/;"	function	line:359
+.s2	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .s2 { color: #d01040 } \/* Literal.String.Double *\/$/;"	function	line:360
+.se	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .se { color: #d01040 } \/* Literal.String.Escape *\/$/;"	function	line:361
+.sh	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .sh { color: #d01040 } \/* Literal.String.Heredoc *\/$/;"	function	line:362
+.si	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .si { color: #d01040 } \/* Literal.String.Interpol *\/$/;"	function	line:363
+.sx	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .sx { color: #d01040 } \/* Literal.String.Other *\/$/;"	function	line:364
+.sr	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .sr { color: #009926 } \/* Literal.String.Regex *\/$/;"	function	line:365
+.s1	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .s1 { color: #d01040 } \/* Literal.String.Single *\/$/;"	function	line:366
+.ss	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .ss { color: #990073 } \/* Literal.String.Symbol *\/$/;"	function	line:367
+.bp	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .bp { color: #999999 } \/* Name.Builtin.Pseudo *\/$/;"	function	line:368
+.vc	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .vc { color: #008080 } \/* Name.Variable.Class *\/$/;"	function	line:369
+.vg	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .vg { color: #008080 } \/* Name.Variable.Global *\/$/;"	function	line:370
+.vi	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .vi { color: #008080 } \/* Name.Variable.Instance *\/$/;"	function	line:371
+.il	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^        .il { color: #009999 } \/* Literal.Number.Integer.Long *\/$/;"	function	line:372
+.type-csharp .highlight .k, .type-csharp .highlight .kt	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^.type-csharp .highlight .k, .type-csharp .highlight .kt {$/;"	function	line:375
+.type-csharp .highlight .nf	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^.type-csharp .highlight .nf {$/;"	function	line:377
+.type-csharp .highlight .nc	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^.type-csharp .highlight .nc {$/;"	function	line:380
+.type-csharp .highlight .nn	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^.type-csharp .highlight .nn {$/;"	function	line:382
+.type-csharp .highlight .s, .type-csharp .highlight .sc	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^.type-csharp .highlight .s, .type-csharp .highlight .sc {$/;"	function	line:384
+body.dark #wrapper	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_highlight.scss	/^body.dark #wrapper {$/;"	function	line:387
+PostsHelper	/Users/katsuki/Desktop/Rails/MyBlog/app/helpers/posts_helper.rb	/^module PostsHelper$/;"	module	line:1
+posts_data	/Users/katsuki/Desktop/Rails/MyBlog/app/helpers/posts_helper.rb	/^  def posts_data$/;"	method	line:2	class:PostsHelper
+posts_status	/Users/katsuki/Desktop/Rails/MyBlog/app/helpers/posts_helper.rb	/^  def posts_status$/;"	method	line:8	class:PostsHelper
+chart_colors	/Users/katsuki/Desktop/Rails/MyBlog/app/helpers/posts_helper.rb	/^  def chart_colors$/;"	method	line:15	class:PostsHelper
+chart_colors2	/Users/katsuki/Desktop/Rails/MyBlog/app/helpers/posts_helper.rb	/^  def chart_colors2$/;"	method	line:19	class:PostsHelper
+ApplicationHelper	/Users/katsuki/Desktop/Rails/MyBlog/app/helpers/application_helper.rb	/^module ApplicationHelper$/;"	module	line:1
+HTMLwithPygments	/Users/katsuki/Desktop/Rails/MyBlog/app/helpers/application_helper.rb	/^  class HTMLwithPygments < Redcarpet::Render::HTML$/;"	class	line:2	class:ApplicationHelper
+block_code	/Users/katsuki/Desktop/Rails/MyBlog/app/helpers/application_helper.rb	/^    def block_code(code, language)$/;"	method	line:3	class:ApplicationHelper.HTMLwithPygments
+markdown	/Users/katsuki/Desktop/Rails/MyBlog/app/helpers/application_helper.rb	/^  def markdown(text)$/;"	method	line:11
+p-color	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_global.scss	/^$p-color: #E0E0E0;$/;"	function	line:1
+p2-color	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_global.scss	/^$p2-color: #EEEEEE;$/;"	function	line:2
+h-color	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_global.scss	/^$h-color: #444;$/;"	function	line:3
+a-color	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_global.scss	/^$a-color: #666;$/;"	function	line:4
+Ruby	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_global.scss	/^$Ruby: #C12214;$/;"	function	line:5
+Go	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_global.scss	/^$Go: #74CDDD;$/;"	function	line:6
+Javascript	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_global.scss	/^$Javascript:#F5DE1A;$/;"	function	line:7
+React	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_global.scss	/^$React:#06D9FE;$/;"	function	line:8
+Life	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_global.scss	/^$Life:#80F222;$/;"	function	line:9
+Rails	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_global.scss	/^$Rails:#CC0001;$/;"	function	line:10
+Others	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_global.scss	/^$Others: #CDCDCD;$/;"	function	line:11
+theme-color	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_global.scss	/^$theme-color: #20AD9F;$/;"	function	line:12
+border-color	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_global.scss	/^$border-color :#efefef;$/;"	function	line:13
+body	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_global.scss	/^body{$/;"	function	line:14
+h1, h2, h3, h4, h5	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_global.scss	/^h1, h2, h3, h4, h5 {$/;"	function	line:19
+p	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_global.scss	/^p {$/;"	function	line:22
+a	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_global.scss	/^a {$/;"	function	line:25
+a:hover	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_global.scss	/^a:hover {$/;"	function	line:28
+.container	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_global.scss	/^.container {$/;"	function	line:31
 @mixin category_btn($color)	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_post-index.scss	/^@mixin category_btn($color){$/;"	function	line:3
 @mixin category_name($color)	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_post-index.scss	/^@mixin category_name($color){$/;"	function	line:9
 @mixin category_name_hover($color)	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_post-index.scss	/^@mixin category_name_hover($color){$/;"	function	line:17
@@ -437,22 +422,43 @@ category_name	/Users/katsuki/Desktop/Rails/MyBlog/app/models/post.rb	/^  def cat
 .btn-Life:hover	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_post-index.scss	/^    .btn-Life:hover  {$/;"	function	line:122
 .btn-Rails	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_post-index.scss	/^    .btn-Rails {$/;"	function	line:126
 .btn-Rails:hover	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_post-index.scss	/^    .btn-Rails:hover {$/;"	function	line:130
-.card:hover	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_post-index.scss	/^.card:hover {$/;"	function	line:138
-img	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_post-index.scss	/^  img {$/;"	function	line:140
-.pagination	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_post-index.scss	/^.pagination {$/;"	function	line:147
-.page-link	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_post-index.scss	/^  .page-link {$/;"	function	line:151
-.page-item.active .page-link	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_post-index.scss	/^  .page-item.active .page-link {$/;"	function	line:154
-.category-Ruby	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_post-index.scss	/^.category-Ruby {$/;"	function	line:160
-.category-Ruby:hover	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_post-index.scss	/^.category-Ruby:hover {$/;"	function	line:164
-.category-Go	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_post-index.scss	/^.category-Go {$/;"	function	line:168
-.category-Go:hover	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_post-index.scss	/^.category-Go:hover {$/;"	function	line:172
-.category-Javascript	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_post-index.scss	/^.category-Javascript {$/;"	function	line:176
-.category-Javascript:hover	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_post-index.scss	/^.category-Javascript:hover {$/;"	function	line:180
-.category-React	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_post-index.scss	/^.category-React {$/;"	function	line:184
-.category-React:hover	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_post-index.scss	/^.category-React:hover {$/;"	function	line:188
-.category-Life	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_post-index.scss	/^.category-Life {$/;"	function	line:192
-.category-Life:hover	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_post-index.scss	/^.category-Life:hover {$/;"	function	line:196
-.category-Rails	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_post-index.scss	/^.category-Rails {$/;"	function	line:200
-.category-Rails:hover	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_post-index.scss	/^.category-Rails:hover {$/;"	function	line:204
-.no-posts	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_post-index.scss	/^.no-posts {$/;"	function	line:210
-.penguin	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_post-index.scss	/^.penguin {$/;"	function	line:215
+.btn-Others	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_post-index.scss	/^    .btn-Others {$/;"	function	line:134
+.btn-Others:hover	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_post-index.scss	/^    .btn-Others:hover {$/;"	function	line:138
+.card:hover	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_post-index.scss	/^.card:hover {$/;"	function	line:146
+img	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_post-index.scss	/^  img {$/;"	function	line:148
+.pagination	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_post-index.scss	/^.pagination {$/;"	function	line:155
+.page-link	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_post-index.scss	/^  .page-link {$/;"	function	line:159
+.page-item.active .page-link	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_post-index.scss	/^  .page-item.active .page-link {$/;"	function	line:162
+.category-Ruby	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_post-index.scss	/^.category-Ruby {$/;"	function	line:168
+.category-Ruby:hover	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_post-index.scss	/^.category-Ruby:hover {$/;"	function	line:172
+.category-Go	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_post-index.scss	/^.category-Go {$/;"	function	line:176
+.category-Go:hover	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_post-index.scss	/^.category-Go:hover {$/;"	function	line:180
+.category-Javascript	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_post-index.scss	/^.category-Javascript {$/;"	function	line:184
+.category-Javascript:hover	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_post-index.scss	/^.category-Javascript:hover {$/;"	function	line:188
+.category-React	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_post-index.scss	/^.category-React {$/;"	function	line:192
+.category-React:hover	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_post-index.scss	/^.category-React:hover {$/;"	function	line:196
+.category-Life	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_post-index.scss	/^.category-Life {$/;"	function	line:200
+.category-Life:hover	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_post-index.scss	/^.category-Life:hover {$/;"	function	line:204
+.category-Rails	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_post-index.scss	/^.category-Rails {$/;"	function	line:208
+.category-Rails:hover	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_post-index.scss	/^.category-Rails:hover {$/;"	function	line:212
+.category-Others	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_post-index.scss	/^.category-Others {$/;"	function	line:216
+.category-Others:hover	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_post-index.scss	/^.category-Others:hover {$/;"	function	line:220
+.no-posts	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_post-index.scss	/^.no-posts {$/;"	function	line:225
+.penguin	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_post-index.scss	/^.penguin {$/;"	function	line:230
+.show-container	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_show.scss	/^.show-container {$/;"	function	line:1
+.show-image	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_show.scss	/^  .show-image {$/;"	function	line:5
+.show-post-title	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_show.scss	/^  .show-post-title {$/;"	function	line:9
+.post-created-on	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_show.scss	/^  .post-created-on {$/;"	function	line:14
+.article-container	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_show.scss	/^  .article-container {$/;"	function	line:20
+.post-context	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_show.scss	/^  .post-context {$/;"	function	line:25
+.go-top	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_show.scss	/^.go-top {$/;"	function	line:30
+.related-post-column	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_show.scss	/^.related-post-column{$/;"	function	line:41
+.related-posts	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_show.scss	/^.related-posts {$/;"	function	line:47
+.related-posts-box	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_show.scss	/^  .related-posts-box {$/;"	function	line:53
+.related-post-card	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_show.scss	/^    .related-post-card{$/;"	function	line:59
+.related-post-title	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_show.scss	/^    .related-post-title {$/;"	function	line:62
+.related-post-title:hover	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_show.scss	/^    .related-post-title:hover {$/;"	function	line:68
+.related-post-intro	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_show.scss	/^    .related-post-intro {$/;"	function	line:71
+.related-post-image	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_show.scss	/^    .related-post-image{$/;"	function	line:76
+.related-posts-box:hover	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_show.scss	/^.related-posts-box:hover {$/;"	function	line:83
+.related-post-image	/Users/katsuki/Desktop/Rails/MyBlog/app/assets/stylesheets/_show.scss	/^  .related-post-image {$/;"	function	line:84

@@ -130,6 +130,14 @@
     .btn-Rails:hover {
       color: $Rails;
     }
+
+    .btn-Others {
+      @include category-btn($Others)
+    }
+
+    .btn-Others:hover {
+      color: $Others;
+    }
   }
  }
 }
@@ -205,6 +213,13 @@
   @include category_name_hover($Rails)
 }
 
+.category-Others {
+  @include category_name($Others)
+}
+
+.category-Others:hover {
+  @include category_name_hover($Others)
+}
 
 //No Posts
 .no-posts {
