@@ -15,6 +15,6 @@ class PostsController < ApplicationController
     @categories = Category.all
     @recent_posts = Post.includes(:category).order(created_at: :DESC).limit(5)
     @post = Post.find(params[:id])
-    @related_posts = @post.category.posts.where.not(id: @post.id).first(2)
+    @related_posts = @post.category.posts.where.not(id: @post.id).first(3)
   end
 end
