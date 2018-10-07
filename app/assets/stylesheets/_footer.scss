@@ -22,21 +22,20 @@
 }
 
 .footer-container {
-  @extend .container;
   position: relative;
   height: 200px;
   background-color: #fff;
-  // background-color: blue;
   margin: 0 auto!important;
   padding: 0 !important;
-  width: 100% !important;
+  width:75% !important;
   .blog-description {
     letter-spacing: 1px;
     margin-top: 40px;
     display: inline-block;
     vertical-align: top;
-    // background-color: red;
-    padding-left: 70px;
+    a {
+      color: #444;
+    }
     p {
       font-size: 18px;
       color: #626262;
@@ -50,6 +49,17 @@
   }
   .links {
     @extend .blog-description;
+    h5 {
+      color: #444;
+    }
+    ul {
+      list-style: none;
+      padding-left: 7px !important;
+    }
+    a {
+      color: #626262;
+      font-size: 17px;
+    }
   }
 }
 

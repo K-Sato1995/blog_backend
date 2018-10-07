@@ -9,18 +9,21 @@
 </div>
 <div class = 'footer-container'>
     <div class = 'row'>
-      <div class="col-md-4 blog-description">
+      <div class="col-md-5 blog-description">
         <h5><a href = 'https://github.com/K-Sato1995/MyBlog'>K-Sato's Blog</a></h5>
         <p>This is my personal blog where I write about programming and my life.</p>
         <p class = 'copy-right'>Copyright © 2018</p>
       </div>
-      <div class="col-md-4 user-description">
+      <div class="col-md-5 user-description">
         <h5><a href = 'https://github.com/K-Sato1995'>K-Sato</a></h5>
         <p>A silly boy aspiring to be a competent programmer.</p>
       </div>
-      <div class="col-md-4 links">
+      <div class="col-md-2 links">
         <h5>Links</h5>
-        <%= link_to 'Archive', archives_path%>
+        <ul>
+          <li><%= link_to 'Archive', archives_path%></li>
+          <li><%= link_to 'About', about_path%></li>
+        </ul>
       </div>
     </div>
 
