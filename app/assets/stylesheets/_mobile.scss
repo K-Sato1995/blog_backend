@@ -110,8 +110,9 @@
     padding-bottom: 25px;
     top: 70px;
     width: 100%;
-    border-bottom: solid 1px #efefef;
-    background-color:rgba(192,192,192,0.9);
+    border-bottom: solid 1px $border-color;
+    background-color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
   }
 
   .mobile-dropdown-list {
@@ -124,7 +125,7 @@
     padding: 15px;
     letter-spacing: 1.5px;
     text-align: center;
-    border-bottom: solid 1px #fff;
+    border-bottom: solid 1px $border-color;
     cursor: pointer;
     color: #222;
     font-size: 20px;
@@ -165,4 +166,24 @@
     color: $theme-color;
   }
 }
+/////////////Archive
+  .post-archive {
+    padding: 10px !important;
+  }
+  .archive-container {
+    padding: 15px;
+    width: 100% !important;
+    background-color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
+  }
+/////////////About
+  .about-container {
+    padding: 10px !important;
+  }
+  .about-content {
+    padding: 15px;
+    width: 100% !important;
+    background-color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
+  }
 }
