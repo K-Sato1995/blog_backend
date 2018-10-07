@@ -19,7 +19,12 @@ class PostsController < ApplicationController
   end
 
   def archive
-    @posts = Post.all
+    @posts = Post.all.order(created_at: :DESC)
+    @categories = Category.all
+    @recent_posts = Post.includes(:category).order(created_at: :DESC).limit(5)
+  end
+
+  def about
     @categories = Category.all
     @recent_posts = Post.includes(:category).order(created_at: :DESC).limit(5)
   end
