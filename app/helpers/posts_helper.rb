@@ -1,7 +1,7 @@
 module PostsHelper
   def posts_data
     data = {}
-    Category.all.map { |category| data["#{category.name}"] = category.posts.size }
+    Category.all.includes(:posts).map { |category| data["#{category.name}"] = category.posts.size }
     return data
   end
 

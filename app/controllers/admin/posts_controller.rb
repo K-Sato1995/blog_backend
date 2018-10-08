@@ -7,13 +7,13 @@ class Admin::PostsController < ApplicationController
     @posts = @q.result(distinct: true)
 
     if params[:status] == 'draft'
-      @posts = Post.draft
+      @posts = Post.includes(:category).draft
       @active1 = 'active'
     elsif params[:status] == 'confidential'
-      @posts = Post.confidential
+      @posts = Post.includes(:category).confidential
       @active2 = 'active'
     else
-      @posts = Post.published
+      @posts = Post.includes(:category).published
       @active3 = 'active'
     end
   end
