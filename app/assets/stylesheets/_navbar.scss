@@ -96,7 +96,6 @@
 }
 
 ///////////////////////////SIDE BAR
-
 .mobile-nav { display: none; }
 
 .navbar-side {
@@ -125,11 +124,11 @@
 }
 
 .navbar-side-item {
- padding: 1.5rem 0;
- font-size: 19px;
- text-align: center;
- border-bottom: 1px solid $border-color;
- height: 5rem;
+  padding: 1.5rem 0;
+  font-size: 19px;
+  text-align: center;
+  border-bottom: 1px solid $border-color;
+  height: 5rem;
 }
 
 .reveal {

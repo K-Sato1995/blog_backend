@@ -1,8 +1,9 @@
 <%= render 'nav' %>
-  <!-- Flash messages -->
-  <% flash.each do |key, value| %>
-    <div class = "alert alert-<%= key %>"><%= value%></div>
-  <% end %>
+<!-- Flash messages -->
+<% flash.each do |key, value| %>
+  <div class = "alert alert-<%= key %>"><%= value%></div>
+<% end %>
+
 <div class = 'container-fluid'>
   <div class = 'admin-container' id = 'admin-container'>
     <!-- SideBar -->
@@ -78,6 +79,7 @@
   </div>
 </div>
 <%= render 'footer'%>
+
 <script>
 /////////TOGGLE SIDEBAR//////////////////////////////
 var sidebar = document.getElementById('admin-sidebar')
