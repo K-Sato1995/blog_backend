@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  devise_for :users, path_names: { sign_up: '' }
+  devise_for :users
   root 'posts#index'
   get '/archives', to: 'posts#archive'
   get '/about', to: 'posts#about'

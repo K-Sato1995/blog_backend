@@ -1,0 +1,25 @@
+.login-form {
+  margin: 0 auto;
+  margin-top: 100px;
+  padding: 30px;
+  text-align: center;
+  height: 300px;
+  width: 500px;
+  border: solid 1px #efefef;
+  h2 {
+    color: #444;
+    letter-spacing: 1.5px;
+  }
+  .login-input {
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 350px;
+    border: solid 1px #efefef;
+    border-radius: 10px;
+  }
+  .login-btn {
+    margin-top: 10px;
+    padding: 5px 20px 5px 20px;
+    letter-spacing: 1px;
+  }
+}
