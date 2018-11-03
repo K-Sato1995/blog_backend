@@ -20,7 +20,7 @@ Post.create(
   title: 'Ruby Getters and Setters',
   intro: INTRO1,
   context: CONTEXT1,
-  image: 'https://cmkt-image-prd.global.ssl.fastly.net/0.1.0/ps/2075055/580/386/m1/fpnw/wm0/ruby_cm-.jpg?1483032261&s=afa1a38a44f95d948272c9dbda1d5f68',
+  image: 'https://images.pexels.com/photos/1536608/pexels-photo-1536608.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
   user_id: 1,
   status: 'published',
   category_name: 'Ruby'
@@ -31,7 +31,7 @@ Post.create(
   title: 'Build a simple API using RoR5',
   intro: INTRO2,
   context: CONTEXT2,
-  image: 'https://avatars.githubusercontent.com/u/4223',
+  image: 'https://images.pexels.com/photos/1367170/pexels-photo-1367170.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
   user_id: 1,
   status: 'published',
   category_name: 'Ruby'
@@ -42,7 +42,7 @@ Post.create(
   intro: INTRO3,
   context: CONTEXT3,
   user_id: 1,
-  image: 'https://cdn-images-1.medium.com/max/432/1*84EvL-QjLpa2jB5J2-N8SQ.png',
+  image: 'https://images.pexels.com/photos/1547727/pexels-photo-1547727.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
   status: 'published',
   category_name:'Ruby'
 )
