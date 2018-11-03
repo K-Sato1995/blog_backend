@@ -1,5 +1,5 @@
 .show-container {
-  padding: 15px 100px 15px 100px;
+  padding: 15px 50px 0 50px;
   margin: 0 auto;
   margin-top: 80px;
   .show-image {
@@ -19,7 +19,9 @@
   }
   .article-container {
     margin: 0 auto;
+    padding: 30px;
     background-color: #fff;
+    border: solid 1px #efefef;
     border-radius: 5px;
   }
   .post-context {
