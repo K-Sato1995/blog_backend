@@ -96,8 +96,14 @@
  }
 
  .go-top {
-  margin-top: 30px;
-  right: 5%;
+   bottom: -80px;
+   margin: 0 auto;
+   border: solid 1px $border-color;
+   border-radius: 8px;
+   padding: 0px 10px 0px 10px;
+   background-color: #111;
+   opacity: 0.2;
+   color: #FFF;
  }
 /////////////////////////////////dropdown-menu
   .mobile-dropdown {
