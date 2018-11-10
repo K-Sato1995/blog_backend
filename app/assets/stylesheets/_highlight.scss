@@ -13,6 +13,7 @@ html, body {
   -webkit-border-radius: 3px; }
 
 p {
+  color: #586068;
   margin: 1em 0;
   line-height: 1.9;
   letter-spacing: 0.7px;
@@ -41,6 +42,7 @@ a {
   #wrapper {
     box-shadow: 0 0 0 1px #cacaca, 0 0 0 4px #eee; } }
 h1, h2, h3, h4, h5, h6 {
+  color: #3B444E;
   font-weight: 700;
   line-height: 1.7;
   cursor: text;
@@ -184,7 +186,7 @@ code, tt {
   border-radius: 3px;
   font-family: Consolas, 'Liberation Mono', Courier, monospace;
   font-size: 15px;
-  color: #333333; }
+  color: #744CBB; }
 
 pre > code {
   margin: 0;
@@ -194,17 +196,17 @@ pre > code {
   background: transparent; }
 
 .highlight pre {
-  background-color: #f8f8f8;
-  border: 1px solid #ccc;
+  background-color: #F5F7F9;
+  border: 1px solid #efefef;
   font-size: 13px;
   line-height: 19px;
   overflow: auto;
-  padding: 10px;
+  padding: 20px;
   border-radius: 3px; }
 
 pre {
-  background-color: #f8f8f8;
-  border: 1px solid #ccc;
+  background-color: #F5F7F9;
+  border: 1px solid #efefef;
   font-size: 14px;
   line-height: 19px;
   overflow: auto;
