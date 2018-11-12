@@ -32,7 +32,7 @@ group :development, :production do
   gem 'jquery-rails'
   gem 'kaminari'
   gem 'listen', '>= 3.0.5', '< 3.2'
-  gem 'pygments.rb', '~> 0.6.3'
+  gem 'pygments.rb'
   gem 'masonry-rails'
   gem 'markdownjs-rails'
   gem 'ransack'
