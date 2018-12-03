@@ -12,18 +12,18 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.7'
   gem 'simplecov', require: false
   gem 'selenium-webdriver'
+  gem 'sqlite3'
 end
 
 gem 'rails', '~> 5.1.6'
-gem 'sqlite3', group: [:development, :test]
 gem 'pg', group: :production
+gem 'web-console', group: :development
 gem 'puma', '~> 3.7'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
-gem 'web-console', group: :development
 gem 'devise'
 gem 'bootstrap', '~> 4.1.3'
 gem 'chartkick'
