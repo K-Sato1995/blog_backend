@@ -1,5 +1,17 @@
 <%= render 'nav_form' %>
 <div class = 'form-container'>
+  <% if @post.errors.any? %>
+  <div id="error_explanation">
+    <div class="alert alert-danger">
+      <%= error_check(@post.errors.count) %>
+      <ul>
+        <h2><% @post.errors.full_messages.each do |msg| %></h2>
+          <li><%= msg %>.</li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+<% end %>
   <%= render 'form' %>
 </div>
  <%= render 'footer'%>

@@ -19,20 +19,19 @@
 
 <div class="form-group">
   <div class="row">
-    <%= f.text_area :intro, placeholder:'Introduction (less than 100 letters)', class:"col-md-12 form-control"%>
-  </div>
-</div>
-
-<div class="form-group">
-  <div class="row">
     <%= f.text_field :image, placeholder:'Post Image', class:"col-md-12 form-control"%>
   </div>
 </div>
 
 <div class="form-group">
   <div class="row">
-    <%= f.text_area :context , cols: "30", rows: "30", placeholder:'Context', id: 'context', class:"col-md-12 form-control", onchange:"setPreview(this.value)"%>
-    <!-- <div id="preview" class = "col-md-6 form-control">Preview</div> -->
+    <%= f.text_area :context ,
+        cols: "30",
+        rows: "30",
+        id: 'context',
+        class:"col-md-12 form-control",
+        value: @post.context ||= initial_value
+    %>
   </div>
 </div>
 
@@ -48,9 +47,3 @@
     <% end %>
   </div>
 </div>
-
-<!-- <script>
-  var preview_content = document.getElementById('preview')
-  var context = document.getElementById('context')
-  preview_content.innerHTML = markdown.toHTML(context.value);
-</script> -->

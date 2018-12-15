@@ -19,4 +19,16 @@ module PostsHelper
   def chart_colors2
     ['#F9E79F', '#A3E4D7', '#F1948A']
   end
+
+  def initial_value
+    "# Introduction\n\n# Table of contents\n1. []()\n- []()\n- []()\n- []()\n- []()\n- []()\n- []()\n\n#\n#\n#\n#"
+  end
+
+  def error_check(num)
+    if num == 1
+      "There is #{num} error."
+    else
+      "There are #{num} errors"
+    end
+  end
 end
