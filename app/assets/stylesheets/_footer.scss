@@ -1,67 +1,59 @@
 @import "global";
-.pre-footer {
-  position: relative;
-  background-color: #F8F8F8;
-  text-align: center;
-  height: 200px;
-   h4 {
-     color: #222222;
-     padding-top: 30px;
-     letter-spacing: 1px;
-   }
-   .snn-links {
-     margin: 0 auto;
-     margin-top: 40px;
-     width: 300px;
-     text-align: center;
-     a {
-       margin: 20px;
-     }
-   }
-}
-
-.footer-container {
-  position: relative;
-  height: 200px;
-  background-color: #fff;
-  margin: 0 auto!important;
-  padding: 0 !important;
-  width:75% !important;
-  .blog-description {
-    letter-spacing: 1px;
-    margin-top: 40px;
-    display: inline-block;
-    vertical-align: top;
-    a {
-      color: #444;
+.footer {
+  border-top: solid 1px $border-color;
+  .footer-container {
+    position: relative;
+    height: 200px;
+    background-color: #fff;
+    margin: 0 auto!important;
+    padding: 0 !important;
+    width:75% !important;
+    .blog-description {
+      letter-spacing: 1px;
+      margin-top: 40px;
+      display: inline-block;
+      vertical-align: top;
+      h5 {
+        font-size: 18px;
+      }
+      a {
+        color: #444;
+      }
+      p {
+        font-size: 15px;
+        color: #626262;
+      }
+      .copy-right {
+       font-size: 13px;
+      }
     }
-    p {
-      font-size: 18px;
-      color: #626262;
+    .user-description {
+      @extend .blog-description;
+      .snn-links {
+        a {
+          margin: 5px;
+        }
+        .fa {
+          font-size: 25px;
+        }
+      }
     }
-    .copy-right {
-     font-size: 15px;
-    }
-  }
-  .user-description {
-    @extend .blog-description;
-  }
-  .links {
-    @extend .blog-description;
-    h5 {
-      color: #444;
-    }
-    ul {
-      list-style: none;
-      padding-left: 7px !important;
-    }
-    a {
-      color: #626262;
-      font-size: 17px;
+    .links {
+      @extend .blog-description;
+      h5 {
+        color: #444;
+      }
+      ul {
+        list-style: none;
+        padding-left: 7px !important;
+      }
+      a {
+        color: #626262;
+        font-size: 15px;
+      }
     }
   }
 }
-
 .author-stamp {
   display: none;
 }

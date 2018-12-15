@@ -20,9 +20,9 @@
     }
     .navbrand {
       position: absolute;
-      top: 18px;
+      top: 20px;
       left: 55px;
-      font-size: 23px;
+      font-size: 20px;
       color: $theme-color;
       letter-spacing: 1px;
       text-decoration: none;
@@ -63,7 +63,7 @@
 
 .search-box {
   margin: 0;
-  // display: none;
+  display: none;
   float: right;
   position: relative;
   height: 100%;
