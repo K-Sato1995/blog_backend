@@ -30,115 +30,117 @@
   margin: 0 auto;
   .box {
 	  margin: 20px;
-	  width: 370px;
-    height: 450px;
+	  width: 330px;
+    height: 310px;
 	  text-align: center;
     border-radius: 5px;
-    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.10);
     .card {
-      width: 370px;
-      height: 450px;
+      width: 330px;
+      height: 310px;
+      border-radius: 5px;
       text-align: left;
     .card-head{
-      height: 200px;
-      width: 100%;
       .image{
-        border-bottom: solid 1px $border-color;
-         max-width: 370px;
-         width: 100%;
-         height: 200px;
+          border-top-left-radius: 5px;
+          border-top-right-radius: 5px;
+          border-bottom: solid 1px $border-color;
+          max-width: 330px;
+          width: 100%;
+          height: 170px;
        }
-       .card-body {
-         height: 200px;
-       }
     }
-    .post-intro {
-      color: #757575;
-      text-align: left;
-      font-size: 17px;
-    }
-    .post-title {
-      color: #21252A;
-      font-size: 20px;
-      margin: 0;
-      padding: 0;
-      text-decoration: none;
-      letter-spacing: 1px;
-    }
-    .post-title:hover {
-      color: $p-color;
-    }
-    .btn-outline-info {
-      color: $theme-color;
-      border-color: $theme-color;
-    }
-    .btn-outline-info:hover {
-      color: #fff;
-      background-color: $theme-color;
-    }
-    .post-created-on {
-      margin-top: 10px;
-      color: #757575;
-      font-size: 14px;
-      float: right;
-    }
-    #c-btn {
-      padding: 2px 15px 2px 15px;
-    }
-    #c-btn:hover {
-      opacity: 0.9;
-      background-color: #fff;
-    }
-    .btn-Ruby {
-      @include category-btn($Ruby);
-    }
-    .btn-Ruby:hover {
-      color: $Ruby;
-    }
+    .card-body {
+      .post-title {
+        width: 290px;
+        padding-bottom: 10px;
+        font-size: 18px;
+        border-bottom: solid 1px #E8E8E8;
+        text-decoration: none;
+        letter-spacing: 1px;
+        .post-title-title {
+          color: #21252A;
+        }
+        .post-title-title:hover {
+          color: $p-color;
+        }
+      }
+      .post-info{
+        margin-top: 20px;
+        height: 50px;
+        .btn-outline-info {
+          color: $theme-color;
+          border-color: $theme-color;
+        }
+        .btn-outline-info:hover {
+          color: #fff;
+          background-color: $theme-color;
+        }
+        .post-created-on {
+          margin-top: 10px;
+          color: #757575;
+          font-size: 14px;
+          float: right;
+        }
+        #c-btn {
+          padding: 2px 15px 2px 15px;
+        }
+        #c-btn:hover {
+          opacity: 0.9;
+          background-color: #fff;
+        }
 
-    .btn-Go {
-      @include category-btn($Go);
-    }
-    .btn-Go:hover  {
-      color: $Go;
-    }
+        .btn-Ruby {
+          @include category-btn($Ruby);
+        }
+        .btn-Ruby:hover {
+          color: $Ruby;
+        }
 
-    .btn-Javascript {
-      @include category-btn($Javascript);
-    }
-    .btn-Javascript:hover  {
-      color: $Javascript;
-    }
+        .btn-Go {
+          @include category-btn($Go);
+        }
+        .btn-Go:hover  {
+          color: $Go;
+        }
 
-    .btn-React {
-      @include category-btn($React);
-    }
-    .btn-React:hover  {
-      color: $React;
-    }
+        .btn-Javascript {
+          @include category-btn($Javascript);
+        }
+        .btn-Javascript:hover  {
+          color: $Javascript;
+        }
 
-    .btn-Life {
-      @include category-btn($Life)
-    }
-    .btn-Life:hover  {
-      color: $Life;
-    }
+        .btn-React {
+          @include category-btn($React);
+        }
+        .btn-React:hover  {
+          color: $React;
+        }
 
-    .btn-Rails {
-      @include category-btn($Rails)
-    }
+        .btn-Life {
+          @include category-btn($Life)
+        }
+        .btn-Life:hover  {
+          color: $Life;
+        }
 
-    .btn-Rails:hover {
-      color: $Rails;
-    }
+        .btn-Rails {
+          @include category-btn($Rails)
+        }
 
-    .btn-Others {
-      @include category-btn($Others)
-    }
+        .btn-Rails:hover {
+          color: $Rails;
+        }
 
-    .btn-Others:hover {
-      color: $Others;
+        .btn-Others {
+          @include category-btn($Others)
+        }
+
+        .btn-Others:hover {
+          color: $Others;
+        }
     }
+   }
   }
  }
 }
