@@ -22,14 +22,15 @@
 
 .post-container {
   margin: 0 auto;
-  margin-top: 80px;
+  margin-top: 70px;
   margin-bottom: 100px;
+  max-width: 1200px;
 }
 
 #posts {
   margin: 0 auto;
   .box {
-	  margin: 20px;
+	  margin: 15px 20px 15px 20px;
 	  width: 330px;
     height: 310px;
 	  text-align: center;
@@ -55,9 +56,8 @@
         padding-bottom: 10px;
         font-size: 18px;
         border-bottom: solid 1px #E8E8E8;
-        text-decoration: none;
-        letter-spacing: 1px;
         .post-title-title {
+          text-decoration: none;
           color: #21252A;
         }
         .post-title-title:hover {

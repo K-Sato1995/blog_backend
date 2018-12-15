@@ -1,5 +1,7 @@
 <nav class="navbar fixed-top">
-  <h4><%= link_to "K-Sato's Blog", root_path, class:'navbrand' %></h4>
+  <div class="nav-container">
+    <a href = '/'><%= image_tag 'logo.png', class: 'logo'%></a>
+    <h4><%= link_to "Blog", root_path, class:'navbrand' %></h4>
     <ul class = 'nav-list' id = 'nav-list'>
       <li class = 'nav-item' onClick = 'openHomeSideBar()'>Category</li>
       <li class = 'nav-item' onClick = 'openHomeSideBar2()'>Recent Posts</li>
@@ -9,9 +11,10 @@
     <div class="search-box" id = 'search-box'>
       <%= form_tag(posts_path, method: :get) do %>
         <%= text_field_tag :title, params[:title],class:'search-bar', placeholder:'Type Here...' %>
-          <span id = 'close-icon' onClick = 'closeSearchBar()'>x</span>
+          <span id='close-icon' onClick = 'closeSearchBar()'>x</span>
       <% end %>
     </div>
+  </div>
 </nav>
 
 

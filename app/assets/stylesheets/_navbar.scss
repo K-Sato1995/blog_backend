@@ -1,35 +1,48 @@
 @import "global";
 
 .navbar {
-  height: 65px;
+  height: 60px;
   background-color: #fff;
   border-bottom: solid 1px $border-color;
-  box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.10);
   z-index: 1;
-  .navbrand {
-    position: absolute;
-    top: 20px;
-    left: 70px;
-    font-size: 23px;
-    color: $theme-color;
-    letter-spacing: 1px;
-    text-decoration: none;
-  }
-  .nav-list {
-    position: absolute;
-    top: 22px;
-    right: 100px;
-    list-style: none;
-    .nav-item {
-      font-size: 17px;
-      margin-right: 20px;
-      letter-spacing: 1px;
-      color: #626262;
-      display: inline-block;
-      cursor: pointer;
+  .nav-container {
+    position: relative;
+    margin: 0 auto;
+    height: 60px;
+    width: 100%;
+    max-width: 1100px;
+    .logo {
+      width: 30px;
+      height: 30px;
+      top: 15px;
+      left: 15px;
+      position: absolute;
     }
-    .nav-item:hover {
+    .navbrand {
+      position: absolute;
+      top: 18px;
+      left: 55px;
+      font-size: 23px;
       color: $theme-color;
+      letter-spacing: 1px;
+      text-decoration: none;
+    }
+    .nav-list {
+      position: absolute;
+      top: 22px;
+      right: 30px;
+      list-style: none;
+      .nav-item {
+        font-size: 14px;
+        margin-right: 20px;
+        letter-spacing: 1px;
+        color: #626262;
+        display: inline-block;
+        cursor: pointer;
+      }
+      .nav-item:hover {
+        color: $theme-color;
+      }
     }
   }
 }
@@ -37,9 +50,9 @@
 //////////////SEARCHBAR
 .fa-search {
   position: absolute;
-  font-size: 25px;
-  top: 22px;
-  right: 70px;
+  font-size: 20px;
+  top: 23px;
+  right: 18px;
   color: #626262;
   cursor: pointer;
 }
@@ -49,8 +62,9 @@
 }
 
 .search-box {
-  margin-top: 7px;
-  display: none;
+  margin: 0;
+  // display: none;
+  float: right;
   position: relative;
   height: 100%;
   transition: 5s;
@@ -59,10 +73,10 @@
 
 .search-bar {
   position: absolute;
-  top: 0;
-  right: 100px;
+  top: 5px;
+  right: 70px;
   padding-left: 10px;
-  height: 45px;
+  height: 35px;
   width: 80%;
   color: #626262;
   background-color: #F4F4F4;
@@ -76,15 +90,14 @@
 
 #close-icon {
   position: absolute;
-  top: 0;
-  right: 40px;
-  height: 95%;
-  padding: 0 15px 0 15px;
-  cursor: pointer;
-  font-size: 30px;
+  top: 5px;
+  right: 18px;
+  padding: 0px 15px 0px 15px;
+  font-size: 25px;
   color: #626262;
   background-color: #F4F4F4;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 #close-icon:hover {
