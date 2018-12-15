@@ -1,11 +1,11 @@
 <%= render 'nav' %>
-<!-- Flash messages -->
-<% flash.each do |key, value| %>
-  <div class = "alert alert-<%= key %>"><%= value%></div>
-<% end %>
 
 <div class = 'container-fluid'>
   <div class = 'admin-container' id = 'admin-container'>
+    <!-- Flash messages -->
+    <% flash.each do |key, value| %>
+      <div class = "alert alert-<%= key %>"><%= value%></div>
+    <% end %>
     <!-- SideBar -->
     <div id = 'admin-sidebar'>
       <!-- Sidebar-list -->

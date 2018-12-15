@@ -1,6 +1,6 @@
 class Admin::PostsController < ApplicationController
   before_action:authenticate_user!
-  before_action:find_post, only: [ :edit, :update, :destroy ]
+  before_action:find_post, only: [:edit, :update, :destroy]
 
   def index
     @q = Post.ransack(params[:q])
@@ -51,7 +51,7 @@ class Admin::PostsController < ApplicationController
   private
 
   def post_params
-    params.require(:post).permit(:title, :context, :category, :status, :image, :category_name, :intro, :user_id).merge(user_id: current_user.id)
+    params.require(:post).permit(:title, :context, :category, :status, :image, :category_name, :user_id).merge(user_id: current_user.id)
   end
 
   def find_post
