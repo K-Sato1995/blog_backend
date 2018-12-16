@@ -1,11 +1,4 @@
 @import "global";
-// not being used rn
-// @mixin category_btn($color){
-//   color: #fff;
-//   border: solid 1px $color;
-//   background-color: $color;
-// }
-
 @mixin category_name($color){
   color: $color;
   border: solid 1px $color;
@@ -74,68 +67,8 @@
           font-size: 14px;
           float: right;
         }
-        // not being used rn
-        // #c-btn {
-        //   font-size: 14px;
-        //   padding: 1px 12px 1px 12px;
-        // }
-        // #c-btn:hover {
-        //   opacity: 0.9;
-        //   background-color: #fff;
-        // }
-        //
-        // .btn-Ruby {
-        //   @include category-btn($Ruby);
-        // }
-        // .btn-Ruby:hover {
-        //   color: $Ruby;
-        // }
-        //
-        // .btn-Go {
-        //   @include category-btn($Go);
-        // }
-        // .btn-Go:hover  {
-        //   color: $Go;
-        // }
-        //
-        // .btn-Javascript {
-        //   @include category-btn($Javascript);
-        // }
-        // .btn-Javascript:hover  {
-        //   color: $Javascript;
-        // }
-        //
-        // .btn-React {
-        //   @include category-btn($React);
-        // }
-        // .btn-React:hover  {
-        //   color: $React;
-        // }
-        //
-        // .btn-Life {
-        //   @include category-btn($Life)
-        // }
-        // .btn-Life:hover  {
-        //   color: $Life;
-        // }
-        //
-        // .btn-Rails {
-        //   @include category-btn($Rails)
-        // }
-        //
-        // .btn-Rails:hover {
-        //   color: $Rails;
-        // }
-        //
-        // .btn-Others {
-        //   @include category-btn($Others)
-        // }
-        //
-        // .btn-Others:hover {
-        //   color: $Others;
-        // }
+      }
     }
-   }
   }
  }
 }
