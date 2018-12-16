@@ -9,7 +9,7 @@
        <hr/>
          <p>
            <%= link_to "#{@post.category_name}", posts_path(category: @post.category.id), class:"category-#{@post.category_name}" %>
-           <span class = 'post-created-on'>Posted on <%= @post.created_at.strftime("%Y-%m-%d") %></span>
+           <span class = 'post-created-on'><%= t(".posted_on")%> <%= @post.created_at.strftime("%Y-%m-%d") %></span>
         </p>
        <hr/>
         <%= image_tag @post.image, class: 'show-image' %>
@@ -18,7 +18,7 @@
         </div>
         <hr/>
         <!--RELATED POSTS  -->
-        <h4 class = 'related-post-column'>Related Posts</h4>
+        <h4 class = 'related-post-column'><%= t(".related_posts") %></h4>
         <div class = 'related-posts'>
             <% @related_posts.each do |post| %>
                 <div class="related-posts-box clearfix">
