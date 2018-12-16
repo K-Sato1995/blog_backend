@@ -1,31 +1,28 @@
-<div class = 'footer'>
-  <div class = 'footer-container'>
-    <div class = 'row'>
+<div class = "footer">
+  <div class = "footer-container">
+    <div class = "row">
       <div class="col-md-5 blog-description">
-        <h5><a href = 'https://github.com/K-Sato1995/MyBlog'>K-Sato's Blog</a></h5>
-        <p>This is my personal blog where I write about programming and my life.</p>
-        <p class = 'copy-right'>Copyright © 2018</p>
+        <h5><a href = "https://github.com/K-Sato1995/MyBlog"><%= t(".title") %></a></h5>
+        <p><%= t(".description") %></p>
+        <p class = "copy-right"><%= t(".copy_right") %></p>
       </div>
       <div class="col-md-5 user-description">
-        <h5><a href = 'https://github.com/K-Sato1995'>K-Sato</a></h5>
-        <p>I'm just a silly boy aspiring to be a competent programmer.</p>
-        <div class = 'snn-links'>
-          <a href = 'https://github.com/K-Sato1995'><%= fa_icon "github",  class: "fa-3x" %></a>
-          <a href = 'https://dev.to/ksato1995'><%= fa_icon "rocket", class: "fa-3x" %></a>
-          <a href = 'https://qiita.com/k-penguin-sato'><%= fa_icon "book", class: "fa-3x" %></a>
+        <h5><a href = "https://github.com/K-Sato1995"><%= t(".author_name") %></a></h5>
+        <p><%= t(".author_description") %></p>
+        <div class = "snn-links">
+          <a href = "https://github.com/K-Sato1995"><%= fa_icon "github",  class: "fa-3x" %></a>
+          <a href = "https://dev.to/ksato1995"><%= fa_icon "rocket", class: "fa-3x" %></a>
+          <a href = "https://qiita.com/k-penguin-sato"><%= fa_icon "book", class: "fa-3x" %></a>
         </div>
       </div>
       <div class="col-md-2 links">
-        <h5>Links</h5>
+        <h5><%= t(".links") %></h5>
         <ul>
-          <li><%= link_to 'Archive', archives_path%></li>
-          <li><%= link_to 'About', about_path%></li>
-          <li><%= link_to 'Source Code', 'https://github.com/K-Sato1995/MyBlog' %>
+          <li><%= link_to t(".archive"), archives_path%></li>
+          <li><%= link_to t(".about"), about_path%></li>
+          <li><%= link_to t(".source_code"), "https://github.com/K-Sato1995/MyBlog" %>
         </ul>
       </div>
     </div>
   </div>
 </div>
-<footer>
-    <p class = 'author-stamp'>Designed and coded by <a href = 'https://github.com/K-Sato1995'>K-Sato</a></p>
-</footer>

@@ -3,8 +3,8 @@
     <a href = '/'><%= image_tag 'logo.png', class: 'logo'%></a>
     <h4><%= link_to "Blog", root_path, class:'navbrand' %></h4>
     <ul class = 'nav-list' id = 'nav-list'>
-      <li class = 'nav-item' onClick = 'openHomeSideBar()'>Category</li>
-      <li class = 'nav-item' onClick = 'openHomeSideBar2()'>Recent Posts</li>
+      <li class = 'nav-item' onClick = 'openHomeSideBar()'><%= t(".category")%></li>
+      <li class = 'nav-item' onClick = 'openHomeSideBar2()'><%= t(".recent_posts")%></li>
     </ul>
     <!--SEARCH BAR  -->
     <%= fa_icon "search",  class: "fa-2x", id: "search-icon" , onClick: 'openSearchBar()'%>

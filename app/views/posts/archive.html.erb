@@ -2,7 +2,7 @@
 <%= render 'nav' %>
 <div class = "post-archive">
   <div class="archive-container">
-    <h3>K-Sato's Blog Archive</h3>
+    <h3><%= t(".title") %></h3>
     <% @posts.each do |post| %>
     <div class = "post">
       <%= post.created_at.strftime('%b %d') %> -
