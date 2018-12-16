@@ -1,8 +1,10 @@
 en:
   posts:
     nav:
+      title: "Blog"
       category: "Category"
       recent_posts: "Recent Posts"
+      placeholder: "Type Here..."
     post:
       posted_on: "Posted on"
     footer:

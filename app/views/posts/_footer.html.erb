@@ -13,6 +13,8 @@
           <a href = "https://github.com/K-Sato1995"><%= fa_icon "github",  class: "fa-3x" %></a>
           <a href = "https://dev.to/ksato1995"><%= fa_icon "rocket", class: "fa-3x" %></a>
           <a href = "https://qiita.com/k-penguin-sato"><%= fa_icon "book", class: "fa-3x" %></a>
+          <%= link_to_unless_current image_tag('en.png', class: 'en_logo'), locale: "en" %>
+          <%= link_to_unless_current image_tag('ja.png', class: 'ja_logo'), locale: "ja" %>
         </div>
       </div>
       <div class="col-md-2 links">
