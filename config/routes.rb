@@ -5,10 +5,10 @@ Rails.application.routes.draw do
     get '/archives', to: 'posts#archive'
     get '/about', to: 'posts#about'
     resources :posts, only: [:index, :show]
+    namespace :admin do
+      resources :posts
+    end
   end
   match '*path', to: redirect("/#{I18n.default_locale}/%{path}"), constraints: lambda { |req| !req.path.starts_with? "/#{I18n.default_locale}/" }, :via => [:get, :post]
   match '', to: redirect("/#{I18n.default_locale}"), :via => [:get, :post]
-  namespace :admin do
-    resources :posts
-  end
 end
