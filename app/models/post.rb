@@ -3,6 +3,7 @@ class Post < ApplicationRecord
   belongs_to :category
   enum status: { draft: 0, published: 1, confidential: 2 }
   validates :title, :context, :category, presence: true
+  validates_inclusion_of :score, in: 1..10
 
   scope :draft, -> { where(status: 'draft') }
   scope :confidential, -> { where(status: 'confidential') }

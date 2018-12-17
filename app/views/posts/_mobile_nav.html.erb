@@ -1,6 +1,6 @@
 <div class = 'mobile-nav' id = 'mobile-navbar'>
   <a href = '/'><%= image_tag 'logo.png', class: 'logo'%></a>
-  <div id="mobile-menu-icon" onClick = "toggleDropList()">
+  <div id="mobile-menu-icon" onClick="toggleDropList()">
     <div class="menu-icon-bar"></div>
     <div class="menu-icon-bar"></div>
     <div class="menu-icon-bar"></div>
@@ -14,64 +14,3 @@
     </ul>
   </div>
 </div>
-
-<!--MOBILE SIDE MENUES  -->
-<div id="overlay" onClick = "closeHomeSideBar()"></div>
-<!-- SIDE NAV1 -->
-  <ul class="navbar-side" id="navbarSide">
-       <% @categories.each do |category| %>
-        <li class = "navbar-side-item"><%= link_to "#{category.name} (#{category.posts.size})", posts_path(category: category.id), class:"category-name #{category.name}" %></li>
-       <% end %>
-  </ul>
-<!-- SIDE NAV2 -->
-  <ul class="navbar-side2" id="navbarSide2">
-    <% @recent_posts.each do |post| %>
-     <li class = "navbar-side-item"><%= link_to post.title, post_path(post), class: 'recent-post-item' %></li>
-    <% end %>
-  </ul>
-
-
-
-  <script>
-    var homeSideBar = document.getElementById('navbarSide')
-    var homeSideBar2 = document.getElementById('navbarSide2')
-    var overlay = document.getElementById('overlay')
-    var mobile_menu_icon = document.getElementById("mobile-menu-icon")
-    var mobile_dropdown = document.getElementById('mobile-dropdown')
-    var mobile_navbar = document.getElementById('mobile-navbar')
-    var overlay_for_drop = document.getElementById('overlay-for-drop')
-
-    function toggleDropList(){
-      if(mobile_dropdown.style.visibility === 'visible'){
-        closeDropList()
-      }else{
-        openDropList()
-      }
-    }
-
-    function openDropList(){
-      mobile_dropdown.style.visibility = 'visible';
-      mobile_navbar.style.borderBottom = 'solid 2px #20AD9F'
-    }
-
-    function closeDropList(){
-      mobile_dropdown.style.visibility = 'hidden';
-      mobile_navbar.style.borderBottom = 'solid 1px #efefef';
-    }
-
-    function openHomeSideBar(){
-      homeSideBar.classList.add('reveal');
-      overlay.style.display = 'block';
-    }
-
-    function openHomeSideBar2(){
-      homeSideBar2.classList.add('reveal');
-      overlay.style.display = 'block';
-    }
-
-    function closeHomeSideBar(){
-      homeSideBar.classList.remove('reveal');
-      homeSideBar2.classList.remove('reveal');
-      overlay.style.display = 'none';
-    }
-  </script>

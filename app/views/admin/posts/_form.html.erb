@@ -37,6 +37,12 @@
 
 <div class="form-group">
   <div class="row">
+    <%= f.select(:score, 10.times.map{|num| [num + 1 , num + 1] },{}, {class:"col-md-12 form-control"}) %>
+  </div>
+</div>
+
+<div class="form-group">
+  <div class="row">
     <%= f.select(:status, Post.statuses.keys, {}, { :class => "col-md-12 form-control" }) %>
   </div>
 </div>
