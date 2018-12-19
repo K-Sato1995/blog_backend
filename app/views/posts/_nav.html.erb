@@ -45,6 +45,9 @@
   var mobile_dropdown = document.getElementById('mobile-dropdown')
   var mobile_navbar = document.getElementById('mobile-navbar')
   var overlay_for_drop = document.getElementById('overlay-for-drop')
+  var nav_list = document.getElementById('nav-list')
+  var search_icon = document.getElementById('search-icon')
+  var search_box = document.getElementById('search-box')
 
   function toggleDropList(){
     if(mobile_dropdown.style.visibility === 'visible'){
@@ -56,7 +59,7 @@
 
   function openDropList(){
     mobile_dropdown.style.visibility = 'visible';
-    mobile_navbar.style.borderBottom = 'solid 2px #20AD9F'
+    mobile_navbar.style.borderBottom = 'solid 2px #00bfb6'
   }
 
   function closeDropList(){
@@ -78,5 +81,17 @@
     homeSideBar.classList.remove('reveal');
     homeSideBar2.classList.remove('reveal');
     overlay.style.display = 'none';
+  }
+
+  function openSearchBar() {
+    nav_list.style.display = 'none';
+    search_icon.style.display = 'none';
+    search_box.style.display = 'block';
+  }
+
+  function closeSearchBar() {
+    nav_list.style.display = 'block';
+    search_icon.style.display = 'block';
+    search_box.style.display = 'none';
   }
 </script>
