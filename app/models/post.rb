@@ -22,6 +22,6 @@ class Post < ApplicationRecord
   end
 
   def category_name
-    self.category ? self.category.name: nil
+    self.category ? self.category.name : nil
   end
 end
