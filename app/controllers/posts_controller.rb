@@ -1,26 +1,24 @@
 class PostsController < ApplicationController
-
   def index
     @categories = Category.all.includes(:posts)
     @recent_posts = Post.published
                         .includes(:category)
                         .order(created_at: :DESC)
                         .limit(5)
-    if params[:category]
-      @posts = Post.published
+    @posts = if params[:category]
+               Post.published
                    .includes(:category)
                    .where(category_id: params[:category].to_i)
                    .page(params[:page])
                    .order(score: :desc, created_at: :desc)
                    .per(12)
-
-    else
-      @posts = Post.published.includes(:category)
+             else
+               Post.published.includes(:category)
                    .search(params[:title])
                    .page(params[:page])
                    .order(score: :desc, created_at: :desc)
                    .per(12)
-    end
+             end
   end
 
   def show

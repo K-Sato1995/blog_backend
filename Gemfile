@@ -13,6 +13,7 @@ group :development, :test do
   gem 'simplecov', require: false
   gem 'selenium-webdriver'
   gem 'sqlite3'
+  gem 'pry-rails'
 end
 
 gem 'rails', '~> 5.1.6'
