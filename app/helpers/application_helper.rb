@@ -2,7 +2,7 @@ module ApplicationHelper
   class HTMLwithPygments < Redcarpet::Render::HTML
     def block_code(code, language)
       sha = Digest::SHA1.hexdigest(code)
-      Rails.cache.fetch ["code", language, sha].join('-') do
+      Rails.cache.fetch ['code', language, sha].join('-') do
         Pygments.highlight(code, lexer: language)
       end
     end
@@ -18,7 +18,7 @@ module ApplicationHelper
       lax_html_blocks: true,
       strikethrough: true,
       superscript: true,
-      highlight: true,
+      highlight: true
     }
     Redcarpet::Markdown.new(renderer, options).render(text).html_safe
   end
