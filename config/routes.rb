@@ -8,6 +8,11 @@ Rails.application.routes.draw do
     namespace :admin do
       resources :posts
     end
+    namespace :api do
+      namespace :v1 do
+        resources :posts, only: [:index, :show]
+      end
+    end
   end
   match '*path', to: redirect("/#{I18n.default_locale}/%{path}"), constraints: lambda { |req| !req.path.starts_with? "/#{I18n.default_locale}/" }, via: [:get, :post]
   match '', to: redirect("/#{I18n.default_locale}"), via: [:get, :post]
