@@ -44,3 +44,30 @@ Post.create(
   status: 'published',
   category_name: 'Ruby'
 )
+
+Post.create(
+  title: 'Javascript',
+  context: CONTEXT3,
+  user_id: 1,
+  image: 'https://images.pexels.com/photos/1322185/pexels-photo-1322185.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+  status: 'published',
+  category_name: 'Javascript'
+)
+
+Post.create(
+  title: 'Go',
+  context: CONTEXT3,
+  user_id: 1,
+  image: 'https://images.pexels.com/photos/868097/pexels-photo-868097.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+  status: 'published',
+  category_name: 'Go'
+)
+
+Post.create(
+  title: 'React',
+  context: CONTEXT3,
+  user_id: 1,
+  image: 'https://images.pexels.com/photos/861126/pexels-photo-861126.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+  status: 'published',
+  category_name: 'React'
+)

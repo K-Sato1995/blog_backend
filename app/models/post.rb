@@ -9,9 +9,11 @@ class Post < ApplicationRecord
   scope :confidential, -> { where(status: 'confidential') }
   scope :published, -> { where(status: 'published') }
 
-  def self.search(title)
+  def self.search(title: '', category: '')
     if title
       where('title LIKE ?', "%#{title}%")
+    elsif category
+      where(category_id: category.to_i)
     else
       all
     end
