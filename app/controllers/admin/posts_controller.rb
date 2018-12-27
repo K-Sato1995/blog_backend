@@ -5,16 +5,13 @@ module Admin
 
     def index
       @q = Post.ransack(params[:q])
-      @posts = @q.result(distinct: true).order('title ASC')
+      @posts = @q.result(distinct: true).includes(:category).status_check(status: params[:status]).order('title ASC')
 
       if params[:status] == 'draft'
-        @posts = Post.includes(:category).draft.order('title ASC')
         @active1 = 'active'
       elsif params[:status] == 'confidential'
-        @posts = Post.includes(:category).confidential.order('title ASC')
         @active2 = 'active'
       else
-        @posts = Post.includes(:category).published.order('title ASC')
         @active3 = 'active'
       end
     end
