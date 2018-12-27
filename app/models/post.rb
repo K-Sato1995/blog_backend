@@ -19,6 +19,16 @@ class Post < ApplicationRecord
     end
   end
 
+  def self.status_check(status: '')
+    if status == 'draft'
+      draft.order('title ASC')
+    elsif status == 'confidential'
+      confidential.order('title ASC')
+    else
+      published.order('title ASC')
+    end
+  end
+
   def category_name=(name)
     self.category = Category.find_or_create_by(name: name)
   end
