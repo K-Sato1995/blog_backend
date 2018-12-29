@@ -20,6 +20,7 @@ ja:
     show:
       posted_on: "投稿日時"
       related_posts: "関連のある投稿"
+      page_views: "合計閲覧数:"
     archive:
       title: "ブログのアーカイブ"
     about:

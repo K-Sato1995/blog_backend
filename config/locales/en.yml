@@ -20,6 +20,7 @@ en:
     show:
       posted_on: "Posted on"
       related_posts: "Related Posts"
+      page_views: "Total Page Views:"
     archive:
       title: "K-Sato's Blog Archive"
     about:
