@@ -16,6 +16,7 @@
         <div class="post-context">
            <%= markdown(@post.context) %>
         </div>
+        <span class="total_page_view"><%= t(".page_views") %> <%=@post.page_views%></span>
         <hr/>
         <!--RELATED POSTS  -->
         <h4 class = 'related-post-column'><%= t(".related_posts") %></h4>

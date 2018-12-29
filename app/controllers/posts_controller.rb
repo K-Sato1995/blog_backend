@@ -7,6 +7,7 @@ class PostsController < ApplicationController
 
   def show
     @post = Post.find(params[:id])
+    @post.update(page_views: @post.page_views += 1)
     @related_posts = @post.category.posts.published.where.not(id: @post.id).first(3)
   end
 
