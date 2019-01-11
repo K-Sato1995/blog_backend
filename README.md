@@ -6,7 +6,7 @@ https://k-blog0130.herokuapp.com/
 
 # Home
 
-![image](https://user-images.githubusercontent.com/32632542/51032682-42442600-15e4-11e9-94a0-d62b74d50619.png)
+![image](https://user-images.githubusercontent.com/32632542/51032887-f2199380-15e4-11e9-9cf9-315abd34a6d6.png)
 
 # Article
 
