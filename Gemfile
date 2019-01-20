@@ -36,6 +36,7 @@ gem 'pygments.rb'
 gem 'masonry-rails'
 gem 'ransack'
 gem 'redcarpet'
+gem 'rack-cors'
 gem 'spring'
 gem 'spring-watcher-listen', '~> 2.0.0'
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
