@@ -22,6 +22,11 @@ module Admin
 
     def create
       @post = Post.new(post_params)
+      tag_list = params[:post][:tag_list].split(',').map do |name|
+        Tag.where(name: name.strip).first_or_create!
+      end
+      @post.tags << tag_list
+
       if @post.save
         flash[:success] = 'Your post was successfully created'
         redirect_to admin_posts_path
@@ -32,6 +37,11 @@ module Admin
 
     def update
       @post.update(post_params)
+      tag_list = params[:post][:tag_list].split(',').map do |name|
+        Tag.where(name: name.strip).first_or_create!
+      end
+      @post.tags << tag_list
+
       if @post.save
         flash[:warning] = 'The post was successfully updated'
         redirect_to admin_posts_path
@@ -49,14 +59,7 @@ module Admin
     private
 
     def post_params
-      params.require(:post).permit(:title,
-                                   :context,
-                                   :category,
-                                   :status,
-                                   :image,
-                                   :category_name,
-                                   :user_id,
-                                   :score).merge(user_id: current_user.id)
+      params.require(:post).permit(Post.column_names, :category_name).merge(user_id: current_user.id)
     end
 
     def find_post

@@ -4,7 +4,7 @@ module Api
       def index
         posts = Post.published.order(score: :desc, created_at: :desc)
         categories = Category.all
-        render json: { status: 'SUCCESS', message: 'loaded posts', data: {posts: posts, categories: categories } }, status: :ok
+        render json: { status: 'SUCCESS', message: 'loaded posts', data: { posts: posts, categories: categories } }, status: :ok
       end
 
       def show

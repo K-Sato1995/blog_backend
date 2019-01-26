@@ -1,6 +1,8 @@
 class Post < ApplicationRecord
   belongs_to :user
   belongs_to :category
+  has_many :taggings, dependent: :destroy
+  has_many :tags, through: :taggings
   enum status: { draft: 0, published: 1, confidential: 2 }
   validates :title, :context, :category, presence: true
   validates_inclusion_of :score, in: 1..10
@@ -35,5 +37,9 @@ class Post < ApplicationRecord
 
   def category_name
     category ? category.name : nil
+  end
+
+  def tag_list
+    tags.map(&:name).join(',')
   end
 end
