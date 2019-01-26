@@ -25,7 +25,7 @@ module Admin
       tag_list = params[:post][:tag_list].split(',').map do |name|
         Tag.where(name: name.strip).first_or_create!
       end
-      @post.tags << tag_list
+      @post.tags = tag_list
 
       if @post.save
         flash[:success] = 'Your post was successfully created'
@@ -40,7 +40,7 @@ module Admin
       tag_list = params[:post][:tag_list].split(',').map do |name|
         Tag.where(name: name.strip).first_or_create!
       end
-      @post.tags << tag_list
+      @post.tags = tag_list
 
       if @post.save
         flash[:warning] = 'The post was successfully updated'
