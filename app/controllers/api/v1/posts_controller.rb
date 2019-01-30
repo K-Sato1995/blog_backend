@@ -4,7 +4,7 @@ module Api
       include ApiHelper
       def index
         posts = Post.select(p_attributes).published.order(score: :desc, created_at: :desc)
-        post_tags = Post.order(score: :desc, created_at: :desc).map { |post| Post.find_by(id: post.id).tags }
+        post_tags = Post.published.order(score: :desc, created_at: :desc).map { |post| Post.find_by(id: post.id).tags }
         categories = Category.all
         tags = Tag.all
 
