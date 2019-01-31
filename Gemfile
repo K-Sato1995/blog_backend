@@ -14,6 +14,7 @@ group :development, :test do
   gem 'selenium-webdriver'
   gem 'sqlite3'
   gem 'pry-rails'
+  gem "bullet"
 end
 
 gem 'rails', '~> 5.1.6'
