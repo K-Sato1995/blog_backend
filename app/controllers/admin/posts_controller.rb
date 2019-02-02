@@ -59,7 +59,8 @@ module Admin
     private
 
     def post_params
-      params.require(:post).permit(Post.column_names, :category_name).merge(user_id: current_user.id)
+      columns = Post.column_names - %i[created_at updated_at]
+      params.require(:post).permit(columns, :category_name).merge(user_id: current_user.id)
     end
 
     def find_post
