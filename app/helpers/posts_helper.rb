@@ -6,18 +6,18 @@ module PostsHelper
   end
 
   def posts_status
-    draft_posts = Post.where("status = '0'").size
-    published_posts = Post.where("status = '1'").size
-    private_posts = Post.where("status = '2'").size
-    { Draft: draft_posts, Published: published_posts, Private: private_posts }
+    draft_posts_num = Post.where("status = '0'").size
+    published_posts_num = Post.where("status = '1'").size
+    private_posts_num = Post.where("status = '2'").size
+    { Draft: draft_posts_num, Published: published_posts_num, Private: private_posts_num }
   end
 
   def chart_colors
-    ['#F1948A', '#D6EAF8', '#F9E79F', '#EBF5FB', '#E6B0AA', '#D5F5E3']
+    %w[#F1948A #D6EAF8 #F9E79F #EBF5FB #E6B0AA #D5F5E3]
   end
 
   def chart_colors2
-    ['#F9E79F', '#A3E4D7', '#F1948A']
+    %w[#F9E79F #A3E4D7 #F1948A]
   end
 
   def initial_value
@@ -25,10 +25,6 @@ module PostsHelper
   end
 
   def error_check(num)
-    if num == 1
-      "There is #{num} error."
-    else
-      "There are #{num} errors"
-    end
+    num == 1 ? "There is #{num} error." : "There are #{num} errors"
   end
 end

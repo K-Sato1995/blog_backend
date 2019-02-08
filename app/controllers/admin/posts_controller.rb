@@ -7,12 +7,10 @@ module Admin
       @q = Post.ransack(params[:q])
       @posts = @q.result(distinct: true).includes(:category).status_check(status: params[:status]).order('title ASC')
 
-      if params[:status] == 'draft'
-        @active1 = 'active'
-      elsif params[:status] == 'confidential'
-        @active2 = 'active'
-      else
-        @active3 = 'active'
+      case params[:status]
+      when 'draft' then @draft = 'active'
+      when 'confidential' then @confidential = 'active'
+      when 'published' then @published = 'active'
       end
     end
 
