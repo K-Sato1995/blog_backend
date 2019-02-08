@@ -3,9 +3,9 @@ require 'rails_helper'
 feature 'Posts', type: :feature do
   describe 'The order of posts' do
     before(:all) do
-      create(:post, title: 'post_2019_12_01', score: 5, created_at: Time.new(2019, 12, 01), category: create(:category, name: 'JS'))
-      create(:post, title: 'post_2019_12_02', score: 5, created_at: Time.new(2019, 12, 02))
-      create(:post, title: 'post_2019_12_03', score: 2, created_at: Time.new(2019, 12, 03))
+      create(:post, title: 'post_2019_12_01', score: 5, created_at: Time.new(2019, 12, 1), category: create(:category, name: 'JS'))
+      create(:post, title: 'post_2019_12_02', score: 5, created_at: Time.new(2019, 12, 2))
+      create(:post, title: 'post_2019_12_03', score: 2, created_at: Time.new(2019, 12, 3))
     end
 
     after(:all) do
