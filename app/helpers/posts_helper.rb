@@ -1,14 +1,12 @@
 module PostsHelper
   def posts_data
-    data = {}
-    Category.all.includes(:posts).map { |category| data[category.name.to_s] = category.posts.size }
-    data
+    Category.all.includes(:posts).each_with_object({}) { |category, hash| hash[category.name.to_s] = category.posts.size }
   end
 
   def posts_status
-    draft_posts_num = Post.where("status = '0'").size
-    published_posts_num = Post.where("status = '1'").size
-    private_posts_num = Post.where("status = '2'").size
+    draft_posts_num = Post.draft.size
+    published_posts_num = Post.published.size
+    private_posts_num = Post.confidential.size
     { Draft: draft_posts_num, Published: published_posts_num, Private: private_posts_num }
   end
 
@@ -24,7 +22,8 @@ module PostsHelper
     "# Introduction\n\n# Table of contents\n1. []()\n- []()\n- []()\n- []()\n- []()\n- []()\n- []()\n\n#\n#\n#\n#"
   end
 
-  def error_check(num)
-    num == 1 ? "There is #{num} error." : "There are #{num} errors"
+  def error_check(num = 1)
+    return "There is #{num} error." if num == 1
+    "There are #{num} errors"
   end
 end
