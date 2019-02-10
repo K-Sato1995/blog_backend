@@ -18,12 +18,26 @@ module PostsHelper
     %w[#F9E79F #A3E4D7 #F1948A]
   end
 
-  def initial_value
-    "# Introduction\n\n# Table of contents\n1. []()\n- []()\n- []()\n- []()\n- []()\n- []()\n- []()\n\n#\n#\n#\n#"
-  end
-
   def error_check(num = 1)
     return "There is #{num} error." if num == 1
-    "There are #{num} errors"
+    "There are #{num} errors."
+  end
+
+  def initial_value
+  <<-TEXT
+# Introduction
+# Table of contents
+  1.[]
+  -[]()
+  -[]()
+  -[]()
+  -[]()
+  -[]()
+  -[]()
+#
+#
+#
+#
+  TEXT
   end
 end
