@@ -15,7 +15,8 @@ group :development, :test do
   gem 'sqlite3'
   gem 'pry-rails'
   gem 'faker'
-  gem "bullet"
+  gem 'database_cleaner'
+  gem 'bullet'
 end
 
 gem 'rails', '~> 5.1.6'
