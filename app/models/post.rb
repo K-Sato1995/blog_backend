@@ -23,13 +23,13 @@ class Post < ApplicationRecord
     end
   end
 
-  def self.status_check(status)
-    if status == 'draft'
-      draft.order('title ASC')
-    elsif status == 'confidential'
-      confidential.order('title ASC')
+  def self.status_check(params)
+    if params[:status] == 'draft'
+      draft
+    elsif params[:status] == 'confidential'
+      confidential
     else
-      published.order('title ASC')
+      published
     end
   end
 
