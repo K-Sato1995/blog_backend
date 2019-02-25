@@ -3,7 +3,7 @@ module Api
     class PostsController < ApplicationController
       include ApiHelper
       def index
-        posts = Post.select(p_attributes).published.order(score: :desc, created_at: :desc)
+        posts = Post.select(index_attributes).published.order(score: :desc, created_at: :desc)
         post_tags = Post.published.order(score: :desc, created_at: :desc).map { |post| Post.includes(:tags, :taggings).find_by(id: post.id).tags }
         categories = Category.all
         tags = Tag.all
@@ -12,7 +12,8 @@ module Api
       end
 
       def show
-        post = Post.select(p_attributes).find(params[:id])
+        post = Post.select(show_attributes).find(params[:id])
+        post.update(page_views: post.page_views += 1)
         render_json(post)
       end
     end
