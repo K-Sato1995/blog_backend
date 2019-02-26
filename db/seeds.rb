@@ -25,7 +25,7 @@ Post.create(
   user_id: 1,
   status: 'published',
   category_name: 'Ruby',
-  introduction: 'This is the introduction'
+  introduction: 'In this post, I will explain how getters and setters work in Ruby. A getter method is a method that gets a value of an instance variable. Without a getter method, you can not retrieve a value of an instance variable outside the class the instance variable is instantiated from....'
 )
 
 Post.create(
@@ -35,7 +35,7 @@ Post.create(
   user_id: 1,
   status: 'published',
   category_name: 'Ruby',
-  introduction: 'This is the introduction'
+  introduction: 'In this post, I will explain how getters and setters work in Ruby. A getter method is a method that gets a value of an instance variable. Without a getter method, you can not retrieve a value of an instance variable outside the class the instance variable is instantiated from....'
 )
 
 Post.create(
@@ -45,7 +45,7 @@ Post.create(
   image: 'https://images.pexels.com/photos/1547727/pexels-photo-1547727.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
   status: 'published',
   category_name: 'Ruby',
-  introduction: 'This is the introduction'
+  introduction: 'In this post, I will explain how getters and setters work in Ruby. A getter method is a method that gets a value of an instance variable. Without a getter method, you can not retrieve a value of an instance variable outside the class the instance variable is instantiated from....'
 )
 
 Post.create(
@@ -65,7 +65,7 @@ Post.create(
   image: 'https://images.pexels.com/photos/868097/pexels-photo-868097.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
   status: 'published',
   category_name: 'Go',
-  introduction: 'This is the introduction'
+  introduction: 'In this post, I will explain how getters and setters work in Ruby. A getter method is a method that gets a value of an instance variable. Without a getter method, you can not retrieve a value of an instance variable outside the class the instance variable is instantiated from....'
 )
 
 Post.create(
@@ -75,5 +75,5 @@ Post.create(
   image: 'https://images.pexels.com/photos/861126/pexels-photo-861126.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
   status: 'published',
   category_name: 'React',
-  introduction: 'This is the introduction'
+  introduction: 'In this post, I will explain how getters and setters work in Ruby. A getter method is a method that gets a value of an instance variable. Without a getter method, you can not retrieve a value of an instance variable outside the class the instance variable is instantiated from....'
 )
