@@ -16,6 +16,12 @@ module Api
         post.update(page_views: post.page_views += 1)
         render_json(post)
       end
+
+      # This is for the other client which is used for conpiling the blog posts.
+      def posts_list
+        posts = Post.all.published.order(score: :desc, created_at: :desc)
+        render_json(posts)
+      end
     end
   end
 end

@@ -14,6 +14,7 @@ describe 'API::V1::PostsController' do
 
     it 'sends a list of posts' do
       expect(json['data'].length).to eq(4)
+      expect(json['data']['posts'].length).to eq(5)
     end
   end
 
@@ -27,6 +28,19 @@ describe 'API::V1::PostsController' do
 
     it 'sends a specific post' do
       expect(JSON.parse(response.body)['data']['title']).to eq(post.title)
+    end
+  end
+
+  describe 'GET /en/api/v1/posts_list' do
+    let(:json) { JSON.parse(response.body) }
+    before { get '/en/api/v1/posts_list' }
+
+    it 'returns 200' do
+      expect(response).to be_success
+    end
+
+    it 'sends a list of posts' do
+      expect(json['data'].length).to eq(5)
     end
   end
 end
