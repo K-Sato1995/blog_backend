@@ -66,15 +66,15 @@ describe 'Post', type: :model do
     let!(:private_posts) { create_list(:post, 10, status: 2) }
 
     it 'only returns published posts' do
-      expect(Post.status_check('published').size).to eq(10)
+      expect(Post.status_check(status: 'published').size).to eq(10)
     end
 
     it 'only returns private posts' do
-      expect(Post.status_check('draft').size).to eq(10)
+      expect(Post.status_check(status: 'draft').size).to eq(10)
     end
 
     it 'only returns drafts' do
-      expect(Post.status_check('confidential').size).to eq(10)
+      expect(Post.status_check(status: 'confidential').size).to eq(10)
     end
   end
 end
