@@ -5,6 +5,7 @@ class Post < ApplicationRecord
   has_many :tags, through: :taggings
 
   enum status: { draft: 0, published: 1, confidential: 2 }
+  enum language: { english: 0, japanese: 1, others: 2 }
 
   validates :title, :context, :category, presence: true
   validates_inclusion_of :score, in: 1..10
