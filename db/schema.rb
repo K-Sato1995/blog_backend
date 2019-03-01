@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190202061755) do
+ActiveRecord::Schema.define(version: 20190228214430) do
 
   create_table "categories", force: :cascade do |t|
     t.string "name"
@@ -30,6 +30,7 @@ ActiveRecord::Schema.define(version: 20190202061755) do
     t.integer "score", default: 1
     t.integer "page_views", default: 0
     t.text "introduction"
+    t.integer "language", default: 0
     t.index ["category_id"], name: "index_posts_on_category_id"
     t.index ["user_id"], name: "index_posts_on_user_id"
   end
