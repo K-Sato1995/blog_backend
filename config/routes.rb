@@ -10,8 +10,10 @@ Rails.application.routes.draw do
     end
     namespace :api do
       namespace :v1 do
-        resources :posts, only: [:index, :show]
         get '/posts_list', to: 'posts#posts_list'
+        resources :posts, only: [:index, :show] do
+          put 'like' => 'posts#like', on: :member
+        end
       end
     end
   end
