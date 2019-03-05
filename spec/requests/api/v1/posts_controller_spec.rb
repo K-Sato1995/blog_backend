@@ -44,7 +44,11 @@ describe 'API::V1::PostsController' do
     end
   end
 
+<<<<<<< HEAD
   describe 'PUT /en/api/v1/posts/:id/like' do
+=======
+  describe 'PUT /en/api/v1/:id/like' do
+>>>>>>> Add test for like feature
     let!(:post) { create(:post) }
 
     before { put "/en/api/v1/posts/#{post.id}/like" }
