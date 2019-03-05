@@ -1,6 +1,7 @@
 module Api
   module V1
     class PostsController < ApplicationController
+      skip_before_action :verify_authenticity_token
       include ApiHelper
       def index
         posts = Post.select(index_attributes).published.order(score: :desc, created_at: :desc)
@@ -14,6 +15,12 @@ module Api
       def show
         post = Post.select(show_attributes).find(params[:id])
         post.update(page_views: post.page_views += 1)
+        render_json(post)
+      end
+
+      def like
+        post = Post.find(params[:id])
+        post.update(like: post.like += 1)
         render_json(post)
       end
 
