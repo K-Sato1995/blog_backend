@@ -43,4 +43,14 @@ describe 'API::V1::PostsController' do
       expect(json['data'].length).to eq(5)
     end
   end
+
+  describe 'PUT /en/api/v1/posts/:id/like' do
+    let!(:post) { create(:post) }
+
+    before { put "/en/api/v1/posts/#{post.id}/like" }
+
+    it 'adds 1 like' do
+      expect(JSON.parse(response.body)['data']['like']).to eq(1)
+    end
+  end
 end
