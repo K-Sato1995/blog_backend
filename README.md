@@ -2,8 +2,6 @@
 
 This is my personal blog.
 
-https://k-blog0130.herokuapp.com/
-
 # Home
 
 ![image](https://user-images.githubusercontent.com/32632542/51032887-f2199380-15e4-11e9-9cf9-315abd34a6d6.png)
