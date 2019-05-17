@@ -6,13 +6,13 @@ services:
     volumes:
       - .:/app
     ports:
-      - "${SERVER_PORT}:3000"
+      - "3000:3000"
     depends_on:
-      - db
-  db:
+      - postgres
+  postgres:
     image: "postgres:alpine"
     ports:
-      - "${DB_PORT}:5432"
+      - "5432:5432"
     volumes:
       - server_db:/var/lib/postgresql/data
 volumes:

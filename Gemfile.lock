@@ -296,7 +296,7 @@ DEPENDENCIES
   puma (~> 3.7)
   pygments.rb
   rack-cors
-  rails (~> 5.2.0)
+  rails (~> 5.2.3)
   ransack
   redcarpet
   rspec-rails (~> 3.7)
@@ -309,6 +309,9 @@ DEPENDENCIES
   tzinfo-data
   uglifier (>= 1.3.0)
   web-console
+
+RUBY VERSION
+   ruby 2.4.1p111
 
 BUNDLED WITH
    1.17.1

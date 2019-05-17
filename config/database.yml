@@ -1,7 +1,8 @@
 default: &default
   adapter: postgresql
-  hostname: postgres
   encoding: unicode
+  hostname: postgres
+  user: postgres
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
 development:
