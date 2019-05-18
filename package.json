@@ -1,5 +1,12 @@
 {
   "name": "MyBlog",
   "private": true,
-  "dependencies": {}
+  "dependencies": {},
+  "scripts": {
+    "start": "PORT=8000 react-scripts start",
+    "setup": "docker-compose run app rake db:setup",
+    "up": "docker-compose up",
+    "build": "docker-compose build",
+    "spec": "docker-compose run app rspec"
+  }
 }

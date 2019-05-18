@@ -10,22 +10,11 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require 'masonry/transitions'
  *= require_self
  */
- @import "font-awesome";
- @import "bootstrap";
- @import "highlight";
- @import "global";
- @import "navbar";
- @import "footer";
- @import "show";
- @import "side";
- @import "form";
- @import "admin";
- @import "admin_content";
- @import "post-index";
- @import "mobile";
- @import "archive";
- @import "about";
- @import "login";
+@import "bootstrap";
+@import "global";
+@import "form";
+@import "admin";
+@import "admin_content";
+@import "login";
