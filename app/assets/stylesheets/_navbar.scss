@@ -14,13 +14,13 @@
     .logo {
       width: 30px;
       height: 30px;
-      top: 15px;
+      top: 10px;
       left: 15px;
       position: absolute;
     }
     .navbrand {
       position: absolute;
-      top: 20px;
+      top: 15px;
       left: 55px;
       font-size: 20px;
       color: $theme-color;
@@ -29,7 +29,7 @@
     }
     .nav-list {
       position: absolute;
-      top: 22px;
+      top: 15px;
       right: 30px;
       list-style: none;
       .nav-item {
@@ -51,7 +51,7 @@
 .fa-search {
   position: absolute;
   font-size: 20px;
-  top: 23px;
+  top: 17px;
   right: 18px;
   color: #626262;
   cursor: pointer;
@@ -79,7 +79,7 @@
   height: 35px;
   width: 80%;
   color: #626262;
-  background-color: #F4F4F4;
+  background-color: #f4f4f4;
   border: none;
   border-radius: 5px;
 }
@@ -95,7 +95,7 @@
   padding: 0px 15px 0px 15px;
   font-size: 25px;
   color: #626262;
-  background-color: #F4F4F4;
+  background-color: #f4f4f4;
   border-radius: 5px;
   cursor: pointer;
 }
@@ -104,12 +104,14 @@
   color: #121212;
 }
 
-.search-bar::placeholder{
-  color:#B8BEC1;
+.search-bar::placeholder {
+  color: #b8bec1;
 }
 
 ///////////////////////////SIDE BAR
-.mobile-nav { display: none; }
+.mobile-nav {
+  display: none;
+}
 
 .navbar-side {
   height: 100%;
@@ -120,7 +122,7 @@
   padding: 0;
   list-style: none;
   border-left: 1px solid $border-color;
-  background-color: #FFF;
+  background-color: #fff;
   overflow-y: scroll;
   z-index: 2000;
   -webkit-transform: translateX(100%);
@@ -133,7 +135,7 @@
 .navbar-side2 {
   @extend .navbar-side;
   width: 30%;
-  background-color: #FFF;
+  background-color: #fff;
 }
 
 .navbar-side-item {
