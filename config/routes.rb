@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   devise_for :users
   namespace :admin do
     resources :posts
+    resources :categories
+    resources :tags
   end
   namespace :api do
     namespace :v1 do
