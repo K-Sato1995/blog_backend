@@ -28,6 +28,8 @@ gem 'uglifier', '>= 1.3.0'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'devise'
+gem 'graphql'
+gem 'graphiql-rails' 
 gem 'bootstrap', '~> 4.1.3'
 gem 'chartkick'
 gem 'jquery-rails'
@@ -38,3 +40,5 @@ gem 'ransack'
 gem 'spring-watcher-listen', '~> 2.0.0'
 gem 'web-console', group: :development
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+gem 'graphiql-rails', group: :development
