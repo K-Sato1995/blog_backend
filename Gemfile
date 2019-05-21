@@ -40,5 +40,5 @@ gem 'web-console', group: :development
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # GraphQL
-gem 'graphql'
-gem 'graphiql-rails'
+# gem 'graphql'
+# gem 'graphiql-rails'
