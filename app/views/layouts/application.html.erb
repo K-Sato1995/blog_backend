@@ -13,3 +13,30 @@
     <%= yield %>
   </body>
 </html>
+
+<script>
+/////////TOGGLE SIDEBAR//////////////////////////////
+var sidebar = document.getElementById('admin-sidebar')
+var adminContent = document.getElementById('admin-content')
+var adminContainer = document.getElementById('admin-container')
+
+function openNav(){
+  sidebar.style.width = '200px';
+  adminContent.className = 'col-md-11 admin-content';
+  adminContainer.style.paddingLeft = '250px'
+}
+
+function closeNav(){
+  sidebar.style.width = '0px';
+  adminContent.className = 'col-md-12 admin-content';
+  adminContainer.style.paddingLeft = '0px'
+}
+
+function toggleNav(){
+  if(sidebar.style.width === '0px'){
+    openNav()
+  }else{
+    closeNav()
+  }
+}
+</script>

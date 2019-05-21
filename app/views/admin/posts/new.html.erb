@@ -1,4 +1,4 @@
-<%= render 'nav_form' %>
+<%= render 'shared/nav_form' %>
 <div class = 'form-container'>
   <% if @post.errors.any? %>
   <div id="error_explanation">
@@ -14,4 +14,4 @@
 <% end %>
   <%= render 'form' %>
 </div>
- <%= render 'footer'%>
+ <%= render 'shared/footer'%>

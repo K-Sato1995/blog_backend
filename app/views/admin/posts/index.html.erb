@@ -1,4 +1,4 @@
-<%= render 'nav' %>
+<%= render 'shared/nav' %>
 
 <div class = 'container-fluid'>
   <div class = 'admin-container' id = 'admin-container'>
@@ -7,13 +7,7 @@
       <div class = "alert alert-<%= key %>"><%= value%></div>
     <% end %>
     <!-- SideBar -->
-    <div id = 'admin-sidebar'>
-      <!-- Sidebar-list -->
-      <ul class="sidebar-nav">
-        <li class = 'nav-item'><%= link_to 'Admin Home', admin_posts_path %></li>
-        <li><%= link_to 'Blog Home', 'https://k-sato1995.github.io/MyBlogFront/' %></li>
-      </ul>
-    </div>
+    <%= render 'shared/side_nav' %>
     <div class = 'row'>
       <!-- Content -->
       <div class="col-md-11 admin-content" id = 'admin-content'>
@@ -78,31 +72,4 @@
     </div>
   </div>
 </div>
-<%= render 'footer'%>
-
-<script>
-/////////TOGGLE SIDEBAR//////////////////////////////
-var sidebar = document.getElementById('admin-sidebar')
-var adminContent = document.getElementById('admin-content')
-var adminContainer = document.getElementById('admin-container')
-
-function openNav(){
-  sidebar.style.width = '200px';
-  adminContent.className = 'col-md-11 admin-content';
-  adminContainer.style.paddingLeft = '250px'
-}
-
-function closeNav(){
-  sidebar.style.width = '0px';
-  adminContent.className = 'col-md-12 admin-content';
-  adminContainer.style.paddingLeft = '0px'
-}
-
-function toggleNav(){
-  if(sidebar.style.width === '0px'){
-    openNav()
-  }else{
-    closeNav()
-  }
-}
-</script>
+<%= render 'shared/footer'%>
