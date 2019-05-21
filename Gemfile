@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+ruby '2.4.1'
+
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
   "https://github.com/#{repo_name}.git"
@@ -12,34 +14,31 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.7'
   gem 'simplecov', require: false
   gem 'selenium-webdriver'
-  gem 'sqlite3'
   gem 'pry-rails'
   gem 'faker'
   gem 'database_cleaner'
   gem 'bullet'
 end
 
-gem 'rails', '~> 5.1.6'
-gem 'pg', group: :production
-gem 'web-console', group: :development
+gem 'rails', '~> 5.2.3'
+gem 'pg'
 gem 'puma', '~> 3.7'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
-gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'devise'
+gem 'graphql'
+gem 'graphiql-rails' 
 gem 'bootstrap', '~> 4.1.3'
 gem 'chartkick'
-gem 'font-awesome-rails'
 gem 'jquery-rails'
-gem 'kaminari'
 gem 'listen', '>= 3.0.5', '< 3.2'
-gem 'pygments.rb'
-gem 'masonry-rails'
-gem 'ransack'
-gem 'redcarpet'
 gem 'rack-cors'
 gem 'spring'
+gem 'ransack'
 gem 'spring-watcher-listen', '~> 2.0.0'
+gem 'web-console', group: :development
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+gem 'graphiql-rails', group: :development

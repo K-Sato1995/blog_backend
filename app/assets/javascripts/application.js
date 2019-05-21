@@ -12,7 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require masonry/jquery.masonry
 //= require rails-ujs
 //= require Chart.bundle
 //= require chartkick
