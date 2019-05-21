@@ -18,8 +18,6 @@ group :development, :test do
   gem 'faker'
   gem 'database_cleaner'
   gem 'bullet'
-  gem 'graphql'
-  gem 'graphiql-rails'
 end
 
 gem 'rails', '~> 5.2.3'
@@ -40,3 +38,5 @@ gem 'ransack'
 gem 'spring-watcher-listen', '~> 2.0.0'
 gem 'web-console', group: :development
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem 'graphql'
+gem 'graphiql-rails'
