@@ -54,7 +54,7 @@
                 <% @posts.each do |post| %>
                 <tr>
                   <td><%= post.id %></td>
-                  <td><%= link_to post.title,"https://k-sato1995.github.io/MyBlogFront/#{post.id}", :target => "_blank" %></td>
+                  <td><%= link_to post.title,"https://k-sato1995.github.io/MyBlogFront/Post/#{post.id}", :target => "_blank" %></td>
                   <td><%= post.category_name %></td>
                   <td><%= post.created_at.strftime("%Y/%m/%d") %></td>
                   <td><%= post.updated_at.strftime("%Y/%m/%d") %></td>
