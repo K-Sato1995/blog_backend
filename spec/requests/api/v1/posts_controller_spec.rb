@@ -4,9 +4,9 @@ describe 'API::V1::PostsController' do
   let(:user) { create(:user) }
   let!(:posts) { 5.times { create(:post) } }
 
-  describe 'GET /en/api/v1/posts' do
+  describe 'GET /api/v1/posts' do
     let(:json) { JSON.parse(response.body) }
-    before { get '/en/api/v1/posts' }
+    before { get '/api/v1/posts' }
 
     it 'returns 200' do
       expect(response).to be_success
@@ -18,9 +18,9 @@ describe 'API::V1::PostsController' do
     end
   end
 
-  describe 'GET /en/api/v1/posts/:id' do
+  describe 'GET /api/v1/posts/:id' do
     let(:post) { create(:post) }
-    before { get "/en/api/v1/posts/#{post.id}" }
+    before { get "/api/v1/posts/#{post.id}" }
 
     it 'returns 200' do
       expect(response).to be_success
@@ -31,9 +31,9 @@ describe 'API::V1::PostsController' do
     end
   end
 
-  describe 'GET /en/api/v1/posts_list' do
+  describe 'GET /api/v1/posts_list' do
     let(:json) { JSON.parse(response.body) }
-    before { get '/en/api/v1/posts_list' }
+    before { get '/api/v1/posts_list' }
 
     it 'returns 200' do
       expect(response).to be_success
@@ -44,10 +44,10 @@ describe 'API::V1::PostsController' do
     end
   end
 
-  describe 'PUT /en/api/v1/posts/:id/like' do
+  describe 'PUT /api/v1/posts/:id/like' do
     let!(:post) { create(:post) }
 
-    before { put "/en/api/v1/posts/#{post.id}/like" }
+    before { put "/api/v1/posts/#{post.id}/like" }
 
     it 'adds 1 like' do
       expect(JSON.parse(response.body)['data']['like']).to eq(1)
