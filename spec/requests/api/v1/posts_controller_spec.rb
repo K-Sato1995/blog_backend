@@ -9,7 +9,7 @@ describe 'API::V1::PostsController' do
     before { get '/api/v1/posts' }
 
     it 'returns 200' do
-      expect(response).to be_success
+      expect(response).to be_successful
     end
 
     it 'sends a list of posts' do
@@ -23,7 +23,7 @@ describe 'API::V1::PostsController' do
     before { get "/api/v1/posts/#{post.id}" }
 
     it 'returns 200' do
-      expect(response).to be_success
+      expect(response).to be_successful
     end
 
     it 'sends a specific post' do
@@ -36,7 +36,7 @@ describe 'API::V1::PostsController' do
     before { get '/api/v1/posts_list' }
 
     it 'returns 200' do
-      expect(response).to be_success
+      expect(response).to be_successful
     end
 
     it 'sends a list of posts' do
