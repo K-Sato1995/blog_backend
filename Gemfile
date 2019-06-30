@@ -16,7 +16,6 @@ group :development, :test do
   gem 'selenium-webdriver'
   gem 'pry-rails'
   gem 'faker'
-  gem 'database_cleaner'
   gem 'bullet'
 end
 

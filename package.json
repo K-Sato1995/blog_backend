@@ -8,6 +8,7 @@
     "up": "docker-compose up",
     "build": "docker-compose build",
     "console": "docker-compose run app rails c",
+    "bundle": "docker-compose run app bundle install",
     "spec": "docker-compose run -e 'RAILS_ENV=test' app rspec"
   }
 }

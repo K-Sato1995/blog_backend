@@ -6,12 +6,13 @@ if ENV['RAILS_ENV'] == 'test'
   SimpleCov.start do
     add_group 'Models', 'app/models/'
     add_group 'Helpers', 'app/helpers/'
-    add_grpup 'API', 'app/controllers/api/'
+    add_group 'API', 'app/controllers/api/'
 
     add_filter '/channels/'
     add_filter '/jobs/'
     add_filter '/mailers/'
     add_filter '/controllers/admin'
+    add_filter '/controllers/application_controller.rb'
     add_filter '/config/'
     add_filter '/spec/'
   end
