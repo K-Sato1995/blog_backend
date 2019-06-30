@@ -77,4 +77,20 @@ describe 'Post', type: :model do
       expect(Post.status_check(status: 'confidential').size).to eq(10)
     end
   end
+
+  describe 'Post#tag_list' do
+    let(:post) { create(:post) }
+    let(:tag1) { create(:tag, name: 'Tag1') }
+    let(:tag2) { create(:tag, name: 'Tag2') }
+
+    before do
+      post.tags = []
+      post.tags << [tag1, tag2]
+      post.tag_list
+    end
+
+    it 'returns the list of tags' do
+      expect(post.tag_list).to eq('Tag1,Tag2')
+    end
+  end
 end
