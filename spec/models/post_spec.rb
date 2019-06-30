@@ -47,16 +47,24 @@ describe 'Post', type: :model do
   describe 'Post.search' do
     let!(:posts) { create_list(:post, 10) }
 
-    it 'only returns searced posts' do
-      expect(Post.search(title: posts.first.title)[0]).to eq(posts[0])
+    context 'Post.search with exsisting arguments' do
+      it 'only returns searced posts' do
+        expect(Post.search(title: posts.first.title)[0]).to eq(posts[0])
+      end
+
+      it 'only returns searced posts' do
+        expect(Post.search(category: posts.first.category_id)[0]).to eq(posts[0])
+      end
+
+      it 'returns all without tile and category parameter' do
+        expect(Post.search.size).to eq(10)
+      end
     end
 
-    it 'only returns searced posts' do
-      expect(Post.search(category: posts.first.category_id)[0]).to eq(posts[0])
-    end
-
-    it 'returns all without tile and category parameter' do
-      expect(Post.search.size).to eq(10)
+    context 'Post.search with non-existent arguments' do
+      it 'does not return any post' do
+        expect(Post.search(title: "This is a fake #{posts.first.title}").size).to eq(0)
+      end
     end
   end
 
@@ -75,6 +83,20 @@ describe 'Post', type: :model do
 
     it 'only returns drafts' do
       expect(Post.status_check(status: 'confidential').size).to eq(10)
+    end
+  end
+
+  describe "Post#category_name=" do
+    let(:post) { create(:post) }
+    let(:category) { create(:category) }
+
+    before do
+      post.category = category
+      post.category_name = 'test category'
+    end
+
+    it 'sets the name of a category' do
+      expect(post.category.name).to eq('test category')
     end
   end
 
