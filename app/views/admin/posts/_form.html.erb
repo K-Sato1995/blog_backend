@@ -37,12 +37,12 @@
 
 <div class="form-group">
   <div class="row">
-    <%= f.text_area :context ,
+    <%= f.text_area :content ,
         cols: "50",
         rows: "50",
-        id: 'context',
+        id: 'content',
         class:"col-md-12 form-control",
-        value: @post.context ||= initial_value
+        value: @post.content ||= initial_value
     %>
   </div>
 </div>

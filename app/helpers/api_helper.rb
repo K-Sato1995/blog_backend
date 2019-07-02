@@ -4,7 +4,7 @@ module ApiHelper
   end
 
   def index_attributes
-    Post.column_names - %w[user_id image page_views context]
+    Post.column_names - %w[user_id image page_views content]
   end
 
   def show_attributes

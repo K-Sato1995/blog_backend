@@ -7,7 +7,7 @@ class Post < ApplicationRecord
   enum status: { draft: 0, published: 1, confidential: 2 }
   enum language: { english: 0, japanese: 1, others: 2 }
 
-  validates :title, :context, :category_name, presence: true
+  validates :title, :content, :category_name, presence: true
   validates_inclusion_of :score, in: 1..10
 
   scope :draft, -> { where(status: 'draft') }
