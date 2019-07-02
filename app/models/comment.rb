@@ -1,4 +1,9 @@
 class Comment < ApplicationRecord
   belongs_to :post
-  enum status: { draft: 0, published: 1 }
+  enum status: { unpublished: 0, published: 1 }
+
+  validates :name, :content, presence: true
+
+  scope :unpublished, -> { where(status: 'unpublished') }
+  scope :published, -> { where(status: 'published') }
 end
