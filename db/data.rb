@@ -1,7 +1,7 @@
 INTRO1 = 'A getter method is a method that gets a value of an instance variable.
 Without a getter method, you can not retrieve a value of an instance variable outside the class the instance variable is instantiated from.'
 
-CONTEXT1 = "#What is a getter method?
+CONTENT1 = "#What is a getter method?
  __A getter method__ is a method that ==gets== a value of an instance variable.
  Without a getter method, you can not retrieve a value of an instance variable outside the class the instance variable is instantiated from.
 
@@ -153,7 +153,7 @@ p obj1.year #=> 1999
 
 INTRO2 = "Here is a simple guideline to create a simple API with RoR5. In this post, I'll create a simple blog like application that users can read, create, update and delete posts."
 
-CONTEXT2 = "#Overview
+CONTENT2 = "#Overview
  Here is a simple guideline to create a simple API with RoR5. In this post, I'll create a simple blog like application that users can read, create, update and delete posts.
 
 #Steps
@@ -270,7 +270,7 @@ end
 You can use [Postman](https://www.getpostman.com/) to check if your api is working correctly."
 
 INTRO3 = "RSpec is a Behaviour-Driven Development tool for Ruby programmers. `BDD` is an approach to software development that combines Test-Driven Development, Domain Driven Design, and Acceptance Test-Driven Planning. "
-CONTEXT3 = "#What is Rspec?
+CONTENT3 = "#What is Rspec?
 RSpec is a Behaviour-Driven Development tool for Ruby programmers. `BDD` is an approach to software development that combines Test-Driven Development, Domain Driven Design, and Acceptance Test-Driven Planning.
 
 #How to install Rspec on your RoR applications?
@@ -373,18 +373,18 @@ end
 respectively on an object.
 
 #Context
- The `context` keyword is just an alias method of `describe` that means there is no functional difference between these two methods. However, there is a contextual difference that makes your tests more understandable by using both of them.
- Generally speaking, `describe` is used to separate sets of tests based on methods or behavior that are being tested, whereas `context` is used to separate specs based on conditions.
+ The `content` keyword is just an alias method of `describe` that means there is no functional difference between these two methods. However, there is a contentual difference that makes your tests more understandable by using both of them.
+ Generally speaking, `describe` is used to separate sets of tests based on methods or behavior that are being tested, whereas `content` is used to separate specs based on conditions.
 
 
 ```Ruby
 describe 'Post' do
 
-  context 'name == Jim' do
+  content 'name == Jim' do
     #tests
   end
 
-  context 'name == John' do
+  content 'name == John' do
     #tests
   end
 

@@ -14,14 +14,14 @@ describe 'Post', type: :model do
 
     context 'When parameters are not filled in with valud values' do
       let(:post1) { build(:post, title: '') }
-      let(:post2) { build(:post, context: '') }
+      let(:post2) { build(:post, content: '') }
       let(:post3) { build(:post, category_id: '') }
 
       it 'is invalid without a title' do
         expect(post1).to_not be_valid
       end
 
-      it 'is invalid without any context' do
+      it 'is invalid without any content' do
         expect(post2).to_not be_valid
       end
 
