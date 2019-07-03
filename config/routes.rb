@@ -10,6 +10,7 @@ Rails.application.routes.draw do
       get '/posts_list', to: 'posts#posts_list'
       resources :posts, only: [:index, :show] do
         put 'like' => 'posts#like', on: :member
+        resources :comments, only: [:create]
       end
     end
   end
