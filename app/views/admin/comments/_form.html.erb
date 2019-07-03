@@ -1,0 +1,23 @@
+<%= form_for [:admin, @comment] do |f|%>
+  <div class="form-group">
+    <div class="row">
+      <%= f.text_field :name, placeholder:'Name', class: "col-md-12 form-control"%>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="row">
+      <%= f.text_area :content, placeholder:'Content',cols: "10", rows: "10", class: "col-md-12 form-control"%>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="row">
+      <%= f.select(:status, Comment.statuses.keys.map {|key| [key.capitalize, key]}, {}, { :class => "col-md-12 form-control" }) %>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="row">
+      <%= f.submit class:'col-md-12 btn btn-outline-primary'%>
+      <% end %>
+    </div>
+  </div>
+</div>

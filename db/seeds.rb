@@ -5,7 +5,7 @@ TAGS = %w(Git Gem Rspec Test Ruby Javascript Go)
   User.create(
     name: Faker::Name.name,
     status: i,
-    email: Faker::Internet.email,
+    email: 'a@example.com',
     password: '111111',
     password_confirmation: '111111'
   )
