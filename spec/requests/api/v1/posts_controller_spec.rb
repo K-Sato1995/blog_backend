@@ -19,6 +19,7 @@ describe 'API::V1::PostsController' do
   end
 
   describe 'GET /api/v1/posts/:id' do
+    let(:json) { JSON.parse(response.body) }
     let(:post) { create(:post) }
     before { get "/api/v1/posts/#{post.id}" }
 
@@ -27,7 +28,11 @@ describe 'API::V1::PostsController' do
     end
 
     it 'sends a specific post' do
-      expect(JSON.parse(response.body)['data']['title']).to eq(post.title)
+      expect(json['data']['post']['title']).to eq(post.title)
+    end
+
+    it 'sends associated comments with the post' do
+      expect(json['data']['comments'].size ).to eq(1)
     end
   end
 

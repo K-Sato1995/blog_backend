@@ -1,7 +1,8 @@
 FactoryBot.define do
   factory :comment do
-    title { Faker::Beer.name }
+    name { Faker::Beer.name }
     content { Faker::Lorem.paragraph }
     status { 1 }
+    post
   end
 end

@@ -6,7 +6,7 @@ if ENV['RAILS_ENV'] == 'test'
   SimpleCov.start do
     add_group 'Models', 'app/models/'
     add_group 'Helpers', 'app/helpers/'
-    add_group 'API', 'app/controllers/api/'
+    add_group 'API', 'app/controllers/api/v1'
 
     add_filter '/channels/'
     add_filter '/jobs/'

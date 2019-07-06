@@ -1,5 +1,5 @@
 class Comment < ApplicationRecord
-  belongs_to :post
+  belongs_to :post, optional: true
   enum status: { unpublished: 0, published: 1 }
 
   validates :name, :content, presence: true
