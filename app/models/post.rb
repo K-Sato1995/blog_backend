@@ -1,9 +1,11 @@
 class Post < ApplicationRecord
+  extend FriendlyId
   belongs_to :user
   belongs_to :category
   has_many :comments
   has_many :taggings, dependent: :destroy
   has_many :tags, through: :taggings
+  friendly_id :title, use: [:slugged, :finders]
 
   enum status: { draft: 0, published: 1, confidential: 2 }
   enum language: { english: 0, japanese: 1, others: 2 }
