@@ -1,79 +1,29 @@
-require_relative 'data'
+CATEGORIES = %w(Ruby Javascript Go React Rails Others Life)
+TAGS = %w(Git Gem Rspec Test Ruby Javascript Go)
 
-# USER
-User.create(
-  name: 'Admin_User',
-  status: 0,
-  email: 'a@example.com',
-  password: '111111',
-  password_confirmation: '111111'
-)
+2.times do |i|
+  User.create(
+    name: Faker::Name.name,
+    status: i,
+    email: 'a@example.com',
+    password: '111111',
+    password_confirmation: '111111'
+  )
+end
 
-User.create(
-  name: 'Sub_Admin_User',
-  status: 1,
-  email: 'sa@example.com',
-  password: '111111',
-  password_confirmation: '111111'
-)
+5.times do  |i|
+  tags = []
+  2.times { tags << Tag.find_or_create_by(name: TAGS[rand(0..6)]) }
 
-# POST
-Post.create(
-  title: 'Ruby Getters and Setters',
-  content: CONTEXT1,
-  image: 'https://images.pexels.com/photos/1536608/pexels-photo-1536608.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
-  user_id: 1,
-  status: 'published',
-  category_name: 'Ruby',
-  introduction: 'In this post, I will explain how getters and setters work in Ruby. A getter method is a method that gets a value of an instance variable. Without a getter method, you can not retrieve a value of an instance variable outside the class the instance variable is instantiated from....'
-)
-
-Post.create(
-  title: 'Build a simple API using RoR5',
-  content: CONTEXT2,
-  image: 'https://images.pexels.com/photos/1367170/pexels-photo-1367170.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
-  user_id: 1,
-  status: 'published',
-  category_name: 'Ruby',
-  introduction: 'In this post, I will explain how getters and setters work in Ruby. A getter method is a method that gets a value of an instance variable. Without a getter method, you can not retrieve a value of an instance variable outside the class the instance variable is instantiated from....'
-)
-
-Post.create(
-  title: 'Rspec Basics ①',
-  content: CONTEXT3,
-  user_id: 1,
-  image: 'https://images.pexels.com/photos/1547727/pexels-photo-1547727.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
-  status: 'published',
-  category_name: 'Ruby',
-  introduction: 'In this post, I will explain how getters and setters work in Ruby. A getter method is a method that gets a value of an instance variable. Without a getter method, you can not retrieve a value of an instance variable outside the class the instance variable is instantiated from....'
-)
-
-Post.create(
-  title: 'Javascript',
-  content: CONTEXT3,
-  user_id: 1,
-  image: 'https://images.pexels.com/photos/1322185/pexels-photo-1322185.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
-  status: 'published',
-  category_name: 'Javascript',
-  introduction: 'This is the introduction'
-)
-
-Post.create(
-  title: 'Go',
-  content: CONTEXT3,
-  user_id: 1,
-  image: 'https://images.pexels.com/photos/868097/pexels-photo-868097.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
-  status: 'published',
-  category_name: 'Go',
-  introduction: 'In this post, I will explain how getters and setters work in Ruby. A getter method is a method that gets a value of an instance variable. Without a getter method, you can not retrieve a value of an instance variable outside the class the instance variable is instantiated from....'
-)
-
-Post.create(
-  title: 'React',
-  content: CONTEXT3,
-  user_id: 1,
-  image: 'https://images.pexels.com/photos/861126/pexels-photo-861126.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
-  status: 'published',
-  category_name: 'React',
-  introduction: 'In this post, I will explain how getters and setters work in Ruby. A getter method is a method that gets a value of an instance variable. Without a getter method, you can not retrieve a value of an instance variable outside the class the instance variable is instantiated from....'
-)
+  post = Post.new(
+    title: Faker::Company.name,
+    content: Faker::Lorem.paragraph(100),
+    user_id: 1,
+    image: 'https://random_url',
+    status: 'published',
+    category_name: CATEGORIES[i],
+    introduction: Faker::Lorem.paragraph
+  )
+  post.tags << tags
+  post.save!
+end

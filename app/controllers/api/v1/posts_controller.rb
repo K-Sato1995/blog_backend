@@ -13,9 +13,11 @@ module Api
       end
 
       def show
-        post = Post.select(show_attributes).find(params[:id])
+        post = Post.friendly.select(show_attributes).find(params[:id])
+        comments = post.comments.published.includes(:post)
         post.update(page_views: post.page_views += 1)
-        render_json(post)
+
+        render_json(post: post, comments: comments)
       end
 
       def like

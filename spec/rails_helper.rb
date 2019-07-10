@@ -4,15 +4,15 @@ ENV['RAILS_ENV'] ||= 'test'
 if ENV['RAILS_ENV'] == 'test'
   require 'simplecov'
   SimpleCov.start do
-    track_files '{app,controllers}/**/*.rb'
-
     add_group 'Models', 'app/models/'
-    add_group 'Controllers', 'app/controllers/'
     add_group 'Helpers', 'app/helpers/'
+    add_group 'API', 'app/controllers/api/v1'
 
     add_filter '/channels/'
     add_filter '/jobs/'
     add_filter '/mailers/'
+    add_filter '/controllers/admin'
+    add_filter '/controllers/application_controller.rb'
     add_filter '/config/'
     add_filter '/spec/'
   end

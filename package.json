@@ -7,6 +7,9 @@
     "setup": "docker-compose run app rake db:setup",
     "up": "docker-compose up",
     "build": "docker-compose build",
-    "spec": "docker-compose run app rspec"
+    "console": "docker-compose run app rails c",
+    "bundle": "docker-compose run app bundle install",
+    "spec": "docker-compose run -e 'RAILS_ENV=test' app rspec",
+    "app": "docker-compose run app"
   }
 }

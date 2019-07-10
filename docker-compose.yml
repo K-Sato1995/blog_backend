@@ -5,8 +5,11 @@ services:
     command: >
       sh -c "rm -f tmp/pids/server.pid &&
       bundle exec rails server -b 0.0.0.0"
+    environment:
+      - BUNDLE_PATH=/bundle
     volumes:
       - .:/app
+      - bundle_path:/bundle
     ports:
       - "3000:3000"
     depends_on:
@@ -18,4 +21,5 @@ services:
     volumes:
       - server_db:/var/lib/postgresql/data
 volumes:
+  bundle_path:
   server_db:
