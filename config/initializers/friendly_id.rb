@@ -8,6 +8,18 @@
 # To learn more, check out the guide:
 #
 # http://norman.github.io/friendly_id/file.Guide.html
+module FriendlyId
+  module Slugged
+    def should_generate_new_friendly_id?
+      return true if send(friendly_id_config.slug_column).nil? && !send(friendly_id_config.base).nil?
+
+      change = :"#{friendly_id_config.base}_changed?"
+      return true if respond_to?(change) && send(change)
+
+      false
+    end
+  end
+end
 
 FriendlyId.defaults do |config|
   # ## Reserved Words
@@ -18,7 +30,7 @@ FriendlyId.defaults do |config|
 
   config.reserved_words = %w(new edit index session login logout users admin
     stylesheets assets javascripts images)
-    
+
   # This adds an option to treat reserved words as conflicts rather than exceptions.
   # When there is no good candidate, a UUID will be appended, matching the existing
   # conflict behavior.
