@@ -12,8 +12,8 @@ module MyBlog
   class Application < Rails::Application
     config.middleware.insert_before 0, Rack::Cors do
       allow do
-        origins '*'
-        resource '*', headers: :any, methods: [:get, :put, :create]
+        origins 'localhost:8000', 'k-sato1995.github.io/MyBlogFront/'
+        resource '*', headers: :any, methods: [:get, :put, :post]
       end
     end
     config.load_defaults 5.1
