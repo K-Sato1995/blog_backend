@@ -12,6 +12,7 @@ module Api
         else
           render json: { status: 'ERROR', message: 'An error occured', data: comment.errors }
         end
+        CommentMailer.comment_email(post.slug, comment.name, comment.content).deliver_now
       end
 
       private

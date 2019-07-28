@@ -17,6 +17,7 @@ group :development, :test do
   gem 'pry-rails'
   gem 'faker'
   gem 'bullet'
+  gem 'dotenv-rails'
 end
 
 gem 'rails', '~> 5.2.3'
