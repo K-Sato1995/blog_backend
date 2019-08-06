@@ -1,6 +1,6 @@
 module ApiHelper
   def render_json(data)
-    render json: { status: 'SUCCESS', message: 'loaded posts', data: data }
+    render json: { status: 'SUCCESS', message: 'loaded data', data: data }
   end
 
   def index_attributes
