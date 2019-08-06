@@ -24,10 +24,10 @@ module Api
         render_json(post)
       end
 
+      def featured_posts
+        posts = Post.select(featured_posts_attributes).published.order(score: :desc, created_at: :desc).limit(5)
 
-      def tags
-        tags = Tag.all
-        render_json(tags: tags)
+        render_json(posts: posts)
       end
     end
   end
