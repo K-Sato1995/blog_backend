@@ -1,7 +1,6 @@
 module Api
   module V1
     class PostsController < ApplicationController
-      skip_before_action :verify_authenticity_token
       include ApiHelper
       def index
         posts = Post.select(index_attributes).published.order(score: :desc, created_at: :desc)
