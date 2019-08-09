@@ -14,5 +14,15 @@ Rails.application.routes.draw do
         resources :comments, only: [:create]
       end
     end
+
+    namespace :v2 do
+      resources :categories, only: :index
+      resources :tags, only: :index
+      get '/featured_posts', to: 'posts#featured_posts'
+      resources :posts, only: [:index, :show] do
+        put 'like' => 'posts#like', on: :member
+        resources :comments, only: [:create]
+      end
+    end
   end
 end
