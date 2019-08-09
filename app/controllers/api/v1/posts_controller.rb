@@ -29,7 +29,11 @@ module Api
       # This is for the other client which is used for conpiling the blog posts.
       def posts_list
         posts = Post.all.published.order(score: :desc, created_at: :desc)
-        render_json(posts)
+        post_tags = Post.published.order(score: :desc, created_at: :desc).map { |post| Post.includes(:tags, :taggings).find_by(id: post.id).tags }
+        categories = Category.all
+        tags = Tag.all
+
+        render_json(posts: posts, categories: categories, tags: tags, post_tags: post_tags)
       end
     end
   end
