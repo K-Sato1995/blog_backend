@@ -1,5 +1,5 @@
-CATEGORIES = %w(Ruby Javascript Go React Rails Others Life)
-TAGS = %w(Git Gem Rspec Test Ruby Javascript Go)
+CATEGORIES = %w[Ruby Javascript Go React Rails Others Life].freeze
+TAGS = %w[Git Gem Rspec Test Ruby Javascript Go].freeze
 
 2.times do |i|
   User.create(
@@ -11,7 +11,7 @@ TAGS = %w(Git Gem Rspec Test Ruby Javascript Go)
   )
 end
 
-5.times do  |i|
+5.times do |i|
   tags = []
   2.times { tags << Tag.find_or_create_by(name: TAGS[rand(0..6)]) }
 

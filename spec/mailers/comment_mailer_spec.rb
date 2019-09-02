@@ -1,8 +1,8 @@
-require "rails_helper"
+require 'rails_helper'
 
 RSpec.describe CommentMailer, type: :mailer do
   describe '.comment_email' do
-    let(:post) { create(:post)}
+    let(:post) { create(:post) }
     let(:comment) { create(:comment) }
     let(:mail) { described_class.comment_email(post.slug, comment.name, comment.content).deliver_now }
 
@@ -14,7 +14,7 @@ RSpec.describe CommentMailer, type: :mailer do
       expect(mail.to).to eq(['katsuki_sato0130@icloud.com'])
     end
 
-    it "renders the sender email" do
+    it 'renders the sender email' do
       expect(mail.from).to eq(['mandanglish@gmail.com'])
     end
 

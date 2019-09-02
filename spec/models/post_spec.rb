@@ -86,7 +86,7 @@ describe 'Post', type: :model do
     end
   end
 
-  describe "Post#category_name=" do
+  describe 'Post#category_name=' do
     let(:post) { create(:post) }
     let(:category) { create(:category) }
 

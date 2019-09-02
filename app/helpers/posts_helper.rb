@@ -20,24 +20,17 @@ module PostsHelper
 
   def error_check(num = 1)
     return "There is #{num} error." if num == 1
+
     "There are #{num} errors."
   end
 
   def initial_value
-  <<-TEXT
-# Introduction
-# Table of contents
-  1.[]
-  -[]()
-  -[]()
-  -[]()
-  -[]()
-  -[]()
-  -[]()
-#
-#
-#
-#
-  TEXT
+    <<~TEXT
+      # Introduction
+      #
+      #
+      #
+      #
+    TEXT
   end
 end
