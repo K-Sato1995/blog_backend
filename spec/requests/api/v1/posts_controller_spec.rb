@@ -45,7 +45,7 @@ describe 'API::V1::PostsController' do
     end
 
     it 'sends a list of posts' do
-      expect(json['data'].length).to eq(5)
+      expect(json['data']['posts'].length).to eq(5)
     end
   end
 
