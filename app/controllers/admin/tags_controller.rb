@@ -1,6 +1,6 @@
 module Admin
   class TagsController < ApplicationController
-    before_action:find_tag, only: [:edit, :update, :destroy]
+    before_action :find_tag, only: [:edit, :update, :destroy]
 
     def index
       @tags = Tag.all

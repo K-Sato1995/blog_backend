@@ -1,6 +1,6 @@
 module Admin
   class CategoriesController < ApplicationController
-    before_action:find_category, only: [:edit, :update, :destroy]
+    before_action :find_category, only: [:edit, :update, :destroy]
 
     def index
       @categories = Category.all
@@ -22,7 +22,7 @@ module Admin
     end
 
     private
-    
+
     def category_params
       params.require(:category).permit(:name)
     end

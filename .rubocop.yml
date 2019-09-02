@@ -11,7 +11,9 @@ AllCops:
     - Gemfile
     - config/puma.rb
     - config/spring.rb
-    - config/initializers/devise.rb
+    - config/environments/*
+    - config/initializers/*
+    - config/application.rb
     - db/data.rb
     - spec/rails_helper.rb
 
