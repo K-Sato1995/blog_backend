@@ -1,11 +1,10 @@
 module Api
   module V1
     class CommentsController < ApplicationController
+      skip_before_action :verify_authenticity_token
+
       def create
-        p '==========================='
-        p params
-        p '=========================='
-        post = Post.find(params[:post_id])
+        post = Post.find_by(slug: params[:post_id])
         comment = post.comments.new(comment_params)
 
         if comment.save
