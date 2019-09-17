@@ -13,7 +13,7 @@ describe 'API::V1::CommentsController' do
     end
 
     it 'creates a comment' do
-      expect { post "/api/v1/posts/#{post1.slug}/comments", params: valid_params }.to change(Comment, :count).by(+1)
+      expect { post "/api/v1/posts/#{post1.id}/comments", params: valid_params }.to change(Comment, :count).by(+1)
       expect(response.status).to eq(200)
     end
   end
