@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.4.1'
+ruby '2.6.3'
 
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
@@ -20,7 +20,7 @@ group :development, :test do
   gem 'dotenv-rails'
 end
 
-gem 'rails', '~> 5.2.3'
+gem 'rails', '~> 6.0.0'
 gem 'pg'
 gem 'puma', '~> 3.7'
 gem 'sass-rails', '~> 5.0'

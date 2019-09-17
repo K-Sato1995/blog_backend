@@ -1,4 +1,4 @@
-FROM ruby:2.4.1-alpine
+FROM ruby:2.6.3-alpine
 
 ENV LANG C.UTF-8
 ENV RAILS_ENV=development
