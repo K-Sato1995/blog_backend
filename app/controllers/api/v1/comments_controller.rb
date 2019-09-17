@@ -2,6 +2,9 @@ module Api
   module V1
     class CommentsController < ApplicationController
       def create
+        p '==========================='
+        p params
+        p '=========================='
         post = Post.find(params[:post_id])
         comment = post.comments.new(comment_params)
 
