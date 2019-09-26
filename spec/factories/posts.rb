@@ -10,7 +10,6 @@ FactoryBot.define do
     association :category, factory: :category
 
     after(:create) do |post|
-      FactoryBot.create(:comment, post: post)
       post.tags << FactoryBot.create(:tag)
     end
   end
