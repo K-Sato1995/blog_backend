@@ -19,7 +19,7 @@ module Admin
     end
 
     def create
-      @post = Post.new(post_params)
+      @post = current_user.posts.new(post_params)
       tag_list = params[:post][:tag_list].split(',').map do |name|
         Tag.where(name: name.strip).first_or_create!
       end
@@ -57,7 +57,7 @@ module Admin
 
     def post_params
       columns = Post.column_names - %i[created_at updated_at]
-      params.require(:post).permit(columns, :category_name).merge(user_id: current_user.id)
+      params.require(:post).permit(columns, :category_name)
     end
 
     def find_post

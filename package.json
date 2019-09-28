@@ -4,7 +4,7 @@
   "dependencies": {},
   "scripts": {
     "start": "PORT=8000 react-scripts start",
-    "setup": "docker-compose run app rake db:setup",
+    "setup": "docker-compose run app bundle exec rake db:setup",
     "up": "docker-compose up",
     "build": "docker-compose build",
     "console": "docker-compose run app rails c",

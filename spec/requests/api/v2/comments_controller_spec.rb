@@ -3,11 +3,11 @@ require 'rails_helper'
 describe 'API::V2::CommentsController' do
   let(:user) { create(:user) }
 
-  describe 'POST /api/v1/posts/:post_id/comments' do
+  describe 'POST /api/v2/posts/:post_id/comments' do
     let(:json) { JSON.parse(response.body) }
     let(:post1) { create(:post) }
     let(:params) { { name: 'name', content: 'content' } }
-    subject { post "/api/v1/posts/#{post1.slug}/comments", params: { comment: params } }
+    subject { post "/api/v2/posts/#{post1.slug}/comments", params: { comment: params } }
 
     context 'when the valid values are passed' do
       it 'creates a comment' do
