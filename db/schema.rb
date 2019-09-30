@@ -10,10 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_07_07_014543) do
+ActiveRecord::Schema.define(version: 2019_09_30_080051) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "authors", force: :cascade do |t|
+    t.string "name"
+    t.string "email"
+    t.string "password_digest"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["email"], name: "index_authors_on_email", unique: true
+  end
 
   create_table "categories", force: :cascade do |t|
     t.string "name"
@@ -48,9 +57,9 @@ ActiveRecord::Schema.define(version: 2019_07_07_014543) do
     t.integer "status"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "user_id"
+    t.bigint "user_id"
     t.string "image"
-    t.integer "category_id"
+    t.bigint "category_id"
     t.integer "score", default: 1
     t.integer "page_views", default: 0
     t.text "introduction"
@@ -63,8 +72,8 @@ ActiveRecord::Schema.define(version: 2019_07_07_014543) do
   end
 
   create_table "taggings", force: :cascade do |t|
-    t.integer "tag_id"
-    t.integer "post_id"
+    t.bigint "tag_id"
+    t.bigint "post_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["post_id"], name: "index_taggings_on_post_id"
@@ -96,4 +105,6 @@ ActiveRecord::Schema.define(version: 2019_07_07_014543) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "posts", "categories"
+  add_foreign_key "posts", "users"
 end
