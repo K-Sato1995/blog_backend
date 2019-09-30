@@ -1,5 +1,13 @@
 Rails.application.routes.draw do
   devise_for :users
+  resources :authors
+  # Create new users
+  get  '/signup',  to: 'authors#new'
+  post '/signup',  to: 'authors#create'
+  # Sessions
+  get    '/login',   to: 'sessions#new'
+  post   '/login',   to: 'sessions#create'
+  delete '/logout',  to: 'sessions#destroy'
   namespace :admin do
     resources :posts
     resources :categories
