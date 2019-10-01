@@ -6,6 +6,7 @@ class SessionsController < ApplicationController
     author = Author.find_by(email: params[:session][:email].downcase)
     if author && author.authenticate(params[:session][:password])
       log_in author
+      params[:session][:remember_me] == '1' ? remember(author) : forget(author)
       redirect_to author
     else
       render 'new'

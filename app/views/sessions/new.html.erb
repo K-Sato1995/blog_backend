@@ -3,6 +3,10 @@
   <%= form_for(:session, url: login_path) do |f| %>
     <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: 'Email', class: 'login-input'%><br/>
     <%= f.password_field :password, autocomplete: "current-password", placeholder: 'Password', class: 'login-input' %>
+    <div class="check-field">
+      <%= f.check_box :remember_me %>
+      <%= f.label :remember_me %>
+    </div>
     <%= f.submit "Log in", class: 'btn btn-outline-primary login-btn' %>
   <% end %>
 </div>

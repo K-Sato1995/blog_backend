@@ -1,5 +1,6 @@
 CATEGORIES = %w[Ruby Javascript Go React Rails Others Life].freeze
 TAGS = %w[Git Gem Rspec Test Ruby Javascript Go].freeze
+Author.create(name:'test', email:'test@email.com', password:'000000')
 
 2.times do |i|
   User.create(
