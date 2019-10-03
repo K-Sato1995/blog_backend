@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 describe 'API::V2::PostsController' do
-  let(:user) { create(:user) }
+  let(:author) { create(:author) }
   let!(:posts) { 5.times { create(:post) } }
 
   describe 'GET /api/v2/posts' do
