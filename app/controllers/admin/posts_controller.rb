@@ -1,5 +1,7 @@
 module Admin
   class PostsController < Admin::ApplicationController
+    include ApplicationHelper
+    before_action :authenticate_author
     before_action :find_post, only: [:edit, :update, :destroy]
 
     def index
@@ -61,6 +63,13 @@ module Admin
 
     def find_post
       @post = Post.find_by(slug: params[:id])
+    end
+
+    def authenticate_author
+      unless logged_in?
+        redirect_to admin_login_path
+        flash[:danger] = 'Please log in.'
+      end
     end
   end
 end

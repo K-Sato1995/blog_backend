@@ -4,10 +4,6 @@ Rails.application.routes.draw do
     resources :categories
     resources :tags
     resources :comments
-    resources :authors
-    # Create new users
-    get  '/signup',  to: 'authors#new'
-    post '/signup',  to: 'authors#create'
     # Sessions
     get    '/login',   to: 'sessions#new'
     post   '/login',   to: 'sessions#create'

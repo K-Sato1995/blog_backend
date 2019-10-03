@@ -17,7 +17,8 @@ module Admin
 
     def destroy
       log_out
-      redirect_to root_url
+      flash[:success] = 'Logged out successfully. Thank you for your service.'
+      redirect_to admin_login_path
     end
   end
 end

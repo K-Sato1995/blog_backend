@@ -1,6 +1,8 @@
 module Admin
   class CategoriesController < Admin::ApplicationController
+    include ApplicationHelper
     before_action :find_category, only: [:edit, :update, :destroy]
+    before_action :authenticate_author
 
     def index
       @categories = Category.all

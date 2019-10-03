@@ -1,5 +1,7 @@
 module Admin
   class CommentsController < Admin::ApplicationController
+    include ApplicationHelper
+    before_action :authenticate_author
     before_action :find_comment, only: [:edit, :update, :destroy]
 
     def index
