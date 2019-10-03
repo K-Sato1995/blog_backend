@@ -7,7 +7,7 @@ RSpec.describe ApiHelper, type: :helper do
   describe 'Api helper methods' do
     describe 'show_attributes' do
       it 'only shows speficfied attributes' do
-        expect(ins.show_attributes).to eq(%w[id title content status created_at updated_at user_id category_id score page_views introduction language like slug])
+        expect(ins.show_attributes).to eq(%w[id title content status created_at updated_at author_id category_id score page_views introduction language like slug])
       end
     end
 

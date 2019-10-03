@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 describe 'API::V2::CommentsController' do
-  let(:user) { create(:user) }
+  let(:author) { create(:author) }
 
   describe 'POST /api/v1/posts/:post_id/comments' do
     let(:json) { JSON.parse(response.body) }
