@@ -9,9 +9,9 @@ module SessionsHelper
 
   def current_author
     if (author_id = session[:author_id])
-      @current_author ||= User.find_by(id: author_id)
+      @current_author ||= Author.find_by(id: author_id)
     elsif (author_id = cookies.signed[:author_id])
-      author = User.find_by(id: author_id)
+      author = Author.find_by(id: author_id)
       if author && author.authenticated?(cookies[:remember_token])
         log_in author
         @current_author = author

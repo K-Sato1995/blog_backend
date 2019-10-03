@@ -27,7 +27,6 @@ gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
-gem 'devise'
 gem "bootstrap", ">= 4.3.1"
 gem 'chartkick'
 gem 'jquery-rails'

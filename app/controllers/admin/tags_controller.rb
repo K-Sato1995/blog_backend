@@ -1,5 +1,5 @@
 module Admin
-  class TagsController < ApplicationController
+  class TagsController < Admin::ApplicationController
     before_action :find_tag, only: [:edit, :update, :destroy]
 
     def index

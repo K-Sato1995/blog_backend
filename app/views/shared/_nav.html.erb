@@ -6,10 +6,10 @@
       <div class="menu-icon-bar"></div>
     </div>
   </h4>
-    <% if user_signed_in? %>
+    <% if logged_in? %>
       <ul class = 'admin-btn-list'>
         <li><%= link_to 'New post', new_admin_post_path, class: 'btn btn-outline-success'%></li>
-        <li><%= link_to 'Logout', destroy_user_session_path, method: :delete, class: 'btn btn-outline-danger'%></li>
+        <li><%= link_to 'Logout', admin_logout_path, method: :delete, class: 'btn btn-outline-danger'%></li>
       </ul>
     <% end %>
 </nav>

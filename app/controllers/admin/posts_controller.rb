@@ -1,6 +1,5 @@
 module Admin
-  class PostsController < ApplicationController
-    before_action :authenticate_user!
+  class PostsController < Admin::ApplicationController
     before_action :find_post, only: [:edit, :update, :destroy]
 
     def index
@@ -19,7 +18,7 @@ module Admin
     end
 
     def create
-      @post = current_user.posts.new(post_params)
+      @post = current_author.posts.new(post_params)
       tag_list = params[:post][:tag_list].split(',').map do |name|
         Tag.where(name: name.strip).first_or_create!
       end
