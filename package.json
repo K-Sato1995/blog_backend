@@ -5,9 +5,11 @@
   "scripts": {
     "start": "PORT=8000 react-scripts start",
     "setup": "docker-compose run app bundle exec rake db:setup",
+    "migrate": "docker-compose run app bundle exec rake db:migrate",
     "up": "docker-compose up",
+    "down": "docker-compose down",
     "build": "docker-compose build",
-    "console": "docker-compose run app rails c",
+    "console": "docker-compose run app bundle exec rails c",
     "bundle": "docker-compose run app bundle install",
     "spec": "docker-compose run -e 'RAILS_ENV=test' app bundle exec rspec",
     "app": "docker-compose run app"

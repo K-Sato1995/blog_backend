@@ -1,10 +1,13 @@
 Rails.application.routes.draw do
-  devise_for :users
   namespace :admin do
     resources :posts
     resources :categories
     resources :tags
     resources :comments
+    # Sessions
+    get    '/login',   to: 'sessions#new'
+    post   '/login',   to: 'sessions#create'
+    delete '/logout',  to: 'sessions#destroy'
   end
   namespace :api do
     namespace :v1 do
