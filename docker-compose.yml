@@ -15,7 +15,7 @@ services:
     depends_on:
       - postgres
   postgres:
-    image: "postgres:alpine"
+    image: "postgres:11-alpine"
     ports:
       - "5432:5432"
     volumes:
