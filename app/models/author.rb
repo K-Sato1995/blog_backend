@@ -11,8 +11,6 @@ class Author < ApplicationRecord
 
   class << self
     # Return the hash value of the given string
-    # Read the article below about BCrypt
-    # https://qiita.com/ponkotuy/items/1a703b866ddf5c9fe80c
     def digest(string)
       cost = ActiveModel::SecurePassword.min_cost ? BCrypt::Engine::MIN_COST : BCrypt::Engine.cost
       BCrypt::Password.create(string, cost: cost)
